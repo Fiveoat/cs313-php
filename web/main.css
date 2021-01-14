@@ -17,7 +17,7 @@ button {
 
 
 .banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/web/images/IMG_2675.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG_2675.jpg");
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
