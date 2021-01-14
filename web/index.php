@@ -25,8 +25,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md">
-            <p>
-              Hello. My name is Coty Fivecoat. I am 27. I live in Salt Lake City. I currently work as a Software Development Engineer at a cybersecurity start up,
+            <p>Hello. My name is Coty Fivecoat. I am 27. I live in Salt Lake City. I currently work as a Software Development Engineer at a cybersecurity start up,
               but we were recently aquired. I don't have very much experience with Web Development, other than the Python frameworks Flask & FastAPI,
               though it has been my job for a couple of weeks now. I actually got this job because I worked on the Operations team & managed to automate in the
               thousands of hours of various tasks between different teams in my free time with Python. I feel very comfortable with Python, though I feel very
