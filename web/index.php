@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <div id="container">
+  <div class=".container-md">
     <header class="display-1">
       <?php require $root . '/header.php'; ?>
     </header>
