@@ -23,7 +23,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm">
-          <p class="display-6">Hello. My name is Coty Fivecoat. I am 27. I live in Salt Lake City. I currently work as a Software Development Engineer at a cybersecurity start up, but we were recently aquired.
+          <p>Hello. My name is Coty Fivecoat. I am 27. I live in Salt Lake City. I currently work as a Software Development Engineer at a cybersecurity start up, but we were recently aquired.
         I don't have very much experience with Web Development, other than the Python frameworks Flask & FastAPI, though it has been my job for a couple of weeks now. I actually got this job because I worked on
         the Operations team & managed to automate in the thousands of hours of various tasks between different teams in my free time with Python. I feel very comfortable with Python,
         though I feel very uncomfortable with most other languages. I am actually finishing school a little late because I spent quite a few years travelling around just skiing & rock climbing around the United States, Canada & other parts of the world. Though I am not even close to the best developer,
@@ -42,6 +42,18 @@
           <div class="col-sm">
             <p>I really would like to get good at backend web development & machine learning. I have recently been spending a lot of time learning about finance & investing as well. One last interesting fact about me is that I live in a built out
         Dodge ProMaster with my wife. I have very low expectations for comfort & I am extremely blessed that my wife shares that as well.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-sm">
+          <img src="images/IMG_0713-2.jpg" alt="image">
+          </div>
+          <div class="col-sm">
+          <img src="images/IMG_0713-2.jpg" alt="image">  
+          </div>
+          <div class="col-sm">
+          <img src="images/IMG_0713-2.jpg" alt="image">  
           </div>
         </div>
       </div>
