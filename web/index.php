@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/main.css" media="screen">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-4ZPLezkTZTsojWFhpdFembdzFudphhoOzIunR1wH6g1WQDzCAiPvDyitaK67mp0+" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <script type="text/javascript" src="/main.js"></script>
   <title>Home Page</title>
 </head>
@@ -35,7 +35,7 @@
       Dodge ProMaster with my wife. I have very low expectations for comfort & I am extremely blessed that my wife shares that as well. 
       </p>
       <br>
-      <button type="button" onclick="getImage()">Click For Random Image</button>
+      <button type="button" class="btn btn-light"onclick="getImage()">Click For Random Image</button>
       <div id="x"></div>
     </main>
     <footer>
