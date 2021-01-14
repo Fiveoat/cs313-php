@@ -1,14 +1,13 @@
 <?php
-$snippets = $_SERVER['DOCUMENT_ROOT'] . 'snippets/';
+include '/Users/mountain/Documents/Uni/cs313-php/web/snippets/footer.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/phpmotors/css/main.css" media="screen">
-  <link rel="stylesheet" href="/phpmotors/css/home-page.css" media="screen">
-  <title>PHP Motors</title>
+  <link rel="stylesheet" href="/main.css" media="screen">
+  <title>Home Page</title>
 </head>
 
 <body>
@@ -20,7 +19,7 @@ $snippets = $_SERVER['DOCUMENT_ROOT'] . 'snippets/';
     <?php require $snippets . 'nav.php'; ?>
     </nav>
     <main>
-      <h1>Welcome to PHP Motors</h1>
+      <h1>About Coty Fivecoat</h1>
       <div class="photo">
         <span class="delorian"><img class="car" src="/phpmotors/images/vehicles/delorean.jpg" alt="Delorean"></span>
         <div class="info">
@@ -32,11 +31,6 @@ $snippets = $_SERVER['DOCUMENT_ROOT'] . 'snippets/';
               <li>Fuzzy Dice!</li>
             </ul>
           </div>
-        </div>
-        <span class="buy-btn">
-          <img class="btn" src="/phpmotors/images/site/own_today.png" alt="Own Today">
-        </span>
-      </div>
       <div class="review-upgrade-box">
         <div class="review-box">
           <h2>DMC Delorean Reviews</h2>
