@@ -56,15 +56,18 @@
       <div class="row">
         <div class="col-md">
           <img src="images2/IMG_1422.jpg" alt="image" class="rounded img-thumbnail">
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;La Sal Range
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;La Sal Range
         </div>
         <div class="col-md">
           <img src="images2/IMG_1297.jpg" alt="image" class="rounded img-thumbnail">
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Southern Sierra Range
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Southern Sierra Range
         </div>
         <div class="col-md">
           <img src="images2/IMG_1173.jpg" alt="image" class="rounded img-thumbnail">
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Purcell Range
+          <br>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Purcell Range
         </div>
       </div>
   </div>
