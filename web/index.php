@@ -1,5 +1,6 @@
 <?php
-include '/Users/mountain/Documents/Uni/cs313-php/web/snippets/footer.php'
+$snippets = $_SERVER['DOCUMENT_ROOT'] . 'snippets/';
+echo "<p>$snippets</p>"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,11 +14,10 @@ include '/Users/mountain/Documents/Uni/cs313-php/web/snippets/footer.php'
 <body>
   <div id="container">
     <header>
+      <?php require $snippets . 'header.php'; ?>
     </header>
     <nav>
-      <?php echo
-    include '/Users/mountain/Documents/Uni/cs313-php/web/snippets/footer.php'
-    ?>
+    <?php require $snippets . 'nav.php'; ?>
     </nav>
     <main>
       <h1>About Coty Fivecoat</h1>
