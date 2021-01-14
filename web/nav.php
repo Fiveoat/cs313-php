@@ -1,11 +1,11 @@
 <ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="#">Home</a>
+    <a class="nav-link active" aria-current="page" href="#">Home&ensp;</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Assignments</a>
+    <a class="nav-link" href="#">Assignments&ensp;</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Other</a>
+    <a class="nav-link" href="#">Other&ensp;</a>
   </li>
 </ul>
