@@ -47,13 +47,13 @@
       </div>
       <div class="row">
           <div class="col-sm">
-          <img src="images/IMG_0713-2.jpg" alt="image">
+          <img src="images2/IMG_1422.jpg" alt="image">
           </div>
           <div class="col-sm">
-          <img src="images/IMG_0713-2.jpg" alt="image">  
+          <img src="images2/IMG_1297.jpg" alt="image">  
           </div>
           <div class="col-sm">
-          <img src="images/IMG_0713-2.jpg" alt="image">  
+          <img src="images2/IMG_1173.jpg" alt="image">  
           </div>
         </div>
       </div>
