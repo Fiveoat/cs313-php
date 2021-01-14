@@ -1,5 +1,5 @@
 <hr>
-<span>@ Coty Fivecoat, All Rights Reserved</span>
+<span>@ Coty Fivecoat</span>
 <br>
 <span>BYU Idaho 2021</span>
 <br>
