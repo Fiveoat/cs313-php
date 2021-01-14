@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/main.css" media="screen">
+  <script type="text/javascript" src="/main.js"></script>
   <title>Home Page</title>
 </head>
 
@@ -17,7 +18,10 @@
     <?php require $root . '/nav.php'; ?>
     </nav>
     <main>
-
+    <h1>About Me</h1>
+    <p>I think that the </p>
+    <button onclick="getImage()">
+    <div id="x"></div>
     </main>
     <footer>
       <?php require $root . '/footer.php'; ?>
