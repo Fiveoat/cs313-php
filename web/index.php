@@ -1,5 +1,5 @@
 <?php
-$snippets = $_SERVER['DOCUMENT_ROOT'] . 'snippets/';
+$snippets = $_SERVER['DOCUMENT_ROOT'] . '/snippets/';
 echo "<p>$snippets</p>"
 ?>
 <!DOCTYPE html>
