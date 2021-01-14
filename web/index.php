@@ -14,10 +14,10 @@ echo $root;
 <body>
   <div id="container">
     <header>
-      <?php require $root . 'header.php'; ?>
+      <?php require $root . '/header.php'; ?>
     </header>
     <nav>
-    <?php require $root . 'nav.php'; ?>
+    <?php require $root . '/nav.php'; ?>
     </nav>
     <main>
       <h1>About Coty Fivecoat</h1>
@@ -77,7 +77,7 @@ echo $root;
       </div>
     </main>
     <footer>
-      <?php require $root . 'footer.php'; ?>
+      <?php require $root . '/footer.php'; ?>
     </footer>
   </div>
 </body>
