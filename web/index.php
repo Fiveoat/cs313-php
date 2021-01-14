@@ -1,4 +1,6 @@
 <?php
+$root = $_SERVER['DOCUMENT_ROOT'];
+echo $root;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +14,10 @@
 <body>
   <div id="container">
     <header>
-      <?php require 'header.php'; ?>
+      <?php require $root . 'header.php'; ?>
     </header>
     <nav>
-    <?php require 'nav.php'; ?>
+    <?php require $root . 'nav.php'; ?>
     </nav>
     <main>
       <h1>About Coty Fivecoat</h1>
@@ -75,7 +77,7 @@
       </div>
     </main>
     <footer>
-      <?php require 'footer.php'; ?>
+      <?php require $root . 'footer.php'; ?>
     </footer>
   </div>
 </body>
