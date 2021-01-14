@@ -30,7 +30,7 @@
     <main>
       <h1>About Me</h1>
       <p>I think that the </p>
-      <button onclick="getImage()">
+      <button type="button" onclick="getImage()">Click For Random Image</button>
         <div id="x"></div>
     </main>
     <footer>
