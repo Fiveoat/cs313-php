@@ -20,7 +20,7 @@
       <?php require $root . '/nav.php'; ?>
     </nav>
     <main>
-      <h1 class="display-3">&emsp;About Me</h1>
+      <h1 class="display-3">&ensp;About Me</h1>
       <br><br><br>
       <div class="container">
         <div class="row">
