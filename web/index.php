@@ -21,7 +21,7 @@
     </nav>
     <main>
       <h1 class="display-1">About Me</h1>
-      <p>Hello. My name is Coty Fivecoat. I am 27. I live in Salt Lake City. I currently work as a Software Development Engineer at a cybersecurity start up, but we were recently aquired.
+      <p class="display-6">Hello. My name is Coty Fivecoat. I am 27. I live in Salt Lake City. I currently work as a Software Development Engineer at a cybersecurity start up, but we were recently aquired.
       I don't have very much experience with Web Development, other than the Python frameworks Flask & FastAPI, though it has been my job for a couple of weeks now. I actually got this job because I worked on 
       the Operations team & managed to automate in the thousands of hours of various tasks between different teams in my free time with Python. I feel very comfortable with Python, 
       though I feel very uncomfortable with most other languages. I really enjoy writing code & I feel very lucky to be where I am. I was also very lucky to work in an organization 
