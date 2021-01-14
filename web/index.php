@@ -20,6 +20,7 @@
       <?php require $root . '/nav.php'; ?>
     </nav>
     <main>
+    <h1 class="display-1">About Me</h1>
       <div class="container">
         <div class="row">
           <div class="col-sm">
@@ -47,17 +48,16 @@
       </div>
       <div class="row">
           <div class="col-sm">
-          <img src="images2/IMG_1422.jpg" alt="image">
+          <img src="images2/IMG_1422.jpg" alt="image" class="rounded img-thumbnail">
           </div>
           <div class="col-sm">
-          <img src="images2/IMG_1297.jpg" alt="image">  
+          <img src="images2/IMG_1297.jpg" alt="image" class="rounded img-thumbnail">  
           </div>
           <div class="col-sm">
-          <img src="images2/IMG_1173.jpg" alt="image">  
+          <img src="images2/IMG_1173.jpg" alt="image" class="rounded img-thumbnail">  
           </div>
         </div>
       </div>
-      <h1 class="display-1">About Me</h1>
       
       <br>
       <button class="btn btn-outline-dark" type="button" onclick="getImage()">Click For Random Image</button>
