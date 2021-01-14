@@ -1,7 +1,7 @@
 <hr>
-<span>@PHP Motors, All Rights Reserved</span>
+<span>@ Coty Fivecoat, All Rights Reserved</span>
 <br>
-<span>All images used are believed to be in "Fair Use". Please notify the author if any are not and they will be removed.</span>
+<span>BYU IDAHO 2021</span>
 <br>
-<span>Last Updated: Nov 2020</span>
+<span>Web Backend II</span>
 <br>
