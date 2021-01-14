@@ -6,6 +6,6 @@
     <a class="nav-link" href="#">Assignments</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Secret Link</a>
+    <a class="nav-link" href="#">Other</a>
   </li>
 </ul>
