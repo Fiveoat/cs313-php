@@ -13,10 +13,11 @@ include '/Users/mountain/Documents/Uni/cs313-php/web/snippets/footer.php'
 <body>
   <div id="container">
     <header>
-      <?php require $snippets . 'header.php'; ?>
     </header>
     <nav>
-    <?php require $snippets . 'nav.php'; ?>
+      <?php echo
+    include '/Users/mountain/Documents/Uni/cs313-php/web/snippets/footer.php'
+    ?>
     </nav>
     <main>
       <h1>About Coty Fivecoat</h1>
