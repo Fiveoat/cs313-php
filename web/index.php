@@ -1,6 +1,4 @@
 <?php
-$snippets = $_SERVER['DOCUMENT_ROOT'] . '/snippets/';
-echo "<p>$snippets</p>"
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,10 +12,10 @@ echo "<p>$snippets</p>"
 <body>
   <div id="container">
     <header>
-      <?php require $snippets . 'header.php'; ?>
+      <?php require 'header.php'; ?>
     </header>
     <nav>
-    <?php require $snippets . 'nav.php'; ?>
+    <?php require 'nav.php'; ?>
     </nav>
     <main>
       <h1>About Coty Fivecoat</h1>
@@ -77,7 +75,7 @@ echo "<p>$snippets</p>"
       </div>
     </main>
     <footer>
-      <?php require $snippets . 'footer.php'; ?>
+      <?php require 'footer.php'; ?>
     </footer>
   </div>
 </body>
