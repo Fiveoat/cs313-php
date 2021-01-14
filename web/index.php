@@ -37,7 +37,7 @@
       <br>
       <button class="btn btn-outline-dark" type="button" onclick="getImage()">Click For Random Image</button>
       <br>
-      <div id="x"></div>
+      <div id="x"><img class="rounded img-thumbnail" src='images/IMG_3629.jpg' alt='image'></div>
     </main>
     <footer>
       <?php require $root . '/footer.php'; ?>
