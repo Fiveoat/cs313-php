@@ -35,7 +35,7 @@
       Dodge ProMaster with my wife. I have very low expectations for comfort & I am extremely blessed that my wife shares that as well. 
       </p>
       <br>
-      <button type="button" class="btn btn-light"onclick="getImage()">Click For Random Image</button>
+      <button type="button" onclick="getImage()">Click For Random Image</button>
       <div id="x"></div>
     </main>
     <footer>
