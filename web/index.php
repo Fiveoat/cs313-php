@@ -10,7 +10,7 @@
   <script>
     function getImage() {
       let i = 0;
-      let images = ["<img src='images/' alt='image'>", "<img src='images/' alt=image>", "<img src='images/' alt='image'>"]
+      let images = ["<img src='images/IMG_0713-2.jpg' alt='image'>", "<img src='images/IMG_0752.jpg' alt=image>", "<img src='images/IMG_2675.jpg' alt='image'>", "<img src='images/IMG_2983.jpg' alt='image'>", "<img src='images/IMG_3584.jpg' alt='image'>", "<img src='images/IMG_9984.jpg' alt='image'>",]
       i = Math.floor(Math.random() * images.length);
       document.getElementById('x').innerHTML = images[i];
     }
