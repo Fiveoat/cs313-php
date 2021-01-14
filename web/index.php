@@ -66,8 +66,8 @@
       </div>
   </div>
   <br><br>
-  <button class="btn btn-outline-dark" type="button" onclick="getImage()" style="">Click For Random Image</button>
-  <br>
+  <button class="btn btn-outline-dark" type="button" onclick="getImage()">Click For Random Image</button>
+  <br><br><br>
   <div id="x"><img class="rounded img-thumbnail" src='images/IMG_3629.jpg' alt='image'></div>
   </main>
   <footer>
