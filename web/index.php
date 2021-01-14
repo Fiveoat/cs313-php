@@ -10,7 +10,11 @@
   <script>
     function getImage() {
       let i = 0;
-      let images = ["<img src='images/IMG_0713-2.jpg' alt='image'>", "<img src='images/IMG_0752.jpg' alt=image>", "<img src='images/IMG_2675.jpg' alt='image'>", "<img src='images/IMG_2983.jpg' alt='image'>", "<img src='images/IMG_3584.jpg' alt='image'>", "<img src='images/IMG_9984.jpg' alt='image'>",]
+      let images = ['0713-2', '0752', '2675', '2983', '3584', '3629', '9186', '9399', '9984']
+      let image_files = []
+      for (i = 0; i < image_files.length; i++){
+        images.push(`<img src='images/IMG_${image_file}.jpg' alt='image'>`)
+      }
       i = Math.floor(Math.random() * images.length);
       document.getElementById('x').innerHTML = images[i];
     }
