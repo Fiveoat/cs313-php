@@ -1,5 +1,5 @@
 * {
-    background-color: #efefd0;
+    background-color: #eef1ef;
 }
 
 img {
@@ -24,4 +24,8 @@ body {
 button {
     text-align: center;
     width: 100%;
+}
+
+br {
+    background-color: #eef1ef;
 }
