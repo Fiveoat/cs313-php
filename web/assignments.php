@@ -20,7 +20,9 @@
       <?php require $root . '/nav.php'; ?>
     </nav>
     <main>
+    <br><br><br><br><br><br><br>
     <h1 class="display-1">COMING SOON</h1>
+    <br><br><br><br><br><br><br>
     </main>
   <footer>
     <?php require $root . '/footer.php'; ?>
