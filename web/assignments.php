@@ -21,7 +21,7 @@
     </nav>
     <main>
     <br><br><br><br><br><br><br>
-    <h1 class="display-1">COMING SOON</h1>
+    <h1 class="display-1">&emsp;&emsp;COMING SOON</h1>
     <br><br><br><br><br><br><br>
     </main>
   <footer>
