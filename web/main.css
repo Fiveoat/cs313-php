@@ -5,8 +5,13 @@ img {
     margin-right: auto;
 }
 
+header {
+    background-color:papayawhip;
+}
+
 footer {
     text-align: center;
+    background-color:papayawhip;
 }
 
 body {
