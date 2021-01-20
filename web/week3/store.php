@@ -20,9 +20,8 @@ $root = $_SERVER['DOCUMENT_ROOT'];
     </nav>
     <br>
     <div id="products">
-    <br><br><br><br>
         <h2 class="display-6">Black Diamond Camalots</h2>
-        <br><br><br><br><br>
+        <br><br><br>
         <form method="POST" action="shopping_cart.php">
             <div class="container">
                 <div class="row">
