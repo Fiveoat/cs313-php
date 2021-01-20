@@ -1,3 +1,18 @@
+<?php
+echo $_POST;
+// $firstName = $_POST["first_name"];
+// $lastName = $_GET["last_name"];
+// $address = $_GET["address"];
+// $phone = $_GET["phone"];
+// $cam2 = $_GET["item_0"];
+// $cam4 = $_GET["item_1"];
+// $cam5 = $_GET["item_2"];
+// $cam6 = $_GET["item_3"];
+// $cardType = $_GET["card"];
+// $cardNumber = $_GET["credit_card"];
+// $cardLast4 = substr($cardNumber, 15, 19);
+// $cardExpiration = $_GET["exp_date"];
+?>
 <!DOCTYPE html>
 <html>
 
