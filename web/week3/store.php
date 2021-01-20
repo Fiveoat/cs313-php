@@ -1,5 +1,6 @@
 <?php
 session_start();
+$root = $_SERVER['DOCUMENT_ROOT']; 
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,8 +15,8 @@ session_start();
     <br />
     <h1 class="display-1">Wind River Range Equipment</h1>
 
-    <div id="cams">
-        <h2>Black Diamond Camalots</h2>
+    <div id="products">
+        <h2 class="display-6">Black Diamond Camalots</h2>
 
         <div class="container">
             <div class="row">
@@ -56,6 +57,9 @@ session_start();
                 </div>
             </div>
         </div>
+        <footer>
+            <?php require $root . '/footer.php'; ?>
+        </footer>
 
 </body>
 
