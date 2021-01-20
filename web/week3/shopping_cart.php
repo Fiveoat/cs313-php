@@ -1,11 +1,7 @@
 <?php
-if (is_array($_POST['product'])){
-	foreach($_POST['product'] as $value)
-	 {
-		 echo 'Been To: '. $_POST[$value] . '<br>';
-	 }
- }
-else {echo "hi";}
+foreach ($_POST as $key => $value) {
+    echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
+}
 // $firstName = $_POST["first_name"];
 // $lastName = $_GET["last_name"];
 // $address = $_GET["address"];
