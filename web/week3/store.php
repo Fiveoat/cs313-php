@@ -65,6 +65,7 @@ $prices = array("120", "110", "100", "90", "80", "70", "60", "50", "40");
                 <div class="col-md">
                     <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} :${$prices[$i]}</label>"; ?>
                     <td><a href="?add=<?php echo ($i); ?>">Add to cart</a></td>
+                </div>
                 </tr>
             <?php }
             ?>
