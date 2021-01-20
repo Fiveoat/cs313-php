@@ -69,6 +69,16 @@
 			   <span class="cam">Black Diamond Camalot Size: .4</span>
 			</a>
          </div>
+S
+            <input type="checkbox" name="products[]" id="S6" value="Black Diamond Camalot Size 6"><label for="S6">Black Diamond Camalot Size 6</label><br/>
+			<input type="checkbox" name="products[]" id="S5" value="Black Diamond Camalot Size 5"><label for="S5">Black Diamond Camalot Size 5</label><br/>
+			<input type="checkbox" name="products[]" id="S4" value="Black Diamond Camalot Size 4"><label for="S4">Black Diamond Camalot Size 4</label><br/>
+			<input type="checkbox" name="products[]" id="S3" value="Black Diamond Camalot Size 3"><label for="S3">Black Diamond Camalot Size 3</label><br/>
+			<input type="checkbox" name="products[]" id="S2" value="Black Diamond Camalot Size 2"><label for="S2">Black Diamond Camalot Size 2</label><br/>
+			<input type="checkbox" name="products[]" id="S1" value="Black Diamond Camalot Size 1"><label for="S1">Black Diamond Camalot Size 1</label><br/>
+          <input type="checkbox" name="products[]" id="S075" value="Black Diamond Camalot Size .75"><label for="S075">Black Diamond Camalot Size .75</label><br/>
+            <input type="checkbox" name="products[]" id="S05" value="Black Diamond Camalot Size .5"><label for="S05">Black Diamond Camalot Size .5</label><br/>
+            <input type="checkbox" name="products[]" id="S04" value="Black Diamond Camalot Size .4"><label for="S04">Black Diamond Camalot Size .4</label><br/>
 
 	  </div>
    </body>
