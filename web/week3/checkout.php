@@ -2,6 +2,9 @@
 <header class="display-4">
     <?php require $root . '/week3/header.php'; ?>
 </header>
+<nav>
+      <?php require $root . '/week3/nav.php'; ?>
+    </nav>
 
 
 <footer>
