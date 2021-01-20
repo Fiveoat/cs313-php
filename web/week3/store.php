@@ -1,7 +1,6 @@
-
 <?php
 session_start();
-$root = $_SERVER['DOCUMENT_ROOT']; 
+$root = $_SERVER['DOCUMENT_ROOT'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,7 +12,10 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 </head>
 
 <body>
-    <br/>
+    <header class="display-4">
+        <?php require $root . '/week3/header.php'; ?>
+    </header>
+    <br />
     <div id="products">
         <h2 class="display-6">Black Diamond Camalots</h2>
 
