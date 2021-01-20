@@ -9,14 +9,6 @@ if (!isset($_SESSION["total"])) {
         $_SESSION["amounts"][$i] = 0;
     }
 }
-if (isset($_GET['reset'])) {
-    if ($_GET["reset"] == 'true') {
-        unset($_SESSION["qty"]);
-        unset($_SESSION["amounts"]);
-        unset($_SESSION["total"]);
-        unset($_SESSION["cart"]);
-    }
-}
 if (isset($_GET["add"])) {
     $i = $_GET["add"];
     $qty = $_SESSION["qty"][$i] + 1;
