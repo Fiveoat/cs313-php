@@ -2,7 +2,12 @@
 foreach ($_POST as $key => $value) {
     echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
 }
-echo $_POST;
+
+foreach($_POST['products'] as $value)
+{
+	echo 'Been To: '. $value. '<br>';
+}
+echo $_POST['products'];
 // $firstName = $_POST["first_name"];
 // $lastName = $_GET["last_name"];
 // $address = $_GET["address"];
