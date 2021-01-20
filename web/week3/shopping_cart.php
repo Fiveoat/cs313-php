@@ -1,7 +1,7 @@
 <?php
 session_start();
 // $_SESSION['cart'] = array();
-foreach ($_POST as $x){
+foreach ($_POST['products'] as $x){
 	echo "TACO".$x;
 }
 $root = $_SERVER['DOCUMENT_ROOT'];
