@@ -6,6 +6,6 @@
         <a class="nav-link active" aria-current="page" href="/week3/checkout.php">Checkout&ensp;</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link active" href="/week3/shopping_cart.php"> Cart<img class="nav-cart" id="shoppingCartImage" src="images/cart.png" alt="Shopping Cart"></a>
+        <a class="nav-link active" href="/week3/shopping_cart.php"> Cart&ensp;<img class="nav-cart" id="shoppingCartImage" src="images/cart.png" alt="Shopping Cart"></a>
     </li>
 </ul>
