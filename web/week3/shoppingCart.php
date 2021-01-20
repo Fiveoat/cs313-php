@@ -5,8 +5,8 @@
 <html>
    <head>
       <title>Wind River Range Equipment</title>
-	  <link rel="stylesheet" type="text/css" href="week03.css">
-	  <link rel="stylesheet" type="text/css" href="menu.css">
+	  <!-- <link rel="stylesheet" type="text/css" href="week03.css"> -->
+	  <!-- <link rel="stylesheet" type="text/css" href="menu.css"> -->
    </head>
    <body>
 	  <br />
