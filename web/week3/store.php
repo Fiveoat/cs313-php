@@ -61,6 +61,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                     </div>
                 </div>
             </div>
+            <input type="submit" value="Add To Cart">
         </form>
         <footer>
             <?php require $root . '/week3/footer.php'; ?>
