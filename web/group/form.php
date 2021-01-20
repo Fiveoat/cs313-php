@@ -1,12 +1,4 @@
 <?php
-// First let's process all the input
-
-// using constants for the names of the elements in the form would be better...
-
-// It would also be better to use an ID of some sort for the
-// value that is submitted such as "cs" as opposed to "Computer Science",
-// then in PHP we could process that value and determine the exact
-// presentation text to render.
 $name = htmlspecialchars($_POST["name"]);
 $email = htmlspecialchars($_POST["email"]);
 $major = htmlspecialchars($_POST["major"]);
