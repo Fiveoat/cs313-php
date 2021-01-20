@@ -6,7 +6,7 @@ session_start();
 
 <head>
     <title>Wind River Range Equipment</title>
-    <link rel="stylesheet" type="text/css" href="week3/main.css">
+    <link rel="stylesheet" type="text/css" href="/week3/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
@@ -55,7 +55,6 @@ session_start();
                 </div>
                 <div class="col-sm">
                     <input class="" type="checkbox" name="products[]" id="S04" value="S04"><label for="S04"><img id="" src="/week3/images/S04.jpg" alt="black diamond camalot"> Black Diamond Camalot Size .4</label><br />
-
                 </div>
             </div>
         </div>
