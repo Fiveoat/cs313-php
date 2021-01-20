@@ -17,8 +17,18 @@
 	</nav>
 	<main>
 		<?php
+		$products = array(
+		'S04'  => 'BLACK DIAMOND SIZE S04',
+		'S05' => 'BLACK DIAMOND SIZE S04',
+		'S075' => 'BLACK DIAMOND SIZE S04',
+		'S1' => 'BLACK DIAMOND SIZE S04',
+		'S2' => 'BLACK DIAMOND SIZE S04',
+		'S3' => 'BLACK DIAMOND SIZE S04', 
+		'S4' => 'BLACK DIAMOND SIZE S04',
+		'S5' => 'BLACK DIAMOND SIZE S04',
+		'S6' => 'BLACK DIAMOND SIZE S04');
 		foreach ($_POST['products'] as $product) {
-			echo $product;
+			echo $products[$product];
 		}
 		?>
 	</main>
