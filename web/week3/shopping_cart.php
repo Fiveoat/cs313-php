@@ -1,6 +1,9 @@
 <?php
 session_start();
 // $_SESSION['cart'] = array();
+foreach ($_POST as $x){
+	echo "TACO".$x;
+}
 $root = $_SERVER['DOCUMENT_ROOT'];
 if (!isset($_SESSION["total"])) {
     $_SESSION["total"] = 0;
