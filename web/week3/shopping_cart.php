@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['cart'] = array();
+// $_SESSION['cart'] = array();
 $root = $_SERVER['DOCUMENT_ROOT'];
 if (!isset($_SESSION["total"])) {
     $_SESSION["total"] = 0;
