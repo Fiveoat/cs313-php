@@ -66,7 +66,8 @@ $prices = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
                 for ($i = 0; $i < 3; $i++) {
                 ?>
                     <div class="col-md">
-                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]} </label><a href='?add=<?php echo ($i); ?>'>Add To Cart</a>"; ?>
+                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]} </label>"; ?>
+                        <a href='?add=<?php echo ($i); ?>'>Add To Cart</a>
                     </div>
                 <?php }
                 ?>
@@ -76,7 +77,8 @@ $prices = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
                 for ($i = 3; $i < 6; $i++) {
                 ?>
                     <div class="col-md">
-                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label><a href='?add=<?php echo ($i); ?>'>Add To Cart</a>"; ?>
+                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label>"; ?>
+                        <a href='?add=<?php echo ($i); ?>'>Add To Cart</a>
                     </div>
                 <?php }
                 ?>
@@ -86,7 +88,8 @@ $prices = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
                 for ($i = 6; $i < 9; $i++) {
                 ?>
                     <div class="col-md">
-                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label><a href='?add=<?php echo ($i); ?>'>Add To Cart</a>"; ?>
+                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label>"; ?>
+                        <a href='?add=<?php echo ($i); ?>'>Add To Cart</a>
                     </div>
                 <?php }
                 ?>
