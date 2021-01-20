@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT']; 
@@ -12,9 +13,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 </head>
 
 <body>
-    <br />
-    <h1 class="display-1">Wind River Range Equipment</h1>
-
+    <br/>
     <div id="products">
         <h2 class="display-6">Black Diamond Camalots</h2>
 
@@ -58,7 +57,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
             </div>
         </div>
         <footer>
-            <?php require $root . '/footer.php'; ?>
+            <?php require $root . '/week3/footer.php'; ?>
         </footer>
 
 </body>
