@@ -18,9 +18,11 @@ $root = $_SERVER['DOCUMENT_ROOT'];
     <nav>
         <?php require $root . '/week3/nav.php'; ?>
     </nav>
-    <br />
+    <br>
     <div id="products">
+    <br><br><br><br>
         <h2 class="display-6">Black Diamond Camalots</h2>
+        <br><br><br><br><br>
         <form method="POST" action="shopping_cart.php">
             <div class="container">
                 <div class="row">
@@ -35,7 +37,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                     </div>
                 </div>
             </div>
-            <br><br>
+            <br><br><br><br>
             <div class="container">
                 <div class="row">
                     <div class="col-md">
@@ -49,7 +51,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                     </div>
                 </div>
             </div>
-            <br><br>
+            <br><br><br><br>
             <div class="container">
                 <div class="row">
                     <div class="col-md">
