@@ -1,1 +1,1 @@
-<h1 class="display-6">Wind River Range Equipment</h1>
+<h1 class="display-1">Wind River Range Equipment</h1>
