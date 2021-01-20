@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['cart'] = array();
 $root = $_SERVER['DOCUMENT_ROOT'];
 ?>
 <!DOCTYPE html>
