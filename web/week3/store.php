@@ -57,45 +57,45 @@ $prices = array("120", "110", "100", "90", "80", "70", "60", "50", "40");
         <?php require $root . '/week3/nav.php'; ?>
     </nav>
     <br>
-    <div class="container">
-        <div class="row">
-            <?php
-            for ($i = 0; $i < 3; $i++) {
-            ?>
-                <div class="col-md">
-                    <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label>"; ?>
-                    <a href="?add=<?php echo ($i); ?>">Add To Cart</a>
-                </div>
-            <?php }
-            ?>
-        </div>
-        <div class="row">
-        <?php
-            for ($i = 3; $i < 6; $i++) {
-            ?>
-                <div class="col-md">
-                    <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label>"; ?>
-                    <a href="?add=<?php echo ($i); ?>">Add To Cart</a>
-                </div>
-            <?php }
-            ?>
-        </div>
-        <div class="row">
-        <?php
-            for ($i = 6; $i < 9; $i++) {
-            ?>
-                <div class="col-md">
-                    <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label>"; ?>
-                    <a href="?add=<?php echo ($i); ?>">Add To Cart</a>
-                </div>
-            <?php }
-            ?>
-        </div>
-    </div>
     <div id="products">
         <h2 class="display-6">Black Diamond Camalots</h2>
         <br><br><br>
-        <form method="POST" action="shopping_cart.php">
+        <div class="container">
+            <div class="row">
+                <?php
+                for ($i = 0; $i < 3; $i++) {
+                ?>
+                    <div class="col-md">
+                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]} </label><a href='?add=<?php echo ($i); ?>'>Add To Cart</a>"; ?>
+                    </div>
+                <?php }
+                ?>
+            </div>
+            <div class="row">
+                <?php
+                for ($i = 3; $i < 6; $i++) {
+                ?>
+                    <div class="col-md">
+                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label><a href='?add=<?php echo ($i); ?>'>Add To Cart</a>"; ?>
+                        <a href="?add=<?php echo ($i); ?>">Add To Cart</a>
+                    </div>
+                <?php }
+                ?>
+            </div>
+            <div class="row">
+                <?php
+                for ($i = 6; $i < 9; $i++) {
+                ?>
+                    <div class="col-md">
+                        <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label><a href='?add=<?php echo ($i); ?>'>Add To Cart</a>"; ?>
+                        <a href="?add=<?php echo ($i); ?>">Add To Cart</a>
+                    </div>
+                <?php }
+                ?>
+            </div>
+        </div>
+    </div>
+    <!-- <form method="POST" action="shopping_cart.php">
             <div class="container">
                 <div class="row">
                     <div class="col-md">
@@ -139,10 +139,10 @@ $prices = array("120", "110", "100", "90", "80", "70", "60", "50", "40");
             </div>
             <br><br><br>
             <input type="submit" class="btn btn-outline-secondary" value="Add To Cart">
-        </form>
-        <footer>
-            <?php require $root . '/week3/footer.php'; ?>
-        </footer>
+        </form> -->
+    <footer>
+        <?php require $root . '/week3/footer.php'; ?>
+    </footer>
 
 </body>
 
