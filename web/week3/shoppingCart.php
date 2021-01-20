@@ -17,54 +17,54 @@
 
 		 <div class="product">
 		    <a href="">
-			   <img id="" src="" alt="black diamond camalot">
+			   <img id="6" src="/week3/products/S6.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: 6</span>
 			</a>
          </div>
          <div class="product">
 		    <a href="">
-			   <img id="" src="" alt="black diamond camalot">
+			   <img id="5" src="/week3/products/S5.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: 5</span>
 			</a>
          </div>
          <div class="product">
 		    <a href="">
-			   <img id="" src="" alt="black diamond camalot">
+			   <img id="4" src="/week3/products/S4.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: 4</span>
 			</a>
          </div>
          <div class="product">
 		    <a href="">
-			   <img id="" src="" alt="black diamond camalot">
+			   <img id="3" src="/week3/products/S3.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: 3</span>
 			</a>
          </div>
          <div class="product">
 		    <a href="">
-			   <img id="" src="" alt="black diamond camalot">
+			   <img id="2" src="/week3/products/S2.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: 2</span>
 			</a>
          </div>
          <div class="product">
 		    <a href="">
-			   <img id="" src="" alt="black diamond camalot">
+			   <img id="1" src="/week3/products/S1.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: 1</span>
 			</a>
          </div>
          <div class="product">
 		    <a href="">
-			   <img id="" src="" alt="black diamond camalot">
+			   <img id="075" src="/week3/products/S075.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: .75</span>
 			</a>
          </div>
          <div class="product">
 		    <a href="">
-			   <img id="" src="" alt="black diamond camalot">
+			   <img id="05" src="/week3/products/S05.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: .5</span>
 			</a>
          </div>
 		 <div class="product">
-		    <a href="">
+		    <a href="04">
 			   <img id="" src="/week3/products/S04.jpg" alt="black diamond camalot">
 			   <span class="cam">Black Diamond Camalot Size: .4</span>
 			</a>
