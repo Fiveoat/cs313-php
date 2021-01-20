@@ -18,15 +18,15 @@
 	<main>
 		<?php
 		$products = array(
-		'S04'  => 'BLACK DIAMOND SIZE S04',
-		'S05' => 'BLACK DIAMOND SIZE S04',
-		'S075' => 'BLACK DIAMOND SIZE S04',
-		'S1' => 'BLACK DIAMOND SIZE S04',
-		'S2' => 'BLACK DIAMOND SIZE S04',
-		'S3' => 'BLACK DIAMOND SIZE S04', 
-		'S4' => 'BLACK DIAMOND SIZE S04',
-		'S5' => 'BLACK DIAMOND SIZE S04',
-		'S6' => 'BLACK DIAMOND SIZE S04');
+		'S04'  => '<label for="S6"><img id="" src="/week3/images/S6.jpg" alt="black diamond camalot"> Size 6 </label>',
+		'S05' => '<label for="S5"><img id="" src="/week3/images/S5.jpg" alt="black diamond camalot"> Size 5 </label>',
+		'S075' => '<label for="S4"><img id="" src="/week3/images/S4.jpg" alt="black diamond camalot"> Size 4 </label>',
+		'S1' => '<label for="S3"><img id="" src="/week3/images/S3.jpg" alt="black diamond camalot"> Size 3 </label>',
+		'S2' => '<label for="S2"><img id="" src="/week3/images/S2.jpg" alt="black diamond camalot"> Size 2 </label>',
+		'S3' => '<label for="S1"><img id="" src="/week3/images/S1.jpg" alt="black diamond camalot"> Size 1 </label>', 
+		'S4' => '<label for="S075"><img id="" src="/week3/images/S075.jpg" alt="black diamond camalot"> Size .75 </label>',
+		'S5' => '<label for="S05"><img id="" src="/week3/images/S05.jpg" alt="black diamond camalot"> Size .5 </label>',
+		'S6' => '<label for="S04"><img id="" src="/week3/images/S04.jpg" alt="black diamond camalot"> Size .4 </label>');
 		foreach ($_POST['products'] as $product) {
 			echo $products[$product];
 		}
