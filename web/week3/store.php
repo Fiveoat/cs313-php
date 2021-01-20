@@ -38,7 +38,7 @@ if (isset($_GET["delete"])) {
 }
 $products = array("Size 6", "Size 5", "Size 4", "Size 3", "Size 2", "Size 1", "Size .75", "Size .5", "Size .4");
 $images = array("S6", "S5", "S4", "S3", "S2", "S1", "S075", "S05", "S04");
-$prices = array("120", "110", "100", "90", "80", "70", "60", "50", "40");
+$prices = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
 ?>
 <!DOCTYPE html>
 <html>
@@ -77,7 +77,6 @@ $prices = array("120", "110", "100", "90", "80", "70", "60", "50", "40");
                 ?>
                     <div class="col-md">
                         <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label><a href='?add=<?php echo ($i); ?>'>Add To Cart</a>"; ?>
-                        <a href="?add=<?php echo ($i); ?>">Add To Cart</a>
                     </div>
                 <?php }
                 ?>
@@ -88,7 +87,6 @@ $prices = array("120", "110", "100", "90", "80", "70", "60", "50", "40");
                 ?>
                     <div class="col-md">
                         <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} Price :${$prices[$i]}</label><a href='?add=<?php echo ($i); ?>'>Add To Cart</a>"; ?>
-                        <a href="?add=<?php echo ($i); ?>">Add To Cart</a>
                     </div>
                 <?php }
                 ?>
