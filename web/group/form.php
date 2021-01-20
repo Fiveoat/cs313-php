@@ -1,39 +1,40 @@
-<?php
-$name = htmlspecialchars($_POST["name"]);
-$email = htmlspecialchars($_POST["email"]);
-$major = htmlspecialchars($_POST["major"]);
-$places = $_POST["places"];
-$comments = htmlspecialchars($_POST["comments"]);
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE341 Wk 3 Team</title>
+    <style>textarea {margin: 10px;} div {
+        padding: 10px;} form {display:flex; width: 500px; margin: 0 auto; flex-direction: column;}</style>
+</head>
+<body>
+
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?><br>
+Major: <?php echo $_POST['major']; ?><br>
+Message: <?php echo $_POST['comments']; ?><br>
+
+<?php 
+
+$locationValues = array(
+    '0'  => "North America",
+    '1' => 'South America',
+    '2' => 'Europe',
+    '3' => 'Asia',
+    '4' => 'Australia',
+    '5' => 'Africa',
+    '6' => 'Antarctica');
+
+
+
+if (is_array($_POST['continent'])){
+       foreach($_POST['continent'] as $value)
+        {
+            echo 'Been To: '. $locationValues[$value] . '<br>';
+        }
+    }
+else {echo "hi";}
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Submission Results</title>
-</head>
-
-<body>
-	<h1>Submission Results</h1>
-
-	<p>Your name is: <?=$name ?></p>
-	<p>Your email is: <a href="mailto:<?=$email ?>"><?=$email ?></a></p>
-	<p>Your major is: <?=$major ?></p>
-	<p>You have been to the following places:</p>
-	<ul>
-
-<?
-foreach ($places as $place)
-{
-	$place_clean = htmlspecialchars($place);
-	echo "<li><p>$place_clean</p></li>";
-}
-?>		
-
-	</ul>
-
-	<p>Comments: <?=$comments?></p>
-
 </body>
-
-
 </html>
