@@ -35,6 +35,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                     </div>
                 </div>
             </div>
+            <br><br>
             <div class="container">
                 <div class="row">
                     <div class="col-md">
@@ -48,6 +49,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                     </div>
                 </div>
             </div>
+            <br><br>
             <div class="container">
                 <div class="row">
                     <div class="col-md">
