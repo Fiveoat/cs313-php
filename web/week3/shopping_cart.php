@@ -17,19 +17,43 @@
 	</nav>
 	<main>
 		<?php
-		$products = array(
-			'S04'  => '<label for="S6"><img id="" src="/week3/images/S6.jpg" alt="black diamond camalot"> Size 6 </label>',
-			'S05' => '<label for="S5"><img id="" src="/week3/images/S5.jpg" alt="black diamond camalot"> Size 5 </label>',
-			'S075' => '<label for="S4"><img id="" src="/week3/images/S4.jpg" alt="black diamond camalot"> Size 4 </label>',
-			'S1' => '<label for="S3"><img id="" src="/week3/images/S3.jpg" alt="black diamond camalot"> Size 3 </label>',
-			'S2' => '<label for="S2"><img id="" src="/week3/images/S2.jpg" alt="black diamond camalot"> Size 2 </label>',
-			'S3' => '<label for="S1"><img id="" src="/week3/images/S1.jpg" alt="black diamond camalot"> Size 1 </label>',
-			'S4' => '<label for="S075"><img id="" src="/week3/images/S075.jpg" alt="black diamond camalot"> Size .75 </label>',
-			'S5' => '<label for="S05"><img id="" src="/week3/images/S05.jpg" alt="black diamond camalot"> Size .5 </label>',
-			'S6' => '<label for="S04"><img id="" src="/week3/images/S04.jpg" alt="black diamond camalot"> Size .4 </label>'
-		);
-		foreach ($_POST['products'] as $product) {
-			echo $products[$product];
+		if (isset($_SESSION["cart"])) {
+		?>
+			<br /><br /><br />
+			<h2>Cart</h2>
+			<table>
+				<tr>
+					<th>Product</th>
+					<th width="10px">&nbsp;</th>
+					<th>Qty</th>
+					<th width="10px">&nbsp;</th>
+					<th>Amount</th>
+					<th width="10px">&nbsp;</th>
+					<th>Action</th>
+				</tr>
+				<?php
+				$total = 0;
+				foreach ($_SESSION["cart"] as $i) {
+				?>
+					<tr>
+						<td><?php echo ($products[$_SESSION["cart"][$i]]); ?></td>
+						<td width="10px">&nbsp;</td>
+						<td><?php echo ($_SESSION["qty"][$i]); ?></td>
+						<td width="10px">&nbsp;</td>
+						<td><?php echo ($_SESSION["amounts"][$i]); ?></td>
+						<td width="10px">&nbsp;</td>
+						<td><a href="?delete=<?php echo ($i); ?>">Delete from cart</a></td>
+					</tr>
+				<?php
+					$total = $total + $_SESSION["amounts"][$i];
+				}
+				$_SESSION["total"] = $total;
+				?>
+				<tr>
+					<td colspan="7">Total : <?php echo ($total); ?></td>
+				</tr>
+			</table>
+		<?php
 		}
 		?>
 	</main>
