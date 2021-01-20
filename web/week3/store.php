@@ -9,7 +9,7 @@
    </head>
    <body>
 	  <br />
-	  <h1>Wind River Range Equipment</h1>
+	  <h1 class="display-1">Wind River Range Equipment</h1>
 	
       <div id="cams">
 	     <h2>Black Diamond Camalots</h2>
