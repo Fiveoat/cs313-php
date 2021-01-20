@@ -96,12 +96,7 @@ $amounts = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
             </div>
         </div>
     </div>
-    <form action="shopping_cart.php" method="GET">
-        <h3>Do you want to submit this order?</h3>
-        <button type="submit" name="btn-submit" class="btn btn-outline-secondary">Submit</button>
-        <button type="submit" name="btn-cancel" class="btn btn-outline-secondary">Cancel</button>
-    </form>
-    <!-- <form method="POST" action="shopping_cart.php">
+    <form method="POST" action="shopping_cart.php">
             <div class="container">
                 <div class="row">
                     <div class="col-md">
@@ -145,7 +140,7 @@ $amounts = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
             </div>
             <br><br><br>
             <input type="submit" class="btn btn-outline-secondary" value="Add To Cart">
-        </form> -->
+        </form>
     <footer>
         <?php require $root . '/week3/footer.php'; ?>
     </footer>
