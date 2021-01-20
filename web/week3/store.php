@@ -2,6 +2,43 @@
 session_start();
 $_SESSION['cart'] = array();
 $root = $_SERVER['DOCUMENT_ROOT'];
+if (!isset($_SESSION["total"])) {
+    $_SESSION["total"] = 0;
+    for ($i = 0; $i < count($products); $i++) {
+        $_SESSION["qty"][$i] = 0;
+        $_SESSION["amounts"][$i] = 0;
+    }
+}
+if (isset($_GET['reset'])) {
+    if ($_GET["reset"] == 'true') {
+        unset($_SESSION["qty"]);
+        unset($_SESSION["amounts"]);
+        unset($_SESSION["total"]);
+        unset($_SESSION["cart"]);
+    }
+}
+if (isset($_GET["add"])) {
+    $i = $_GET["add"];
+    $qty = $_SESSION["qty"][$i] + 1;
+    $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
+    $_SESSION["cart"][$i] = $i;
+    $_SESSION["qty"][$i] = $qty;
+}
+if (isset($_GET["delete"])) {
+    $i = $_GET["delete"];
+    $qty = $_SESSION["qty"][$i];
+    $qty--;
+    $_SESSION["qty"][$i] = $qty;
+    if ($qty == 0) {
+        $_SESSION["amounts"][$i] = 0;
+        unset($_SESSION["cart"][$i]);
+    } else {
+        $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
+    }
+}
+$products = array("Size 6", "Size 5", "Size 4");
+$images = array("");
+$prices = array("120", "110", "100");
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,6 +57,19 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <?php require $root . '/week3/nav.php'; ?>
     </nav>
     <br>
+    <div class="container">
+        <div class="row">
+            <?php
+            for ($i = 0; $i < count($products); $i++) {
+            ?>
+                <div class="col-md">
+                    <?php echo "<label><img src='/week3/images/{$images[$i]}.jpg' alt='black diamond camalot'>{$products[$i]} :${$prices[$i]}</label>"; ?>
+                    <td><a href="?add=<?php echo ($i); ?>">Add to cart</a></td>
+                </tr>
+            <?php }
+            ?>
+        </div>
+    </div>
     <div id="products">
         <h2 class="display-6">Black Diamond Camalots</h2>
         <br><br><br>
