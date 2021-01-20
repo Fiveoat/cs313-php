@@ -54,10 +54,10 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                         <input class="form-check-input" type="checkbox" name="products[]" id="S075" value="S075"><label for="S075"><img id="" src="/week3/images/S075.jpg" alt="black diamond camalot"> Size .75 Price: $70 </label><br />
                     </div>
                     <div class="col-md">
-                        <input class="form-check-input" type="checkbox" name="products[]" id="S05" value="S05"><label for="S05"><img id="" src="/week3/images/S05.jpg" alt="black diamond camalot"> Size.5 Price: $60 </label><br />
+                        <input class="form-check-input" type="checkbox" name="products[]" id="S05" value="S05"><label for="S05"><img id="" src="/week3/images/S05.jpg" alt="black diamond camalot"> Size .5 Price: $60 </label><br />
                     </div>
                     <div class="col-md">
-                        <input class="form-check-input" type="checkbox" name="products[]" id="S04" value="S04"><label for="S04"><img id="" src="/week3/images/S04.jpg" alt="black diamond camalot"> Size.4 Price: $50 </label><br />
+                        <input class="form-check-input" type="checkbox" name="products[]" id="S04" value="S04"><label for="S04"><img id="" src="/week3/images/S04.jpg" alt="black diamond camalot"> Size .4 Price: $50 </label><br />
                     </div>
                 </div>
             </div>
