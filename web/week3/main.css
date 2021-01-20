@@ -12,5 +12,9 @@ footer {
 }
 
 .nav-cart {
-    width:5%;
+    width: 5%;
+}
+
+input {
+    text-align: center;
 }
