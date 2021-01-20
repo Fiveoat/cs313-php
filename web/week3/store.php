@@ -21,7 +21,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
     <br />
     <div id="products">
         <h2 class="display-6">Black Diamond Camalots</h2>
-        <form method="POST" action="results.php">
+        <form method="POST" action="shopping_cart.php">
             <div class="container">
                 <div class="row">
                     <div class="col-md">
@@ -61,6 +61,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                     </div>
                 </div>
             </div>
+            <br><br><br>
             <input type="submit" class="btn btn-outline-secondary" value="Add To Cart">
         </form>
         <footer>
