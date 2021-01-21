@@ -2,6 +2,7 @@
 session_start();
 $_SESSION['cart'] = array();
 $root = $_SERVER['DOCUMENT_ROOT'];
+require $root . '/week3/add_to_cart.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,10 +21,9 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <?php require $root . '/week3/nav.php'; ?>
     </nav>
     <br>
-
     <div class="container">
         <div class="row">
-            <form method="POST" action="shopping_cart.php" class="col-md">
+            <form method="POST" action="/week3/add_to_cart.php" class="col-md">
                 <label for="S6"><img src="/week3/images/S6.jpg" alt="black diamond camalot"></label>
                 <input class="btn btn-primary" type="submit" name="products[]" id="S6" value="Add To Cart"><br />
             </form>

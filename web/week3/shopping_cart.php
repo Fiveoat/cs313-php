@@ -1,6 +1,7 @@
 <?php
 // session_start();
 // $_SESSION['cart'] = array();
+// header("location: store.php");
 foreach ($_POST['products'] as $x){
 	echo "TACO".$x;
 }
