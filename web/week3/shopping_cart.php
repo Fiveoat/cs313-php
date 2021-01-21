@@ -24,7 +24,10 @@ session_start();
         <div class="row">
             <?php
             foreach ($_SESSION['cart'] as $id){
-                echo "<div class='col-md'><img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}</div><br><a href='/week3/remove_from_cart.php?id={$id}'>Remove From Cart</a>";
+                echo "<div class='col-sm'>
+                        <img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}
+                        <a href='/week3/remove_from_cart.php?id={$id}'>Remove From Cart</a>
+                     </div><br>";
             }
             ?>
         </div>
