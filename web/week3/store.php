@@ -23,15 +23,15 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="row">
             <div method="GET" action="/week3/add?" class="col-md">
                 <img src="/week3/images/S6.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=6">$140 + Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=6">Add To Cart</a>
             </div>
             <div method="GET" action="shopping_cart.php" class="col-md">
                 <img src="/week3/images/S5.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=5">$130 + Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=5">Add To Cart</a>
             </div>
             <div class="col-md">
                 <img src="/week3/images/S4.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=4">$120 + Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=4">Add To Cart</a>
             </div>
         </div>
     </div>
@@ -40,15 +40,15 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="row">
             <div method="GET" action="/week3/add?" class="col-md">
                 <img src="/week3/images/S3.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=3">$110 + Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=3">Add To Cart</a>
             </div>
             <div method="GET" action="shopping_cart.php" class="col-md">
                 <img src="/week3/images/S2.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=2">$100 + Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=2">Add To Cart</a>
             </div>
             <div class="col-md">
                 <img src="/week3/images/S1.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=1">$90 + Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=1">Add To Cart</a>
             </div>
         </div>
     </div>
@@ -57,15 +57,15 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="row">
             <div method="GET" action="/week3/add?" class="col-md">
                 <img src="/week3/images/S075.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=075">$80 + Cart</a>
+                <a class="btn btn-outline-secondary" class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=075">Add To Cart</a>
             </div>
             <div method="GET" action="shopping_cart.php" class="col-md">
                 <img src="/week3/images/S05.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=05">$70 + Cart</a>
+                <a class="btn btn-outline-secondary" class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=05">Add To Cart</a>
             </div>
             <div class="col-md">
                 <img src="/week3/images/S04.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=04">$60 + Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=04">Add To Cart</a>
             </div>
         </div>
     </div>
