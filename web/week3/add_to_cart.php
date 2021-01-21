@@ -10,5 +10,5 @@ if (!isset($_SESSION["cart"])){
         echo "y".$x;
     }
 }
-header("location: store.php");
+// header("location: store.php");
 ?>
