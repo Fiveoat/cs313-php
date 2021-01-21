@@ -25,7 +25,7 @@ var_dump($_SESSION['cart']);
         <div class="row">
             <?php
             foreach ($_SESSION['cart'] as $id){
-                echo "<div class='col-md'><img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}</div>";
+                echo "<div class='col-md'><img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}</div><br><a href='/week3/remove_from_cart.php?id={$id}'></a>";
             }
             ?>
         </div>
