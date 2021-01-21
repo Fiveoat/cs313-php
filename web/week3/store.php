@@ -24,13 +24,13 @@ $root = $_SERVER['DOCUMENT_ROOT'];
     <div class="container">
         <div class="row">
             <form method="POST" action="shopping_cart.php" class="col-md">
-                    <input class="btn btn-primary" type="submit" name="products[]" id="S6" value="Add To Cart"><label for="S6"><img src="/week3/images/S6.jpg" alt="black diamond camalot"> Size 6 Price: $130 </label><br />
+                    <input class="btn btn-primary" type="submit" name="products[]" id="S6" value="Size 6"><label for="S6"><img src="/week3/images/S6.jpg" alt="black diamond camalot"></label><br />
             </form>
             <form method="POST" action="shopping_cart.php" class="col-md">
-                    <input class="btn btn-primary" type="submit" name="products[]" id="S5" value="Add To Cart"><label for="S5"><img src="/week3/images/S5.jpg" alt="black diamond camalot"> Size 5 Price: $120 </label><br />
+                    <input class="btn btn-primary" type="submit" name="products[]" id="S5" value="Size 5"><label for="S5"><img src="/week3/images/S5.jpg" alt="black diamond camalot"></label><br />
             </form>
             <form method="POST" action="shopping_cart.php" class="col-md">
-                    <input class="btn btn-primary" type="submit" name="products[]" id="S4" value="Add To Cart"><label for="S4"><img src="/week3/images/S4.jpg" alt="black diamond camalot"> Size 4 Price: $110 </label><br />
+                    <input class="btn btn-primary" type="submit" name="products[]" id="S4" value="Size 4"><label for="S4"><img src="/week3/images/S4.jpg" alt="black diamond camalot"></label><br />
             </form>
         </div>
     </div>
