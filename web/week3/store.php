@@ -25,17 +25,17 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="row">
             <form method="POST" action="shopping_cart.php">
                 <div class="col-md">
-                    <input class="form-check-input" type="checkbox" name="products[]" id="S6" value="S6"><label for="S6"><img id="" src="/week3/images/S6.jpg" alt="black diamond camalot"> Size 6 Price: $130 </label><br />
+                    <input class="form-check-input" type="submit" name="products[]" id="S6" value="S6"><label for="S6"><img id="" src="/week3/images/S6.jpg" alt="black diamond camalot"> Size 6 Price: $130 </label><br />
                 </div>
             </form>
             <form method="POST" action="shopping_cart.php">
                 <div class="col-md">
-                    <input class="form-check-input" type="checkbox" name="products[]" id="S5" value="S5"><label for="S5"><img id="" src="/week3/images/S5.jpg" alt="black diamond camalot"> Size 5 Price: $120 </label><br />
+                    <input class="form-check-input" type="submit" name="products[]" id="S5" value="S5"><label for="S5"><img id="" src="/week3/images/S5.jpg" alt="black diamond camalot"> Size 5 Price: $120 </label><br />
                 </div>
             </form>
             <form method="POST" action="shopping_cart.php">
                 <div class="col-md">
-                    <input class="form-check-input" type="checkbox" name="products[]" id="S4" value="S4"><label for="S4"><img id="" src="/week3/images/S4.jpg" alt="black diamond camalot"> Size 4 Price: $110 </label><br />
+                    <input class="form-check-input" type="submit" name="products[]" id="S4" value="S4"><label for="S4"><img id="" src="/week3/images/S4.jpg" alt="black diamond camalot"> Size 4 Price: $110 </label><br />
                 </div>
             </form>
         </div>
