@@ -25,16 +25,15 @@ $street = htmlspecialchars($_POST["street"]);
         <?php require $root . '/week3/nav.php'; ?>
     </nav>
     <main>
-        <h1>Order Confirmation</h1>
+        <h1 class="display-5">Order Confirmation</h1>
         <?php
-        echo "<h1>Thank you, {$name} for your order.</h1>
-            <h3>Email: {$email}</h3>
-            <h3>Street: {$street}</h3>
-            <h3>City: {$city}</h3>
-            <h3>State: {$state}</h3>
-            <h3>Zip: {$zip}</h3>";
+        echo "<h1 class='display-4'>Thank you, {$name} for your order.</h1>
+            <h3 class='display-6'>Email: {$email}</h3>
+            <h3 class='display-6'>Street: {$street}</h3>
+            <h3 class='display-6'>City: {$city}</h3>
+            <h3 class='display-6'>State: {$state}</h3>
+            <h3 class='display-6'>Zip: {$zip}</h3>";
         ?>
-        <h1>Items</h1>
         <div class="container">
             <div class="row">
                 <?php foreach ($_SESSION['cart'] as $id) {
