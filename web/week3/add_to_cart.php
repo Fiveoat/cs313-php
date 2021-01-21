@@ -1,4 +1,10 @@
 <?php
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+}
+$name = "Coty";
+array_push($_SESSION['cart'],$name);
+echo $_SESSION['cart'][0];
 foreach ($_POST as $x){
     foreach($x as $wtf){
         echo "ugh".$wtf;
@@ -8,6 +14,8 @@ foreach ($_POST as $x){
     array_push($_SESSION["cart"], 420, "TACOs");
     header("location: store.php");
 }
+
+
 session_start();
 if (!isset($_SESSION["cart"])){
     $_SESSION["cart"] = array();
