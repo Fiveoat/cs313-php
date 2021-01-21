@@ -2,9 +2,9 @@
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 }
-$name = "Coty";
-array_push($_SESSION['cart'],$name);
-echo $_SESSION['cart'][0];
+// $name = "Coty";
+// array_push($_SESSION['cart'],$name);
+// echo $_SESSION['cart'][0];
 
 
 foreach ($_POST as $x){
