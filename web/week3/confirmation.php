@@ -1,5 +1,6 @@
 <?php
 session_start();
+$_SESSION['cart'] = array();
 $name = htmlspecialchars($_POST["name"]);
 $email = htmlspecialchars($_POST["email"]);
 $state = htmlspecialchars($_POST["state"]);
