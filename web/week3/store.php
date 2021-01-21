@@ -9,7 +9,8 @@ if (!isset($_SESSION['cart'])) {
     array_push($_SESSION['cart'], "ADSFASD");
     echo "alsjdfk".$_SESSION['cart'][0];
 }
-
+$products = array("product A", "product B", "product C");
+$amounts = array("19.99", "10.99", "2.99");
 if (!isset($_SESSION["total"])) {
     $_SESSION["total"] = 0;
     for ($i = 0; $i < count($products); $i++) {
