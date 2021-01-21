@@ -6,6 +6,7 @@ require $root . '/week3/add_to_cart.php';
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
 } else {
+    array_push($_SESSION['cart'], "ADSFASD");
     echo "alsjdfk".$_SESSION['cart'][0];
 }
 
