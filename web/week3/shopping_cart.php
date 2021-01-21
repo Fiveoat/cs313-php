@@ -26,7 +26,7 @@ session_start();
             foreach ($_SESSION['cart'] as $id){
                 echo "<div class='col-sm'>
                         <img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}
-                        <a href='/week3/remove_from_cart.php?id={$id}'>Remove From Cart</a>
+                        <a href='/week3/remove_from_cart.php?id={$id}'>Delte</a>
                      </div><br>";
             }
             ?>

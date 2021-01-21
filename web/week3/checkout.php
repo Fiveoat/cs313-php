@@ -17,6 +17,21 @@ echo $_SESSION['cart'][0];
 <nav>
     <?php require $root . '/week3/nav.php'; ?>
 </nav>
+<main>
+    <h1 class="display-4">Checkout</h1>
+    <div class="container">
+        <div class="row">
+            <?php
+            foreach ($_SESSION['cart'] as $id) {
+                echo "<div class='col-sm'>
+                        <img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}
+                        <a href='/week3/remove_from_cart.php?id={$id}'>Delte</a>
+                     </div><br>";
+            }
+            ?>
+        </div>
+    </div>
+</main>
 
 
 <footer>
