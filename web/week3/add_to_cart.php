@@ -10,7 +10,8 @@ if (!isset($_SESSION['cart'])) {
 foreach ($_POST as $x){
     foreach($x as $wtf){
         echo "xx".$wtf;
-        array_push($_SESSION["cart"], $wtf);
+        array_push($_SESSION['cart'], $wtf);
+        echo $_SESSION['cart'][0];
     }
     echo "x".$x;
     array_push($_SESSION["cart"], 420, "TACOs");
