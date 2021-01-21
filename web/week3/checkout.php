@@ -1,5 +1,6 @@
 <?php
-if (isset($_POST)) {
+echo $_SESSION["cart"][0];
+if (isset($_SESSION["cart"])) {
 ?>
     <br /><br /><br />
     <h2>Cart</h2>
