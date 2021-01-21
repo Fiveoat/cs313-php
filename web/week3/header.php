@@ -1,1 +1,1 @@
-<h1 class="display-1 justify-content-end">🌚 Wind River Range Equipment🌝 &ensp;</h1>
+<h1 class="display-1 justify-content-end">🌚 Wind River Range Equipment 🌝 &ensp;</h1>
