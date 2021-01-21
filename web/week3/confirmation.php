@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION['cart'] = array();
 $name = htmlspecialchars($_POST["name"]);
 $email = htmlspecialchars($_POST["email"]);
 $state = htmlspecialchars($_POST["state"]);
@@ -25,16 +24,33 @@ $street = htmlspecialchars($_POST["street"]);
     <nav>
         <?php require $root . '/week3/nav.php'; ?>
     </nav>
-    <h1>Order Confirmation</h1>
-    <?php
-    echo "<h1>Thank you, {$name} for your order.</h1>
-    <h6>Email: {$email}</h6>
-    <h6>Street: {$street}</h6>
-    <h6>City: {$city}</h6>
-    <h6>State: {$state}</h6>
-    <h6>Zip: {$zip}</h6>
-    </h6>";
-    ?>
+    <main>
+        <h1>Order Confirmation</h1>
+        <?php
+        echo "<h1>Thank you, {$name} for your order.</h1>
+            <h6>Email: {$email}</h6>
+            <h6>Street: {$street}</h6>
+            <h6>City: {$city}</h6>
+            <h6>State: {$state}</h6>
+            <h6>Zip: {$zip}</h6>
+            </h6>";
+        ?>
+        <h1>Items</h1>
+        <div class="container">
+            <div class="row">
+                <?php foreach ($_SESSION['cart'] as $id) {
+                    echo "<div class='col-sm'>
+                        <img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}
+                        <a style='text-decoration: none;' href='/week3/remove_from_cart.php?id={$id}'>Delete</a>
+                     </div><br>";
+                } ?>
+            </div>
+        </div>
+        <div>
+            <a style='text-decoration: none;' href="/week3/clear_cart.php">Clear Cart</a>
+        </div>
+    </main>
+
     <footer>
         <?php require $root . '/week3/footer.php'; ?>
     </footer>
