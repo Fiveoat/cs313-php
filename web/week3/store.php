@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION['cart'] = array();
 $root = $_SERVER['DOCUMENT_ROOT'];
 
 // if (isset($_SESSION["cart"])) {
