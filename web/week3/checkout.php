@@ -1,5 +1,5 @@
 <?php
-if (isset($_SESSION["cart"])) {
+if (isset($_POST)) {
 ?>
     <br /><br /><br />
     <h2>Cart</h2>
