@@ -2,40 +2,16 @@
 session_start();
 $_SESSION['cart'] = array();
 $root = $_SERVER['DOCUMENT_ROOT'];
-require $root . '/week3/add_to_cart.php';
-if (!isset($_SESSION['cart'])) {
-    $_SESSION['cart'] = array();
-} else {
-    array_push($_SESSION['cart'], "ADSFASD");
-    echo "alsjdfk".$_SESSION['cart'][0];
-}
-$products = array("product A", "product B", "product C");
-$amounts = array("19.99", "10.99", "2.99");
-if (!isset($_SESSION["total"])) {
-    $_SESSION["total"] = 0;
-    for ($i = 0; $i < count($products); $i++) {
-        $_SESSION["qty"][$i] = 0;
-        $_SESSION["amounts"][$i] = 0;
-    }
-}
 
-if (isset($_GET["add"])) {
-    $i = $_GET["add"];
-    $qty = $_SESSION["qty"][$i] + 1;
-    $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
-    $_SESSION['cart'][$i] = $i;
-    $_SESSION["qty"][$i] = $qty;
-}
-
-if (isset($_SESSION["cart"])) {
-    echo "SET";
-    echo $_SESSION['cart'][0];
-    foreach ($_SESSION['cart'] as $x) {
-        echo "ur_mum" . $x;
-    }
-} else {
-    echo "NOT SET";
-}
+// if (isset($_SESSION["cart"])) {
+//     echo "SET";
+//     echo $_SESSION['cart'][0];
+//     foreach ($_SESSION['cart'] as $x) {
+//         echo "ur_mum" . $x;
+//     }
+// } else {
+//     echo "NOT SET";
+// }
 ?>
 <!DOCTYPE html>
 <html>
