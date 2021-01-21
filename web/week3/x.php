@@ -119,6 +119,9 @@ if (isset($_SESSION["cart"])) {
             <td colspan="7">Total : <?php echo ($total); ?></td>
         </tr>
     </table>
+    <form action="checkout.php" method="POST">
+        <input type="submit" name="Go To Cart">
+    </form>
 <?php
 }
 ?>
