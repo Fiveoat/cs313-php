@@ -3,6 +3,12 @@ session_start();
 $_SESSION['cart'] = array();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/week3/add_to_cart.php';
+if (!isset($_SESSION['cart'])) {
+    $_SESSION['cart'] = array();
+} else {
+    echo "alsjdfk".$_SESSION['cart'][0];
+}
+
 if (isset($_SESSION["cart"])) {
     echo "SET";
     echo $_SESSION['cart'][0];
