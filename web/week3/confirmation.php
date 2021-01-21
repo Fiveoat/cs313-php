@@ -40,7 +40,8 @@ $street = htmlspecialchars($_POST["street"]);
                     echo "<div class='col-sm'>
                         <img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}
                      </div><br>";
-                } ?>
+                };
+                $_SESSION['cart'] = array();?>
             </div>
         </div>
     </main>
