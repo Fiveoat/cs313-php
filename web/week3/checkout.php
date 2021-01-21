@@ -1,4 +1,5 @@
 <?php
+session_start();
 echo $_SESSION["cart"][0];
 if (isset($_SESSION["cart"])) {
 ?>

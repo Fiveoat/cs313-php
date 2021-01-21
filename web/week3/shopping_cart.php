@@ -1,60 +1,9 @@
 <?php
-// session_start();
-// $_SESSION['cart'] = array();
-// header("location: store.php");
-foreach ($_POST['products'] as $x){
-	echo "TACO".$x;
-}
-
-foreach ($_SESSION as $x){
-    echo "XXXX".$x;
-}
-
-foreach ($_SESSION['cart'] as $x){
-	echo "Paco".$x;
-}
-$root = $_SERVER['DOCUMENT_ROOT'];
-if (!isset($_SESSION["total"])) {
-    $_SESSION["total"] = 0;
-    for ($i = 0; $i < count($products); $i++) {
-        $_SESSION["qty"][$i] = 0;
-        $_SESSION["amounts"][$i] = 0;
-    }
-}
-if (isset($_GET['reset'])) {
-    if ($_GET["reset"] == 'true') {
-        unset($_SESSION["qty"]);
-        unset($_SESSION["amounts"]);
-        unset($_SESSION["total"]);
-        unset($_SESSION["cart"]);
-    }
-}
-if (isset($_GET["add"])) {
-    $i = $_GET["add"];
-    $qty = $_SESSION["qty"][$i] + 1;
-    $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
-    $_SESSION["cart"][$i] = $i;
-    $_SESSION["qty"][$i] = $qty;
-}
-if (isset($_GET["delete"])) {
-    $i = $_GET["delete"];
-    $qty = $_SESSION["qty"][$i];
-    $qty--;
-    $_SESSION["qty"][$i] = $qty;
-    if ($qty == 0) {
-        $_SESSION["amounts"][$i] = 0;
-        unset($_SESSION["cart"][$i]);
-    } else {
-        $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
-    }
-}
-
 session_start();
-$_SESSION["cart"][$_POST["item"]]++;
-
-$products = array("Size 6", "Size 5", "Size 4", "Size 3", "Size 2", "Size 1", "Size .75", "Size .5", "Size .4");
-$images = array("S6", "S5", "S4", "S3", "S2", "S1", "S075", "S05", "S04");
-$amounts = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
+var_dump($_SESSION['cart']);
+foreach ($_SESSION['cart'] as $id){
+    echo "<img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>";
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -74,6 +23,16 @@ $amounts = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
 		<?php require $root . '/week3/nav.php'; ?>
 	</nav>
 	<main>
+    <h1 class="display-4">Shopping Cart</h1>
+    <div class="container">
+        <div class="row">
+            <?php
+            foreach ($_SESSION['cart'] as $id){
+                echo "<div class='col-md'><img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'></div>";
+            }
+            ?>
+        </div>
+    </div>
 	</main>
 	<footer>
 		<?php require $root . '/week3/footer.php'; ?>
