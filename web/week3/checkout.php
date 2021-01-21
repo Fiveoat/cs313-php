@@ -18,46 +18,51 @@ session_start();
 </nav>
 <main>
     <h1 class="display-4">Checkout</h1>
-    
+
     <div class="container">
         <div class="row">
             <?php
             foreach ($_SESSION['cart'] as $id) {
                 echo "<div class='col-sm'>
                         <img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}
-                        <a href='/week3/remove_from_cart.php?id={$id}'>Delete</a>
                      </div><br>";
             }
             ?>
         </div>
     </div>
     <form method="POST" action="confirmation.php">
-        <p>Please answer the following questions:</p>
-
-        <label for="name">Name</label>
-        <input type="text" placeholder="Name" id="name" name="name">
-        <br />
-
-        <label for="email">Email</label>
-        <input type="text" placeholder="Email Address" id="email" name="email">
-        <br />
-
-        <label for="street">Street Address</label>
-        <input type="text" placeholder="Street Address" id="street" name="street">
-        <br />
-
-        <label for="city">City</label>
-        <input type="text" placeholder="City" id="city" name="city">
-        <br />
-
-        <label for="state">State</label>
-        <input type="text" placeholder="State" id="state" name="state">
-        <br />
-
-        <label for="zip">Zip</label>
-        <input type="text" placeholder="Zip" id="zip" name="zip">
-        <br />
-        <input type="submit" value="Submit">
+        <div class="input-group mb-3">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" placeholder="Name" id="name" name="name">
+        </div>
+        <br>
+        <div class="input-group mb-3">
+            <label for="email">Email</label>
+            <input class="form-control" type="text" placeholder="Email Address" id="email" name="email">
+        </div>
+        <br>
+        <div class="input-group mb-3">
+            <label for="street">Street Address</label>
+            <input class="form-control" type="text" placeholder="Street Address" id="street" name="street">
+        </div>
+        <br>
+        <div class="input-group mb-3">
+            <label for="city">City</label>
+            <input class="form-control" type="text" placeholder="City" id="city" name="city">
+        </div>
+        <br>
+        <div class="input-group mb-3">
+            <label for="state">State</label>
+            <input class="form-control" type="text" placeholder="State" id="state" name="state">
+        </div>
+        <br>
+        <div class="input-group mb-3">
+            <label for="zip">Zip</label>
+            <input class="form-control" type="text" placeholder="Zip" id="zip" name="zip">
+        </div>
+        <br>
+        <div>
+            <input class="btn btn-outline-secondary" type="submit" value="Submit">
     </form>
 
 </main>
