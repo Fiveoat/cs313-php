@@ -2,6 +2,7 @@
 foreach ($_POST as $x){
     foreach($x as $wtf){
         echo "ugh".$wtf;
+        array_push($_SESSION["cart"], $wtf);
     }
     echo "x".$x;
     array_push($_SESSION["cart"], 420, "TACOs");
