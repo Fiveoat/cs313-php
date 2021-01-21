@@ -1,8 +1,11 @@
 <?php
-session_start();
-$_SESSION['cart'] = array();
+// session_start();
+// $_SESSION['cart'] = array();
 foreach ($_POST['products'] as $x){
 	echo "TACO".$x;
+}
+foreach ($_SESSION['cart'] as $x){
+	echo "Paco".$x;
 }
 $root = $_SERVER['DOCUMENT_ROOT'];
 if (!isset($_SESSION["total"])) {
