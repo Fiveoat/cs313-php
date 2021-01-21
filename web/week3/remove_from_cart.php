@@ -1,9 +1,9 @@
 <?php
 session_start();
 echo $_GET['id'];
-if (($key = array_search($_GET['id'], $array)) !== false) {
+if (($key = array_search($_GET['id'], $_SESSION['cart'])) !== false) {
     echo "REOMVED";
-    unset($array[$key]);
+    unset($_SESSION['cart'][$key]);
 } else {
     echo "KPET";
 }
