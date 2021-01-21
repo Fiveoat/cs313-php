@@ -52,10 +52,10 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="row">
             <div method="GET" action="/week3/add?" class="col-md">
                 <img src="/week3/images/S075.jpg" alt="black diamond camalot">
-                <a href="/week3/add_to_cart.php?id=075">Add To Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=075">Add To Cart</a>
             </div>
             <div method="GET" action="shopping_cart.php" class="col-md">
-                <a href="/week3/add_to_cart.php?id=05"><img src="/week3/images/S05.jpg" alt="black diamond camalot">Add To Cart</a>
+                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=05"><img src="/week3/images/S05.jpg" alt="black diamond camalot">Add To Cart</a>
             </div>
             <div class="col-md">
                 <a href="/week3/add_to_cart.php?id=04"><img src="/week3/images/S04.jpg" alt="black diamond camalot">Add To Cart</a>
