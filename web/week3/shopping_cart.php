@@ -50,7 +50,6 @@ if (isset($_GET["delete"])) {
 
 session_start();
 $_SESSION["cart"][$_POST["item"]]++;
-header("location: store.php");
 
 $products = array("Size 6", "Size 5", "Size 4", "Size 3", "Size 2", "Size 1", "Size .75", "Size .5", "Size .4");
 $images = array("S6", "S5", "S4", "S3", "S2", "S1", "S075", "S05", "S04");
