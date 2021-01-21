@@ -28,12 +28,11 @@ $street = htmlspecialchars($_POST["street"]);
         <h1>Order Confirmation</h1>
         <?php
         echo "<h1>Thank you, {$name} for your order.</h1>
-            <h6>Email: {$email}</h6>
-            <h6>Street: {$street}</h6>
-            <h6>City: {$city}</h6>
-            <h6>State: {$state}</h6>
-            <h6>Zip: {$zip}</h6>
-            </h6>";
+            <h3>Email: {$email}</h3>
+            <h3>Street: {$street}</h3>
+            <h3>City: {$city}</h3>
+            <h3>State: {$state}</h3>
+            <h3>Zip: {$zip}</h3>";
         ?>
         <h1>Items</h1>
         <div class="container">
