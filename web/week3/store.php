@@ -5,7 +5,8 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/week3/add_to_cart.php';
 if (isset($_SESSION["cart"])) {
     echo "SET";
-    foreach ($_SESSION["cart"] as $x) {
+    echo $_SESSION['cart'][0];
+    foreach ($_SESSION['cart'] as $x) {
         echo "ur_mum" . $x;
     }
 } else {
