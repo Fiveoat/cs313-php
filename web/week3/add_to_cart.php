@@ -6,7 +6,7 @@ foreach ($_POST as $x){
     }
     echo "x".$x;
     array_push($_SESSION["cart"], 420, "TACOs");
-    // header("location: store.php");
+    header("location: store.php");
 }
 session_start();
 if (!isset($_SESSION["cart"])){
