@@ -21,22 +21,46 @@ $root = $_SERVER['DOCUMENT_ROOT'];
     <br>
     <div class="container">
         <div class="row">
-            <form method="GET" action="/week3/add?" class="col-md">
-                <img src="/week3/images/S6.jpg" alt="black diamond camalot">
-                <input class="btn btn-primary" type="submit" name="products[]" id="S6" value="Add Size 6"><br />
-            </form>
-            <form method="GET" action="shopping_cart.php" class="col-md">
-                <img src="/week3/images/S5.jpg" alt="black diamond camalot">
-                <input class="btn btn-primary" type="submit" name="products[]" id="S5" value="Add Size 5"><br />
-            </form>
+            <div method="GET" action="/week3/add?" class="col-md">
+            <a href="/week3/add_to_cart.php?id=6"><img src="/week3/images/S6.jpg" alt="black diamond camalot">Add To Cart</a>
+            </div>
+            <div method="GET" action="shopping_cart.php" class="col-md">
+                <a href="/week3/add_to_cart.php?id=5"><img src="/week3/images/S5.jpg" alt="black diamond camalot">Add To Cart</a>
+            </div>
             <div class="col-md">
                 <a href="/week3/add_to_cart.php?id=4"><img src="/week3/images/S4.jpg" alt="black diamond camalot">Add To Cart</a>
-                <input class="btn btn-primary" type="submit" name="products[]" id="S4" value="Add Size 4"><br />
             </div>
         </div>
     </div>
     <br><br><br><br>
     <div class="container">
+        <div class="row">
+            <div method="GET" action="/week3/add?" class="col-md">
+            <a href="/week3/add_to_cart.php?id=3"><img src="/week3/images/S3.jpg" alt="black diamond camalot">Add To Cart</a>
+            </div>
+            <div method="GET" action="shopping_cart.php" class="col-md">
+                <a href="/week3/add_to_cart.php?id=2"><img src="/week3/images/S2.jpg" alt="black diamond camalot">Add To Cart</a>
+            </div>
+            <div class="col-md">
+                <a href="/week3/add_to_cart.php?id=1"><img src="/week3/images/S1.jpg" alt="black diamond camalot">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div class="container">
+        <div class="row">
+            <div method="GET" action="/week3/add?" class="col-md">
+            <a href="/week3/add_to_cart.php?id=075"><img src="/week3/images/S075.jpg" alt="black diamond camalot">Add To Cart</a>
+            </div>
+            <div method="GET" action="shopping_cart.php" class="col-md">
+                <a href="/week3/add_to_cart.php?id=05"><img src="/week3/images/S05.jpg" alt="black diamond camalot">Add To Cart</a>
+            </div>
+            <div class="col-md">
+                <a href="/week3/add_to_cart.php?id=04"><img src="/week3/images/S04.jpg" alt="black diamond camalot">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
         <div class="row">
             <div class="col-md">
                 <input class="form-check-input" type="checkbox" name="products[]" id="S3" value="S3"><label for="S3"><img id="" src="/week3/images/S3.jpg" alt="black diamond camalot"> Size 3 Price: $100 </label><br />
@@ -64,7 +88,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         </div>
     </div>
     <br><br><br>
-    <input type="submit" class="btn btn-outline-secondary" value="Add To Cart">
+    <input type="submit" class="btn btn-outline-secondary" value="Add To Cart"> -->
     </form>
     <footer>
         <?php require $root . '/week3/footer.php'; ?>
