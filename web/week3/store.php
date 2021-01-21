@@ -10,6 +10,14 @@ if (!isset($_SESSION['cart'])) {
     echo "alsjdfk".$_SESSION['cart'][0];
 }
 
+if (isset($_GET["add"])) {
+    $i = $_GET["add"];
+    $qty = $_SESSION["qty"][$i] + 1;
+    $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
+    $_SESSION['cart'][$i] = $i;
+    $_SESSION["qty"][$i] = $qty;
+}
+
 if (isset($_SESSION["cart"])) {
     echo "SET";
     echo $_SESSION['cart'][0];
@@ -39,15 +47,15 @@ if (isset($_SESSION["cart"])) {
     <br>
     <div class="container">
         <div class="row">
-            <form method="POST" action="/week3/add_to_cart.php" class="col-md">
+            <form method="GET" action="/week3/add?" class="col-md">
                 <img src="/week3/images/S6.jpg" alt="black diamond camalot">
                 <input class="btn btn-primary" type="submit" name="products[]" id="S6" value="Add Size 6"><br />
             </form>
-            <form method="POST" action="shopping_cart.php" class="col-md">
+            <form method="GET" action="shopping_cart.php" class="col-md">
                 <img src="/week3/images/S5.jpg" alt="black diamond camalot">
                 <input class="btn btn-primary" type="submit" name="products[]" id="S5" value="Add Size 5"><br />
             </form>
-            <form method="POST" action="shopping_cart.php" class="col-md">
+            <form method="GET" action="shopping_cart.php" class="col-md">
                 <img src="/week3/images/S4.jpg" alt="black diamond camalot">
                 <input class="btn btn-primary" type="submit" name="products[]" id="S4" value="Add Size 4"><br />
             </form>
