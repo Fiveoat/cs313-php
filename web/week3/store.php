@@ -64,10 +64,10 @@ if (isset($_SESSION["cart"])) {
                 <img src="/week3/images/S5.jpg" alt="black diamond camalot">
                 <input class="btn btn-primary" type="submit" name="products[]" id="S5" value="Add Size 5"><br />
             </form>
-            <form method="GET" action="shopping_cart.php" class="col-md">
+            <div class="col-md">
                 <a href="/week3/add_to_cart.php?id=4"><img src="/week3/images/S4.jpg" alt="black diamond camalot">Add To Cart</a>
                 <input class="btn btn-primary" type="submit" name="products[]" id="S4" value="Add Size 4"><br />
-            </form>
+            </div>
         </div>
     </div>
     <br><br><br><br>
