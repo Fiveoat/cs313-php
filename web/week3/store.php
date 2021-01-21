@@ -1,16 +1,6 @@
 <?php
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
-
-// if (isset($_SESSION["cart"])) {
-//     echo "SET";
-//     echo $_SESSION['cart'][0];
-//     foreach ($_SESSION['cart'] as $x) {
-//         echo "ur_mum" . $x;
-//     }
-// } else {
-//     echo "NOT SET";
-// }
 ?>
 <!DOCTYPE html>
 <html>
