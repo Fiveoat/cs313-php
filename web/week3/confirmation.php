@@ -28,12 +28,11 @@ $street = htmlspecialchars($_POST["street"]);
     <?php
     echo "<h1>Thank you, {$name} for your order.</h1>
     <h6>Email: {$email}</h6>
-    <h6>Address:
     <h6>Street: {$street}</h6>
     <h6>City: {$city}</h6>
     <h6>State: {$state}</h6>
     <h6>Zip: {$zip}</h6>
-    </h6>"
+    </h6>";
     ?>
     <footer>
         <?php require $root . '/week3/footer.php'; ?>

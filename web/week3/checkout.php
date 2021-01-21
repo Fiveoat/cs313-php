@@ -30,6 +30,7 @@ session_start();
             ?>
         </div>
     </div>
+    <br><br><br><br><br>
     <form method="POST" action="confirmation.php">
         <div class="input-group">
             <label for="name">Name  </label>
