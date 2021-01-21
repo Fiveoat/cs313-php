@@ -3,6 +3,14 @@ session_start();
 $_SESSION['cart'] = array();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/week3/add_to_cart.php';
+if (isset($_SESSION["cart"])) {
+    echo "SET";
+    foreach ($_SESSION["cart"] as $x){
+        echo "ur_mum".$x;
+    }
+} else {
+    echo "NOT SET";
+}
 ?>
 <!DOCTYPE html>
 <html>
