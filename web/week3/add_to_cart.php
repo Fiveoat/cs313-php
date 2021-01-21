@@ -1,5 +1,8 @@
 <?php
 foreach ($_POST as $x){
+    foreach($x as $wtf){
+        echo "ugh".$wtf;
+    }
     echo "x".$x;
     array_push($_SESSION["cart"], 420, "TACOs");
     // header("location: store.php");
