@@ -31,7 +31,7 @@ session_start();
             </div>
         </div>
         <div>
-            <a style='text-decoration: none;' href="/week3/clear_cart.php">Clear Cart</a>
+            <a style='text-decoration: none;' class="btn btn-outline-secondary" href="/week3/clear_cart.php">Clear Cart</a>
         </div>
     </main>
     <footer>

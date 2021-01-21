@@ -40,13 +40,9 @@ $street = htmlspecialchars($_POST["street"]);
                 <?php foreach ($_SESSION['cart'] as $id) {
                     echo "<div class='col-sm'>
                         <img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}
-                        <a style='text-decoration: none;' href='/week3/remove_from_cart.php?id={$id}'>Delete</a>
                      </div><br>";
                 } ?>
             </div>
-        </div>
-        <div>
-            <a style='text-decoration: none;' href="/week3/clear_cart.php">Clear Cart</a>
         </div>
     </main>
 
