@@ -10,6 +10,14 @@ if (!isset($_SESSION['cart'])) {
     echo "alsjdfk".$_SESSION['cart'][0];
 }
 
+if (!isset($_SESSION["total"])) {
+    $_SESSION["total"] = 0;
+    for ($i = 0; $i < count($products); $i++) {
+        $_SESSION["qty"][$i] = 0;
+        $_SESSION["amounts"][$i] = 0;
+    }
+}
+
 if (isset($_GET["add"])) {
     $i = $_GET["add"];
     $qty = $_SESSION["qty"][$i] + 1;
