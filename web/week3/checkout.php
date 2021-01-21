@@ -33,32 +33,26 @@ session_start();
     <br><br><br><br><br>
     <form method="POST" action="confirmation.php">
         <div class="input-group">
-            <label for="name">Name  </label>
             <input class="form-control" type="text" placeholder="Name" id="name" name="name">
         </div>
         <br>
         <div class="input-group">
-            <label for="email">Email  </label>
             <input class="form-control" type="text" placeholder="Email Address" id="email" name="email">
         </div>
         <br>
         <div class="input-group">
-            <label for="street">Street Address  </label>
             <input class="form-control" type="text" placeholder="Street Address" id="street" name="street">
         </div>
         <br>
         <div class="input-group">
-            <label for="city">City  </label>
             <input class="form-control" type="text" placeholder="City" id="city" name="city">
         </div>
         <br>
         <div class="input-group">
-            <label for="state">State  </label>
             <input class="form-control" type="text" placeholder="State" id="state" name="state">
         </div>
         <br>
         <div class="input-group">
-            <label for="zip">Zip  </label>
             <input class="form-control" type="text" placeholder="Zip" id="zip" name="zip">
         </div>
         <br>
