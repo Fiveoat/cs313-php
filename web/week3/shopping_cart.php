@@ -4,6 +4,11 @@
 foreach ($_POST['products'] as $x){
 	echo "TACO".$x;
 }
+
+foreach ($_SESSION as $x){
+    echo "XXXX".$x;
+}
+
 foreach ($_SESSION['cart'] as $x){
 	echo "Paco".$x;
 }
@@ -42,6 +47,11 @@ if (isset($_GET["delete"])) {
         $_SESSION["amounts"][$i] = $amounts[$i] * $qty;
     }
 }
+
+session_start();
+$_SESSION["cart"][$_POST["item"]]++;
+header("location: browse.php");
+
 $products = array("Size 6", "Size 5", "Size 4", "Size 3", "Size 2", "Size 1", "Size .75", "Size .5", "Size .4");
 $images = array("S6", "S5", "S4", "S3", "S2", "S1", "S075", "S05", "S04");
 $amounts = array(120, 110, 100, 90, 80, 70, 60, 50, 40);
