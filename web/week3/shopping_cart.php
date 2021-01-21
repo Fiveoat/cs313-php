@@ -1,9 +1,6 @@
 <?php
 session_start();
 var_dump($_SESSION['cart']);
-foreach ($_SESSION['cart'] as $id){
-    echo "<img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>";
-}
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +25,7 @@ foreach ($_SESSION['cart'] as $id){
         <div class="row">
             <?php
             foreach ($_SESSION['cart'] as $id){
-                echo "<div class='col-md'><img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'></div>";
+                echo "<div class='col-md'><img src='/week3/images/S{$id}.jpg' alt='black diamond camalot'>Size {$id}</div>";
             }
             ?>
         </div>
