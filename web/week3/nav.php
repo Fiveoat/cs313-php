@@ -11,4 +11,4 @@ session_start();
     <li class="nav-item">
         <a class="nav-link active" href="/week3/shopping_cart.php"> Cart&ensp;<img class="nav-cart" id="shoppingCartImage" src="images/cart.png" alt="Shopping Cart"><?php echo " ".count($_SESSION['cart'])?></a>
     </li>
-</ul>
+</ul>s
