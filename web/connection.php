@@ -19,7 +19,7 @@ catch (PDOException $ex)
 }
 foreach ($db->query('SELECT * FROM users') as $row)
 {
-echo $row;
+echo $row['first_name'];
 //   echo 'user: ' . $row['username'];
 //   echo ' password: ' . $row['password'];
 //   echo '<br/>';

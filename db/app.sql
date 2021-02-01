@@ -38,3 +38,4 @@ UPDATES
 UPDATE users SET points = <points> WHERE user_id = <user_id>;
 UPDATE bookings SET booked = <bool> WHERE booking = <booking_id>;
 
+ALTER TABLE users ADD COLUMN email varchar(60);
