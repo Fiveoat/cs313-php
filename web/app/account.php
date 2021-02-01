@@ -1,6 +1,7 @@
 <?php
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
+require $root . '/app/connection.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +19,9 @@ $root = $_SERVER['DOCUMENT_ROOT'];
     <nav>
         <?php require $root . '/app/nav.php'; ?>
     </nav>
+    <main>
+
+    </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
     </footer>
