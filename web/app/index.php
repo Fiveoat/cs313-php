@@ -1,6 +1,7 @@
 <?php
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
+require $root . '/app/connection.php';
 ?>
 <!DOCTYPE html>
 <html>
