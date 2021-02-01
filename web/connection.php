@@ -11,17 +11,17 @@ try
   $dbName = ltrim($dbOpts["path"],'/');
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo $dbOpt;
-  echo $dbHost;
-  echo $dbPort;
-  echo $dbUser;
-  echo $dbPassword;
-  echo "Worked";
 }
 catch (PDOException $ex)
 {
   echo 'Error!: ' . $ex->getMessage();
   die();
 }
-
+foreach ($db->query('SELECT * FROM users') as $row)
+{
+echo $row;
+//   echo 'user: ' . $row['username'];
+//   echo ' password: ' . $row['password'];
+//   echo '<br/>';
+}
 ?>
