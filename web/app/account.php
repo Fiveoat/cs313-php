@@ -22,7 +22,7 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * password FROM users') as $row) {
+        foreach ($db->query('SELECT * FROM users') as $row) {
             echo 'first: ' . $row['first_name'];
             echo 'last: ' . $row['last_name'];
             echo '<br/>';
