@@ -63,6 +63,10 @@ require $root . '/app/connection.php';
                     <h5>Country</h5>
                     <?php echo $country_code; ?>
                 </div>
+                <div class="col-md">
+                    <h5>Home</h5>
+                    <?php echo $home_id; ?>
+                </div>
             </div>
         </div>
     </main>
