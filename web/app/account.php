@@ -31,23 +31,6 @@ require $root . '/app/connection.php';
             $home_id = $row['home_id'];
             $name = $row['name'];
             $country_code = $row['country_code'];
-            echo $first_name;
-            echo '<br>';
-            echo $email;
-            echo '<br>';
-            echo $last_name;
-            echo '<br>';
-            echo $hashed_password;
-            echo '<br>';
-            echo $points;
-            echo '<br>';
-            echo $home_id;
-            echo '<br>';
-            echo $name;
-            echo '<br>';
-            echo $country_code;
-            echo '<br>';
-            
         }
         ?>
         <div class="container">
@@ -64,39 +47,6 @@ require $root . '/app/connection.php';
         </div>
     </div>
     <br><br><br><br>
-    <div class="container">
-        <div class="row">
-            <div method="GET" action="/week3/add?" class="col-md">
-                <img src="/week3/images/S3.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=3">Add To Cart</a>
-            </div>
-            <div method="GET" action="shopping_cart.php" class="col-md">
-                <img src="/week3/images/S2.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=2">Add To Cart</a>
-            </div>
-            <div class="col-md">
-                <img src="/week3/images/S1.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=1">Add To Cart</a>
-            </div>
-        </div>
-    </div>
-    <br><br><br><br>
-    <div class="container">
-        <div class="row">
-            <div method="GET" action="/week3/add?" class="col-md">
-                <img src="/week3/images/S075.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=075">Add To Cart</a>
-            </div>
-            <div method="GET" action="shopping_cart.php" class="col-md">
-                <img src="/week3/images/S05.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=05">Add To Cart</a>
-            </div>
-            <div class="col-md">
-                <img src="/week3/images/S04.jpg" alt="black diamond camalot">
-                <a class="btn btn-outline-secondary" href="/week3/add_to_cart.php?id=04">Add To Cart</a>
-            </div>
-        </div>
-    </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
