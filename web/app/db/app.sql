@@ -16,9 +16,9 @@ CREATE TABLE bookings(booking_id SERIAL PRIMARY KEY, renter int REFERENCES users
 INSERTS
 ---------------
 INSERT INTO users(first_name, last_name, points, hashed_password, email) VALUES ('Bill', 'Gates', 100, 'e23e8b55e902d8ecbca3542ea41bca0b', 'bill.gates@gmail.com');
-INSERT INTO homes(user_id, city_id, value) VALUES(1, 1, 100);
+INSERT INTO homes(user_id, location_id, value) VALUES(1, 1, 100);
 INSERT INTO locations(name, country_code) VALUES ('Seattle', 'US');
-INSERT INTO bookings(user_id, renter, owner, home_id, booked, duration) VALUES(1, 1, TRUE, 1, 1, 1);
+INSERT INTO bookings(renter, owner, home_id, booked, duration) VALUES(2, 2, 2, TRUE, 2);
 
 
 SELECTS

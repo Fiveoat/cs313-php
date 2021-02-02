@@ -23,9 +23,11 @@ require $root . '/app/connection.php';
         <?php
         $db = getConnection();
         foreach ($db->query('SELECT * FROM bookings') as $row) {
-            echo 'first: ' . $row['first_name'];
-            echo '<br/>';
-            echo 'last: ' . $row['last_name'];
+            $renter = $row['renter']; 
+            $owner = $row['owner'];  
+            $home_id = $row['home_id']; 
+            $booked = $row['booked']; 
+            $duration = $row['duration'];
         }
         ?>
     </main>

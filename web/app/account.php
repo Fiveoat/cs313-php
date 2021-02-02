@@ -22,14 +22,30 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * FROM users') as $row) {
-            echo $row['first_name'];
-            echo '<br/>';
-            echo $row['email'];
-            echo '<br/>';
-            echo $row['last_name'];
-            echo '<br/>';
-            echo $row['hashed_password'];
+        foreach ($db->query('SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id;') as $row) {
+            $first_name = $row['first_name'];
+            $email = $row['email'];
+            $last_name = $row['last_name'];
+            $hashed_password =  $row['hashed_password'];
+            $points = $row['points'];
+            $home_id = $row['home_id'];
+            $name = $row['name'];
+            $country_code = $row['country_code'];
+            echo $first_name;
+            echo '<br>';
+            echo $email;
+            echo '<br>';
+            echo $last_name;
+            echo '<br>';
+            echo $hashed_password;
+            echo '<br>';
+            echo $points;
+            echo '<br>';
+            echo $home_id;
+            echo '<br>';
+            echo $name;
+            echo '<br>';
+            echo $country_code;
         }
         ?>
     </main>
