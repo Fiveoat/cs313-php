@@ -32,9 +32,18 @@ require $root . '/app/connection.php';
             $name = $row['name'];
             $country_code = $row['country_code'];
         }
+        foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h on h.home_id = b.home_id INNER JOIN locations l ON h.home_id = l.home_id;') as $row) {
+            $renter = $row['renter'];
+            $owner = $row['owner'];
+            $home_id = $row['home_id'];
+            $booked = $row['booked'];
+            $duration = $row['duration'];
+            $city_name = $row['name'];
+            $country_code = $row['country_code'];
+        }
         ?>
         <br>
-        <h5 class="display-3">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?></h5>
+        <h5 class="display-3">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -52,6 +61,24 @@ require $root . '/app/connection.php';
             </div>
         </div>
         <br><br><br><br>
+        <h5 class="display-3">&ensp;Your Home Location.</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h5>City</h5>
+                    <?php echo $name; ?>
+                </div>
+                <div class="col-md">
+                    <h5>Country</h5>
+                    <?php echo $country_code; ?>
+                </div>
+                <div class="col-md">
+                    <h5>Home</h5>
+                    <?php echo $home_id; ?>
+                </div>
+            </div>
+        </div>
+        <h5 class="display-3">&ensp;Your Bookings!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">

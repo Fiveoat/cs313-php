@@ -23,13 +23,47 @@ require $root . '/app/connection.php';
         <?php
         $db = getConnection();
         foreach ($db->query('SELECT * FROM bookings') as $row) {
-            $renter = $row['renter']; 
-            $owner = $row['owner'];  
-            $home_id = $row['home_id']; 
-            $booked = $row['booked']; 
+            $renter = $row['renter'];
+            $owner = $row['owner'];
+            $home_id = $row['home_id'];
+            $booked = $row['booked'];
             $duration = $row['duration'];
         }
         ?>
+        <h5 class="display-3">&ensp;Check Out These Bookings!</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h5>Points</h5>
+                    <?php echo $points; ?>
+                </div>
+                <div method="GET" action="shopping_cart.php" class="col-md">
+                    <h5>Last</h5>
+                    <?php echo $last_name; ?>
+                </div>
+                <div class="col-md">
+                    <h5>Email</h5>
+                    <?php echo $email; ?>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h5>City</h5>
+                    <?php echo $name; ?>
+                </div>
+                <div class="col-md">
+                    <h5>Country</h5>
+                    <?php echo $country_code; ?>
+                </div>
+                <div class="col-md">
+                    <h5>Home</h5>
+                    <?php echo $home_id; ?>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
