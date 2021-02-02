@@ -32,6 +32,7 @@ require $root . '/app/connection.php';
             $home_city_name = $row['name'];
             $home_country_code = $row['country_code'];
         }
+        $db = getConnection();
         foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h on h.home_id = b.home_id INNER JOIN locations l ON h.home_id = l.home_id;') as $row) {
             $renter = $row['renter'];
             $owner = $row['owner'];
