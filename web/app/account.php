@@ -34,28 +34,34 @@ require $root . '/app/connection.php';
         }
         ?>
         <div class="container">
-        <div class="row">
-            <div method="GET" action="/week3/add?" class="col-md">
-                <?php echo $first_name;?>
-            </div>
-            <div method="GET" action="shopping_cart.php" class="col-md">
-                <?php echo $last_name;?>
-            </div>
-            <div class="col-md">
-                <?php echo $email;?>
-            </div>
-            <div class="col-md">
-                <?php echo $points;?>
-            </div>
-            <div class="col-md">
-                <?php echo $name;?>
-            </div>
-            <div class="col-md">
-                <?php echo $country_code;?>
+            <div class="row">
+                <div method="GET" action="/week3/add?" class="col-md">
+                    <h3 class="display-6">First</h3>
+                    <?php echo $first_name; ?>
+                </div>
+                <div method="GET" action="shopping_cart.php" class="col-md">
+                    <h3 class="display-6">Last</h3>
+                    <?php echo $last_name; ?>
+                </div>
+                <div class="col-md">
+                    <h3 class="display-6">Email</h3>
+                    <?php echo $email; ?>
+                </div>
+                <div class="col-md">
+                    <h3 class="display-6">Points</h3>
+                    <?php echo $points; ?>
+                </div>
+                <div class="col-md">
+                    <h3 class="display-6">City</h3>
+                    <?php echo $name; ?>
+                </div>
+                <div class="col-md">
+                    <h3 class="display-6">Country</h3>
+                    <?php echo $country_code; ?>
+                </div>
             </div>
         </div>
-    </div>
-    <br><br><br><br>
+        <br><br><br><br>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
