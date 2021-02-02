@@ -22,7 +22,7 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * FROM bookings') as $row) {
+        foreach ($db->query('SELECT * FROM bookings INNER JOIN') as $row) {
             $renter = $row['renter'];
             $owner = $row['owner'];
             $home_id = $row['home_id'];

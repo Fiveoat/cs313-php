@@ -29,8 +29,8 @@ require $root . '/app/connection.php';
             $hashed_password =  $row['hashed_password'];
             $points = $row['points'];
             $home_id = $row['home_id'];
-            $name = $row['name'];
-            $country_code = $row['country_code'];
+            $home_city_name = $row['name'];
+            $home_country_code = $row['country_code'];
         }
         foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h on h.home_id = b.home_id INNER JOIN locations l ON h.home_id = l.home_id;') as $row) {
             $renter = $row['renter'];
@@ -38,8 +38,8 @@ require $root . '/app/connection.php';
             $home_id = $row['home_id'];
             $booked = $row['booked'];
             $duration = $row['duration'];
-            $city_name = $row['name'];
-            $country_code = $row['country_code'];
+            $booking_city_name = $row['name'];
+            $booking_country_code = $row['country_code'];
         }
         ?>
         <br>
@@ -66,11 +66,11 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <h5>City</h5>
-                    <?php echo $name; ?>
+                    <?php echo $home_city_name; ?>
                 </div>
                 <div class="col-md">
                     <h5>Country</h5>
-                    <?php echo $country_code; ?>
+                    <?php echo $home_country_code; ?>
                 </div>
                 <div class="col-md">
                     <h5>Home</h5>
@@ -83,11 +83,11 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <h5>City</h5>
-                    <?php echo $name; ?>
+                    <?php echo $booking_city_name; ?>
                 </div>
                 <div class="col-md">
                     <h5>Country</h5>
-                    <?php echo $country_code; ?>
+                    <?php echo $booking_country_code; ?>
                 </div>
                 <div class="col-md">
                     <h5>Home</h5>
