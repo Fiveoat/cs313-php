@@ -20,7 +20,14 @@ require $root . '/app/connection.php';
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
-
+        <?php
+        $db = getConnection();
+        foreach ($db->query('SELECT * FROM bookings') as $row) {
+            echo 'first: ' . $row['first_name'];
+            echo '<br/>';
+            echo 'last: ' . $row['last_name'];
+        }
+        ?>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
