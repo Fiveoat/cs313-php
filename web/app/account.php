@@ -44,6 +44,15 @@ require $root . '/app/connection.php';
             <div class="col-md">
                 <?php echo $email;?>
             </div>
+            <div class="col-md">
+                <?php echo $points;?>
+            </div>
+            <div class="col-md">
+                <?php echo $name;?>
+            </div>
+            <div class="col-md">
+                <?php echo $country_code;?>
+            </div>
         </div>
     </div>
     <br><br><br><br>
