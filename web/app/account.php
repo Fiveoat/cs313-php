@@ -33,10 +33,13 @@ require $root . '/app/connection.php';
             $country_code = $row['country_code'];
         }
         ?>
+        <br><br><br><br>
+        <h5 class="display-3">Welcome back, <?php echo $first_name . " " . $last_name; ?></h5>
         <div class="container">
             <div class="row">
-                <div method="GET" action="/week3/add?" class="col-md">
-                    <h5 class="display-3">Welcome back, <?php echo $first_name." ".$last_name; ?></h5>
+                <div class="col-md">
+                    <h5>Points</h5>
+                    <?php echo $points; ?>
                 </div>
                 <div method="GET" action="shopping_cart.php" class="col-md">
                     <h5>Last</h5>
@@ -46,21 +49,20 @@ require $root . '/app/connection.php';
                     <h5>Email</h5>
                     <?php echo $email; ?>
                 </div>
-                <div class="col-md">
-                    <h5>Points</h5>
-                    <?php echo $points; ?>
-                </div>
-                <div class="col-md">
-                    <h5>City</h5>
-                    <?php echo $name; ?>
-                </div>
-                <div class="col-md">
-                    <h5>Country</h5>
-                    <?php echo $country_code; ?>
-                </div>
             </div>
         </div>
         <br><br><br><br>
+        <div class="container">
+
+            <div class="col-md">
+                <h5>City</h5>
+                <?php echo $name; ?>
+            </div>
+            <div class="col-md">
+                <h5>Country</h5>
+                <?php echo $country_code; ?>
+            </div>
+        </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
