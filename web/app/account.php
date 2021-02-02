@@ -36,8 +36,7 @@ require $root . '/app/connection.php';
         <div class="container">
             <div class="row">
                 <div method="GET" action="/week3/add?" class="col-md">
-                    <h5>First</h5>
-                    <?php echo $first_name; ?>
+                    <h5 class="display-3">Welcome back, <?php echo $first_name." ".$last_name; ?></h5>
                 </div>
                 <div method="GET" action="shopping_cart.php" class="col-md">
                     <h5>Last</h5>
