@@ -24,8 +24,8 @@ require $root . '/app/connection.php';
         $db = getConnection();
         foreach ($db->query('SELECT * FROM users') as $row) {
             echo 'first: ' . $row['first_name'];
-            echo 'last: ' . $row['last_name'];
             echo '<br/>';
+            echo 'last: ' . $row['last_name'];
         }
         ?>
     </main>
