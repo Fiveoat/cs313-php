@@ -54,13 +54,15 @@ require $root . '/app/connection.php';
         </div>
         <br><br><br><br>
         <div class="container">
-            <div class="col-md">
-                <h5>City</h5>
-                <?php echo $name; ?>
-            </div>
-            <div class="col-md">
-                <h5>Country</h5>
-                <?php echo $country_code; ?>
+            <div class="row">
+                <div class="col-md">
+                    <h5>City</h5>
+                    <?php echo $name; ?>
+                </div>
+                <div class="col-md">
+                    <h5>Country</h5>
+                    <?php echo $country_code; ?>
+                </div>
             </div>
         </div>
     </main>
