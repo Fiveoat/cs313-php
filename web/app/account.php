@@ -36,27 +36,27 @@ require $root . '/app/connection.php';
         <div class="container">
             <div class="row">
                 <div method="GET" action="/week3/add?" class="col-md">
-                    <h3 class="display-6">First</h3>
+                    <h5>First</h5>
                     <?php echo $first_name; ?>
                 </div>
                 <div method="GET" action="shopping_cart.php" class="col-md">
-                    <h3 class="display-6">Last</h3>
+                    <h5>Last</h5>
                     <?php echo $last_name; ?>
                 </div>
                 <div class="col-md">
-                    <h3 class="display-6">Email</h3>
+                    <h5>Email</h5>
                     <?php echo $email; ?>
                 </div>
                 <div class="col-md">
-                    <h3 class="display-6">Points</h3>
+                    <h5>Points</h5>
                     <?php echo $points; ?>
                 </div>
                 <div class="col-md">
-                    <h3 class="display-6">City</h3>
+                    <h5>City</h5>
                     <?php echo $name; ?>
                 </div>
                 <div class="col-md">
-                    <h3 class="display-6">Country</h3>
+                    <h5>Country</h5>
                     <?php echo $country_code; ?>
                 </div>
             </div>
