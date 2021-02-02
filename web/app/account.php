@@ -33,8 +33,9 @@ require $root . '/app/connection.php';
             $country_code = $row['country_code'];
         }
         ?>
-        <br><br><br><br>
+        <br><br>
         <h5 class="display-3">Welcome back, <?php echo $first_name . " " . $last_name; ?></h5>
+        <br><br>
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -53,7 +54,6 @@ require $root . '/app/connection.php';
         </div>
         <br><br><br><br>
         <div class="container">
-
             <div class="col-md">
                 <h5>City</h5>
                 <?php echo $name; ?>
