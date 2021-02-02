@@ -32,16 +32,6 @@ require $root . '/app/connection.php';
             $home_city_name = $row['name'];
             $home_country_code = $row['country_code'];
         }
-        $db = getConnection();
-        foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h on h.home_id = b.home_id INNER JOIN locations l ON h.home_id = l.home_id;') as $row) {
-            $renter = $row['renter'];
-            $owner = $row['owner'];
-            $home_id = $row['home_id'];
-            $booked = $row['booked'];
-            $duration = $row['duration'];
-            $booking_city_name = $row['name'];
-            $booking_country_code = $row['country_code'];
-        }
         ?>
         <br>
         <h5 class="display-3">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
@@ -79,23 +69,20 @@ require $root . '/app/connection.php';
                 </div>
             </div>
         </div>
-        <h5 class="display-3">&ensp;Your Bookings!</h5>
+        <!-- <h5 class="display-3">&ensp;Your Bookings!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
                     <h5>City</h5>
-                    <?php echo $booking_city_name; ?>
                 </div>
                 <div class="col-md">
                     <h5>Country</h5>
-                    <?php echo $booking_country_code; ?>
                 </div>
                 <div class="col-md">
                     <h5>Home</h5>
-                    <?php echo $home_id; ?>
                 </div>
             </div>
-        </div>
+        </div> -->
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
