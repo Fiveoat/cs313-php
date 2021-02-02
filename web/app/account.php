@@ -34,7 +34,7 @@ require $root . '/app/connection.php';
         }
         ?>
         <br>
-        <h5 class="display-3">Welcome back, <?php echo $first_name . " " . $last_name; ?></h5>
+        <h5 class="display-3">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?></h5>
         <br>
         <div class="container">
             <div class="row">
