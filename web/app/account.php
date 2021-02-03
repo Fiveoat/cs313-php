@@ -70,8 +70,8 @@ require $root . '/app/connection.php';
                 </div>
                 <div class="col-md">
                     <h5>Home Availablity</h5>
-                    <?php 
-                    if ($available = true){
+                    <?php
+                    if ($available = true) {
                         echo "Currently Set To Available";
                         echo '<br><a href="">Update</a>';
                     } else {
@@ -84,19 +84,25 @@ require $root . '/app/connection.php';
         </div>
         <br><br><br><br>
         <h5 class="display-6">&ensp;Add Points</h5>
-        <form>
-            <div class="mb-3 col-md">
-                <select class="form-select" aria-label="Default select example">
-                    <option value="1">100</option>
-                    <option value="2">200</option>
-                    <option value="3">300</option>
-                    <option value="3">400</option>
-                    <option value="3">500</option>
-                </select>
-                <div id="emailHelp" class="form-text">&ensp;Honor system.</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <form>
+                        <div class="mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="1">100</option>
+                                <option value="2">200</option>
+                                <option value="3">300</option>
+                                <option value="3">400</option>
+                                <option value="3">500</option>
+                            </select>
+                            <div id="emailHelp" class="form-text">&ensp;Honor system.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Points</button>
+                    </form>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Add Points</button>
-        </form>
+        </div>
         <!-- <h5 class="display-3">&ensp;Your Bookings!</h5>
         <div class="container">
             <div class="row">

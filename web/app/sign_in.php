@@ -19,20 +19,26 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
-    <h5 class="display-6">&ensp;Good to see you again.</h5>
-    <br>
-        <form>
-            <div class="mb-3 col-md">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <h5 class="display-6">&ensp;Good to see you again.</h5>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div>
+                            <label for="inputPassword5" class="form-label">Password</label>
+                            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
             </div>
-            <div>
-                <label for="inputPassword5" class="form-label">Password</label>
-                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary">Sign In</button>
-        </form>
+        </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
