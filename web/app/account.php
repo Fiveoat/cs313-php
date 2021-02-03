@@ -69,6 +69,7 @@ require $root . '/app/connection.php';
                 </div>
             </div>
         </div>
+        <br><br><br><br>
         <h5 class="display-6">&ensp;Enter Your Earned Points</h5>
         <form>
             <div class="mb-3">
