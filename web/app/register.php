@@ -19,7 +19,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
-        <h1 class="display-4">&ensp;Welcome! Sign Up!</h1>
+        <h1 class="display-4">&ensp;Welcome!</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -59,7 +59,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                             </select>
                         </div>
                         <br><br>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Register</button>
                     </form>
                 </div>
             </div>
