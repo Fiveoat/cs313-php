@@ -22,13 +22,28 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <h1 class="display-4">Welcome! Sign Up!</h1>
         <form>
             <div class="mb-3">
-                <label for="email" class="form-label">Email address</label>
+                <label for="email" class="form-label">Email Address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password">
+                <label for="city" class="form-label">City</label>
+                <input type="city" class="form-control" id="city">
+            </div>
+            <div class="mb-3">
+                <label for="country-code" class="form-label">Country Code</label>
+                <input type="country-code" class="form-control" id="country-code">
+            </div>
+            <div class="mb-3">
+                <label for="first-name" class="form-label">First Name</label>
+                <input type="first-name" class="form-control" id="first-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="last-name" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="last-name" class="form-control" id="last-name">
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
