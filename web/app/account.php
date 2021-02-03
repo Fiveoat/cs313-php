@@ -64,8 +64,8 @@ require $root . '/app/connection.php';
                     <?php echo $home_country_code; ?>
                 </div>
                 <div class="col-md">
-                    <h5>Points</h5>
-                    <?php echo $points; ?>
+                    <h5>Point Value</h5>
+                    <?php echo $points . "Points"; ?>
                 </div>
             </div>
         </div>
