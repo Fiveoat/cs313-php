@@ -38,8 +38,8 @@ require $root . '/app/connection.php';
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <h5>Points</h5>
-                    <?php echo $points; ?>
+                    <h5>Your Points</h5>
+                    <?php echo $points . " Points"; ?>
                 </div>
                 <div method="GET" action="shopping_cart.php" class="col-md">
                     <h5>Last</h5>
@@ -65,7 +65,7 @@ require $root . '/app/connection.php';
                 </div>
                 <div class="col-md">
                     <h5>Point Value</h5>
-                    <?php echo $points . " Points"; ?>
+                    <?php echo $points . " Points Per Day"; ?>
                 </div>
             </div>
         </div>

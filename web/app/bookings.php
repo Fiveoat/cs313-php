@@ -38,7 +38,7 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <h5>Cost</h5>
-                    <?php echo $points . " Points"; ?>
+                    <?php echo $points . " Points Per Day"; ?>
                 </div>
                 <div class="col-md">
                     <h5>City</h5>
