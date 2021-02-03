@@ -33,7 +33,7 @@ require $root . '/app/connection.php';
                 <div class="row">
                     <div class="col-md">
                         <h5>How It Works.</h5>
-                        <ul class="list-group">
+                        <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 1: Sign up & add your home details.
                             </li>
