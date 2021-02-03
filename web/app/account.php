@@ -42,10 +42,6 @@ require $root . '/app/connection.php';
                     <h5>Your Points</h5>
                     <?php echo $points . " Points"; ?>
                 </div>
-                <div method="GET" action="shopping_cart.php" class="col-md">
-                    <h5>Last</h5>
-                    <?php echo $last_name; ?>
-                </div>
                 <div class="col-md">
                     <h5>Email</h5>
                     <?php echo $email; ?>
