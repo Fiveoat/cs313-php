@@ -26,7 +26,7 @@ require $root . '/app/connection.php';
                 <div class="col-md">
                     <h5>Welcome to Houslr.</h5>
                     <p>
-                        We hve house.
+                        Since our inception in 2021 we have been helping people go on vacations & getting the most use out of their home. We have enabled retired couples to travel around the world without paying for a single night for a place to stay.
                     </p>
                 </div>
                 <div class="row">

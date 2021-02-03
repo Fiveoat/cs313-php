@@ -22,7 +22,7 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id;') as $row) {
+        foreach ($db->query('SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner_id = u.user_id;') as $row) {
             $first_name = $row['first_name'];
             $email = $row['email'];
             $last_name = $row['last_name'];
@@ -31,6 +31,7 @@ require $root . '/app/connection.php';
             $home_id = $row['home_id'];
             $home_city_name = $row['name'];
             $home_country_code = $row['country_code'];
+            $available = $row['booked'];
         }
         ?>
         <br>
@@ -66,6 +67,16 @@ require $root . '/app/connection.php';
                 <div class="col-md">
                     <h5>Point Value</h5>
                     <?php echo $points . " Points Per Day"; ?>
+                </div>
+                <div class="col-md">
+                    <h5>Home Availablity</h5>
+                    <?php 
+                    if ($available = true){
+                        echo "Currently Set To Available";
+                    } else {
+                        echo "Not Set To Available";
+                    }
+                    ?>
                 </div>
             </div>
         </div>
