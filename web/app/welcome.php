@@ -26,13 +26,30 @@ require $root . '/app/connection.php';
                 <div class="col-md">
                     <h5>Welcome to Houslr.</h5>
                     <p>
-                        Since our inception in 2021 we have been helping people go on vacations & getting the most use out of their home. We have enabled retired couples to travel around the world without paying for a single night for a place to stay.
+                        Since our inception in 2021 we have been helping people go on vacations & getting the most use out of their home.
+                        We have enabled retired couples to travel around the world without paying for a single night for a place to stay.
                     </p>
                 </div>
                 <div class="row">
                     <div class="col-md">
                         <h5>How It Works.</h5>
-                        <p>You trade house for house.</p>
+                        <ul>
+                            <li>
+                                Step 1: Sign up & add your home details.
+                            </li>
+                            <li>
+                                Step 2: "Rent" your home out & grow your points.
+                            </li>
+                            <li>
+                                Step 3: Browse currently available homes to "rent".
+                            </li>
+                            <li>
+                                Step 4: Use your points to stay at any of the available homes.
+                            </li>
+                            <li>
+                                Step 5: Profit.
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md">
