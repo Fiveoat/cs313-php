@@ -50,7 +50,7 @@ require $root . '/app/connection.php';
                 </div>
                 <div class="col-md">
                     <h5>Book</h5>
-                    <?php echo "<a href='../app/book.php?{$home_id}'></a>"; ?>
+                    <?php echo "<a href='../app/book.php?{$home_id}'>Book Now</a>"; ?>
                 </div>
             </div>
         </div>
