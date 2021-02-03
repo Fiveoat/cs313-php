@@ -19,7 +19,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
-        <h1 class="display-4">Welcome! Sign Up!</h1>
+        <h1 class="display-4">&ensp;Welcome! Sign Up!</h1>
         <div class="container">
             <div class="row">
                 <div class="col-md">
