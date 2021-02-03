@@ -41,11 +41,6 @@ require $root . '/app/connection.php';
                     <h5>Last</h5>
                     <?php echo $owner; ?>
                 </div>
-            </div>
-        </div>
-        <br><br><br><br>
-        <div class="container">
-            <div class="row">
                 <div class="col-md">
                     <h5>City</h5>
                     <?php echo $name; ?>
@@ -58,6 +53,12 @@ require $root . '/app/connection.php';
                     <h5>Home</h5>
                     <?php echo $home_id; ?>
                 </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="container">
+            <div class="row">
+                
             </div>
         </div>
     </main>
