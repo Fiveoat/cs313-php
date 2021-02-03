@@ -38,10 +38,10 @@ require $root . '/app/connection.php';
                                 1: Sign up & add your home details.
                             </li>
                             <li class="list-group-item">
-                                2: "Rent" your home out & grow your points.
+                                2: Rent your home out & grow your points.
                             </li>
                             <li class="list-group-item">
-                                3: Browse currently available homes to "rent".
+                                3: Browse currently available homes to rent.
                             </li>
                             <li class="list-group-item">
                                 4: Use your points to stay at any of the available homes.
