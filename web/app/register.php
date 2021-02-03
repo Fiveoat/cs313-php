@@ -45,12 +45,14 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                 <label for="last-name" class="form-label">Last Name</label>
                 <input type="last-name" class="form-control" id="last-name">
             </div>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Home Size</option>
-                <option value="1">Large</option>
-                <option value="2">Medium</option>
-                <option value="3">Small</option>
-            </select>
+            <div>
+                <label for="last-name" class="form-label">Home Size</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">Large</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Small</option>
+                </select>
+            </div>
             <br><br>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
