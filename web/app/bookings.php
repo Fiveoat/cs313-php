@@ -22,12 +22,14 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h ON h.home_id = b.home_id INNER JOIN locations l ON l.location_id = h.location_id') as $row) {
+        foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h ON h.home_id = b.home_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN users u ON u.user_id = b.owner_id') as $row) {
             $renter = $row['renter'];
             $owner = $row['owner'];
             $home_id = $row['home_id'];
             $booked = $row['booked'];
             $duration = $row['duration'];
+            $country_code = $row['country_code'];
+            $name = $row['name'];
         }
         ?>
         <h5 class="display-3">&ensp;Check Out These Bookings!</h5>
@@ -40,10 +42,6 @@ require $root . '/app/connection.php';
                 <div method="GET" action="shopping_cart.php" class="col-md">
                     <h5>Last</h5>
                     <?php echo $renter; ?>
-                </div>
-                <div class="col-md">
-                    <h5>Email</h5>
-                    <?php echo $email; ?>
                 </div>
             </div>
         </div>
