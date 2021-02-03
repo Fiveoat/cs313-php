@@ -22,6 +22,14 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <h1 class="display-4">Welcome! Sign Up!</h1>
         <form>
             <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="last-name" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+                <label for="last-name" class="form-label">Last Name</label>
+                <input type="last-name" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
                 <label for="email" class="form-label">Email Address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
             </div>
@@ -37,20 +45,12 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                 <label for="first-name" class="form-label">First Name</label>
                 <input type="first-name" class="form-control" id="first-name">
             </div>
-            <div class="mb-3">
-                <label for="last-name" class="form-label">Last Name</label>
-                <input type="last-name" class="form-control" id="last-name">
-            </div>
-            <div class="mb-3">
-                <label for="last-name" class="form-label">Last Name</label>
-                <input type="last-name" class="form-control" id="last-name">
-            </div>
             <div>
                 <label for="last-name" class="form-label">Home Size</label>
                 <select class="form-select" aria-label="Default select example">
-                    <option value="1">Large</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Small</option>
+                    <option value="1">Large > 2000 sq ft.</option>
+                    <option value="2">Medium : < 2000 sq ft.</option>
+                    <option value="3">Small : < 1000 sq ft.</option>
                 </select>
             </div>
             <br><br>
