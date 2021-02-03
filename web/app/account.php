@@ -13,7 +13,7 @@ require $root . '/app/connection.php';
 </head>
 
 <body>
-    <header class="display-4">
+    <header class="display-6">
         <?php require $root . '/app/header.php'; ?>
     </header>
     <nav>
@@ -35,7 +35,7 @@ require $root . '/app/connection.php';
         }
         ?>
         <br>
-        <h5 class="display-4">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
+        <h5 class="display-5">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
