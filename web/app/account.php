@@ -73,10 +73,16 @@ require $root . '/app/connection.php';
         <h5 class="display-6">&ensp;Add Points</h5>
         <form>
             <div class="mb-3">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <select class="form-select" aria-label="Default select example">
+                    <option value="1">100</option>
+                    <option value="2">200</option>
+                    <option value="3">300</option>
+                    <option value="3">400</option>
+                    <option value="3">500</option>
+                </select>
                 <div id="emailHelp" class="form-text">&ensp;Honor system.</div>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Add Points</button>
         </form>
         <!-- <h5 class="display-3">&ensp;Your Bookings!</h5>
         <div class="container">
