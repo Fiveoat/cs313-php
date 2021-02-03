@@ -70,10 +70,9 @@ require $root . '/app/connection.php';
             </div>
         </div>
         <br><br><br><br>
-        <h5 class="display-6">&ensp;Enter Your Earned Points</h5>
+        <h5 class="display-6">&ensp;Add Points</h5>
         <form>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">&ensp;Add Points</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text">&ensp;Honor system.</div>
             </div>
