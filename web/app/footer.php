@@ -1,4 +1,4 @@
 <br><br>
-<span class="display-6">© Housler</span>
+<span class="display-6">© Houslr</span>
 <br>
 <br>

@@ -6,7 +6,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 <html>
 
 <head>
-    <title>Houselr</title>
+    <title>Houslr</title>
     <link rel="stylesheet" type="text/css" href="/app/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
@@ -45,8 +45,8 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                 <label for="last-name" class="form-label">Home Size</label>
                 <select class="form-select" aria-label="Default select example">
                     <option value="1">Large > 2000 sq ft.</option>
-                    <option value="2">Medium : < 2000 sq ft.</option>
-                    <option value="3">Small : < 1000 sq ft.</option>
+                    <option value="2">Medium < 2000 sq ft.</option>
+                    <option value="3">Small < 1000 sq ft.</option>
                 </select>
             </div>
             <br><br>

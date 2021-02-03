@@ -7,7 +7,7 @@ require $root . '/app/connection.php';
 <html>
 
 <head>
-    <title>Houselr</title>
+    <title>Houslr</title>
     <link rel="stylesheet" type="text/css" href="/app/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
@@ -24,26 +24,22 @@ require $root . '/app/connection.php';
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <h5>Welcome to Houselr</h5>
+                    <h5>Welcome to Houslr.</h5>
                     <p>
-                    We hve house.
+                        We hve house.
                     </p>
                 </div>
-            <div class="row">
-                <div class="col-md">
-                    <h5>How It Works.</h5>
-                    <p>You trade house for house.</p>
+                <div class="row">
+                    <div class="col-md">
+                        <h5>How It Works.</h5>
+                        <p>You trade house for house.</p>
+                    </div>
                 </div>
-            </div>
                 <div class="col-md">
                     <h5>Join Today.</h5>
                     <a href="../app/register.php">Sign Up</a>
                     <br>
                     <a href="../app/sign_in.php">Already have an account?</a>
-                </div>
-                <div class="col-md">
-                    <h5>Home</h5>
-                    <?php echo $home_id; ?>
                 </div>
             </div>
         </div>
