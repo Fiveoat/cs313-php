@@ -38,6 +38,7 @@ require $root . '/app/connection.php';
                 <div class="col-md">
                     <h5>Join Today.</h5>
                     <a href="../app/register.php">Sign Up</a>
+                    <br>
                     <a href="../app/sign_in.php">Already have an account?</a>
                 </div>
                 <div class="col-md">

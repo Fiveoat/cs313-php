@@ -33,7 +33,7 @@ require $root . '/app/connection.php';
             $points = $row['points'];
         }
         ?>
-        <h5 class="display-3">&ensp;Check Out These Bookings!</h5>
+        <h5 class="display-3">&ensp;Available Homes!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
