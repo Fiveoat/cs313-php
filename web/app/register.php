@@ -47,7 +47,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                             <input type="city" class="form-control" id="city">
                         </div>
                         <div class="mb-3">
-                            <label for="country-code" class="form-label">Country Code</label>
+                            <label for="country-code" class="form-label">Country Code (ex. US / AU / UK etc.)</label>
                             <input type="country-code" class="form-control" id="country-code">
                         </div>
                         <div>
