@@ -22,7 +22,7 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * FROM bookings') as $row) {
+        foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h ON h.home_id = b.home_id INNER JOIN locations l ON l.location_id = h.location_id') as $row) {
             $renter = $row['renter'];
             $owner = $row['owner'];
             $home_id = $row['home_id'];
@@ -41,7 +41,7 @@ require $root . '/app/connection.php';
                     <h5>Last</h5>
                     <?php echo $renter; ?>
                 </div>
-                <!-- <div class="col-md">
+                <div class="col-md">
                     <h5>Email</h5>
                     <?php echo $email; ?>
                 </div>
@@ -63,7 +63,7 @@ require $root . '/app/connection.php';
                     <?php echo $home_id; ?>
                 </div>
             </div>
-        </div> -->
+        </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
