@@ -22,8 +22,8 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <h1 class="display-4">Welcome! Sign Up!</h1>
         <form>
             <div class="mb-3">
-                <label for="last-name" class="form-label">Last Name</label>
-                <input type="last-name" class="form-control" id="last-name">
+                <label for="first-name" class="form-label">First Name</label>
+                <input type="first-name" class="form-control" id="first-name">
             </div>
             <div class="mb-3">
                 <label for="last-name" class="form-label">Last Name</label>
@@ -40,10 +40,6 @@ $root = $_SERVER['DOCUMENT_ROOT'];
             <div class="mb-3">
                 <label for="country-code" class="form-label">Country Code</label>
                 <input type="country-code" class="form-control" id="country-code">
-            </div>
-            <div class="mb-3">
-                <label for="first-name" class="form-label">First Name</label>
-                <input type="first-name" class="form-control" id="first-name">
             </div>
             <div>
                 <label for="last-name" class="form-label">Home Size</label>
