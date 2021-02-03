@@ -85,7 +85,7 @@ require $root . '/app/connection.php';
         <br><br><br><br>
         <h5 class="display-6">&ensp;Add Points</h5>
         <form>
-            <div class="mb-3">
+            <div class="mb-3 col-md">
                 <select class="form-select" aria-label="Default select example">
                     <option value="1">100</option>
                     <option value="2">200</option>

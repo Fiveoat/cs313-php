@@ -22,7 +22,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
     <h5 class="display-6">&ensp;Good to see you again.</h5>
     <br>
         <form>
-            <div class="mb-3">
+            <div class="mb-3 col-md">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
