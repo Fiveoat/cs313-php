@@ -21,3 +21,11 @@ button {
 a {
     text-decoration: none;
 }
+
+html { 
+    background: url(../images/IMG_2675.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
