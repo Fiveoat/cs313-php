@@ -34,7 +34,7 @@ require $root . '/app/connection.php';
         }
         ?>
         <br>
-        <h5 class="display-3">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
+        <h5 class="display-4">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -52,7 +52,7 @@ require $root . '/app/connection.php';
             </div>
         </div>
         <br><br><br><br>
-        <h5 class="display-6">&ensp;Your Home Location.</h5>
+        <h5 class="display-6">&ensp;Your Home Information.</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -64,8 +64,8 @@ require $root . '/app/connection.php';
                     <?php echo $home_country_code; ?>
                 </div>
                 <div class="col-md">
-                    <h5>Home</h5>
-                    <?php echo $home_id; ?>
+                    <h5>Points</h5>
+                    <?php echo $points; ?>
                 </div>
             </div>
         </div>
