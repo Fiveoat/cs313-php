@@ -51,6 +51,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                 <option value="2">Medium</option>
                 <option value="3">Small</option>
             </select>
+            <br><br>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </main>
