@@ -65,7 +65,7 @@ require $root . '/app/connection.php';
                 </div>
                 <div class="col-md">
                     <h5>Point Value</h5>
-                    <?php echo $points . "Points"; ?>
+                    <?php echo $points . " Points"; ?>
                 </div>
             </div>
         </div>
