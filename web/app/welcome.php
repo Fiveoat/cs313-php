@@ -33,20 +33,20 @@ require $root . '/app/connection.php';
                 <div class="row">
                     <div class="col-md">
                         <h5>How It Works.</h5>
-                        <ul>
-                            <li>
+                        <ul class="list-group">
+                            <li class="list-group-item">
                                 1: Sign up & add your home details.
                             </li>
-                            <li>
+                            <li class="list-group-item">
                                 2: "Rent" your home out & grow your points.
                             </li>
-                            <li>
+                            <li class="list-group-item">
                                 3: Browse currently available homes to "rent".
                             </li>
-                            <li>
+                            <li class="list-group-item">
                                 4: Use your points to stay at any of the available homes.
                             </li>
-                            <li>
+                            <li class="list-group-item">
                                 5: Profit.
                             </li>
                         </ul>
