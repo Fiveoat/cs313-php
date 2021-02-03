@@ -35,11 +35,11 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <h5>Points</h5>
-                    <?php echo $points; ?>
+                    <?php echo $renter; ?>
                 </div>
                 <div method="GET" action="shopping_cart.php" class="col-md">
                     <h5>Last</h5>
-                    <?php echo $last_name; ?>
+                    <?php echo $renter; ?>
                 </div>
                 <div class="col-md">
                     <h5>Email</h5>
