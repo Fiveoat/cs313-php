@@ -49,8 +49,8 @@ require $root . '/app/connection.php';
                     <?php echo $country_code; ?>
                 </div>
                 <div class="col-md">
-                    <h5>Home</h5>
-                    <?php echo $home_id; ?>
+                    <h5>Book</h5>
+                    <?php echo "<a href='../app/book.php?{$home_id}'></a>"; ?>
                 </div>
             </div>
         </div>
