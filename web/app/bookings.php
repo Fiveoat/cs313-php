@@ -22,14 +22,12 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h ON h.home_id = b.home_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN users u ON u.user_id = b.owner_id') as $row) {
+        foreach ($db->query('SELECT * FROM bookings') as $row) {
             $renter = $row['renter'];
             $owner = $row['owner'];
             $home_id = $row['home_id'];
             $booked = $row['booked'];
             $duration = $row['duration'];
-            $country_code = $row['country_code'];
-            $name = $row['name'];
         }
         ?>
         <h5 class="display-3">&ensp;Check Out These Bookings!</h5>
@@ -41,27 +39,11 @@ require $root . '/app/connection.php';
                 </div>
                 <div method="GET" action="shopping_cart.php" class="col-md">
                     <h5>Last</h5>
-                    <?php echo $renter; ?>
+                    <?php echo $owner; ?>
                 </div>
             </div>
         </div>
-        <br><br><br><br>
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <h5>City</h5>
-                    <?php echo $name; ?>
-                </div>
-                <div class="col-md">
-                    <h5>Country</h5>
-                    <?php echo $country_code; ?>
-                </div>
-                <div class="col-md">
-                    <h5>Home</h5>
-                    <?php echo $home_id; ?>
-                </div>
-            </div>
-        </div>
+
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
