@@ -27,7 +27,7 @@ require $root . '/app/connection.php';
                     <h5>Welcome to Houslr.</h5>
                     <p>
                         Since our inception in 2021 we have been helping people go on vacations & getting the most use out of their home.
-                        We have enabled retired couples to travel around the world without paying for a single night for a place to stay.
+                        We have enabled home owners to travel around the world without paying for a single night for a place to stay.
                     </p>
                 </div>
                 <div class="row">
@@ -35,19 +35,19 @@ require $root . '/app/connection.php';
                         <h5>How It Works.</h5>
                         <ul>
                             <li>
-                                Step 1: Sign up & add your home details.
+                                1: Sign up & add your home details.
                             </li>
                             <li>
-                                Step 2: "Rent" your home out & grow your points.
+                                2: "Rent" your home out & grow your points.
                             </li>
                             <li>
-                                Step 3: Browse currently available homes to "rent".
+                                3: Browse currently available homes to "rent".
                             </li>
                             <li>
-                                Step 4: Use your points to stay at any of the available homes.
+                                4: Use your points to stay at any of the available homes.
                             </li>
                             <li>
-                                Step 5: Profit.
+                                5: Profit.
                             </li>
                         </ul>
                     </div>
