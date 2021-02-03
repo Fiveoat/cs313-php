@@ -52,7 +52,7 @@ require $root . '/app/connection.php';
             </div>
         </div>
         <br><br><br><br>
-        <h5 class="display-6">&ensp;Your Home Information.</h5>
+        <h5 class="display-6">&ensp;Your Home Information</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
