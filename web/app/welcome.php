@@ -50,6 +50,7 @@ require $root . '/app/connection.php';
                                 5: Profit.
                             </li>
                         </ul>
+                        <br>
                     </div>
                 </div>
                 <div class="col-md">
