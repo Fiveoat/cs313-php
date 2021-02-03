@@ -73,10 +73,10 @@ require $root . '/app/connection.php';
                     <?php 
                     if ($available = true){
                         echo "Currently Set To Available";
-                        echo '<a href="">Update</a>';
+                        echo '<br><a href="">Update</a>';
                     } else {
                         echo "Not Set To Available";
-                        echo '<a href="">Update</a>';
+                        echo '<br><a href="">Update</a>';
                     }
                     ?>
                 </div>
