@@ -1,6 +1,6 @@
 <ul class="nav justify-content-end">
   <li class="nav-item">
-    <a class="nav-link active" aria-current="page" href="../app/index.php">Welcome&ensp;</a>
+    <a class="nav-link active" aria-current="page" href="../app/welcome.php">Welcome&ensp;</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="../app/bookings.php">Availablities&ensp;</a>

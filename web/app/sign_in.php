@@ -29,7 +29,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                 <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
             </div>
             <br>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Sign In</button>
         </form>
     </main>
     <footer>
