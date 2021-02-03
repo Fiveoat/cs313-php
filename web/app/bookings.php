@@ -30,6 +30,7 @@ require $root . '/app/connection.php';
             $duration = $row['duration'];
             $country_code = $row['country_code'];
             $name = $row['name'];
+            $points = $row['points'];
         }
         ?>
         <h5 class="display-3">&ensp;Check Out These Bookings!</h5>
@@ -37,7 +38,7 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <h5>Points</h5>
-                    <?php echo $renter; ?>
+                    <?php echo $points; ?>
                 </div>
                 <div method="GET" action="shopping_cart.php" class="col-md">
                     <h5>Last</h5>
