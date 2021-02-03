@@ -33,9 +33,12 @@ require $root . '/app/connection.php';
             $points = $row['points'];
         }
         ?>
-        <h5 class="display-5">&ensp;Available Homes!</h5>
+
         <div class="container">
             <div class="row">
+                <div class="col-md">
+                    <h5 class="display-5">&ensp;Available Homes!</h5>
+                </div>
                 <div class="col-md">
                     <h5>Cost</h5>
                     <?php echo $points . " Points Per Day"; ?>
@@ -57,7 +60,7 @@ require $root . '/app/connection.php';
         <br><br><br><br>
         <div class="container">
             <div class="row">
-                
+
             </div>
         </div>
     </main>
