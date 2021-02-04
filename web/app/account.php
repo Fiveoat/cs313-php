@@ -3,11 +3,6 @@ session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
 require $root . '/app/controller.php';
-if (isset($_SESSION['user_id'])) {
-    $user_id = $_SESSION['user_id'];
-} else {
-    $user_id = 1;
-}
 
 ?>
 <!DOCTYPE html>
@@ -28,6 +23,11 @@ if (isset($_SESSION['user_id'])) {
     </nav>
     <main>
         <?php
+        if (isset($_SESSION['user_id'])) {
+            $user_id = $_SESSION['user_id'];
+        } else {
+            $user_id = 1;
+        }
         $db = getConnection();
         foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE u.user_id = {$user_id};") as $row) {
             $first_name = $row['first_name'];
@@ -41,14 +41,19 @@ if (isset($_SESSION['user_id'])) {
             $available = $row['booked'];
         }
         ?>
-        <!-- <?php
+        <?php
+         if (isset($_SESSION['user_id'])) {
+            $user_id = $_SESSION['user_id'];
+        } else {
+            $user_id = 1;
+        }
         $db = getConnection();
         foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row) {
             $home_id = $row['home_id'];
             $city_name = $row['name'];
             $country_code = $row['country_code'];
         }
-        ?> -->
+        ?> 
         <br>
         <h5 class="display-5">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
         <div class="container">
