@@ -23,9 +23,10 @@ require $root . '/app/controller.php';
     </nav>
     <main>
         <?php
-        if (!isset($_SESSION['user_id'])) {
-            $user_id = $_SESSION['user_id'];
-        }
+        // if (!isset($_SESSION['user_id'])) {
+        //     $user_id = $_SESSION['user_id'];
+        // }
+        $user_id = 1;
         $db = getConnection();
         foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE u.user_id = {$user_id};") as $row) {
             $first_name = $row['first_name'];
