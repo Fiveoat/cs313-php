@@ -53,9 +53,9 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                         <div>
                             <label for="last-name" name="select" class="form-label">Home Size</label>
                             <select class="form-select" aria-label="Default select example">
-                                <option value="1">Large > 2000 sq ft.</option>
-                                <option value="2">Medium < 2000 sq ft.</option>
-                                <option value="3">Small < 1000 sq ft.</option>
+                                <option value="300">Large > 2000 sq ft.</option>
+                                <option value="200">Medium < 2000 sq ft.</option>
+                                <option value="100">Small < 1000 sq ft.</option>
                             </select>
                         </div>
                         <br><br>

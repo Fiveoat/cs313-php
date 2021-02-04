@@ -49,7 +49,8 @@ require $root . '/app/connection.php';
                             header("location: account.php");
                         }
                         echo "TACO";
-                        create_user($_POST['first_name'], $_POST['last_name'], $_POST['email'], $_POST['password'], $_POST['city'], $_POST['country_code'], $_POST['home_size']);
+                        $home_size = (int) $_POST['select'];
+                        create_user($_POST['first_name'], $_POST['last_name'], $_POST['email'], $_POST['password'], $_POST['city'], $_POST['country_code'], $home_size);
                     } else {
                         echo $_POST['email'];
                         echo $_POST['password'];
