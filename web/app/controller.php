@@ -3,7 +3,7 @@ session_start();
 require $root . '/app/connection.php';
 
 echo $_POST['password'];
-echo $POST['email'];
+echo $_POST['email'];
 function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
 {
     $db = getConnection();
