@@ -32,12 +32,19 @@ require $root . '/app/connection.php';
                         echo "CITY";
                         function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
                         {
+                            echo "1";
                             $db = getConnection();
+                            echo "2";
                             $hashed_password = hash('sha256', $password);
+                            echo "3";
                             $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?) RETURNING user_id;");
+                            echo "4";
                             $user_id = $statement->execute(array($first_name, $last_name, $email, $hashed_password));
+                            echo $user_id;
                             $statement = $db->prepare("INSERT INTO users (name, country_code, home_size) VALUES (?, ?, ?)");
+                            echo "5";
                             $statement->execute(array($city, $country_code, $home_size));
+                            echo "6";
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
                         }
