@@ -26,7 +26,8 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <?php
-                    if ($_POST['city']) {
+                    print_r($_POST);
+                    if (isset($_POST['city'])) {
                         function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
                         {
                             $db = getConnection();
