@@ -22,9 +22,8 @@ $_SESSION['user_id'] = 1;
     </nav>
     <main>
         <?php
-        $user_id = 1;
         $db = getConnection();
-        foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE u.user_id = {$user_id};") as $row) {
+        foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE u.user_id = {$_SESSION['user_id']};") as $row) {
             $first_name = $row['first_name'];
             $email = $row['email'];
             $last_name = $row['last_name'];
@@ -54,7 +53,6 @@ $_SESSION['user_id'] = 1;
                 <div class="col-md">
                     <h5>Your Points</h5>
                     <?php echo $points . " Points"; 
-                    echo $_SESSION['user_id'];
                     ?>
                 </div>
                 <div class="col-md">
