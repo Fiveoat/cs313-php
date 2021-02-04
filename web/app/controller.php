@@ -34,15 +34,15 @@ require $root . '/app/connection.php';
 
                             $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password, points) VALUES (?, ?, ?, ?, ?) RETURNING user_id;");
                             $statement->execute(array($first_name, $last_name, $email, $hashed_password, 0));
-                            $user_id = $db->lastInsertId();
+                            $user_id = (int) $db->lastInsertId();
 
                             $statement = $db->prepare("INSERT INTO locations (name, country_code) VALUES (?, ?) RETURNING location_id");
                             $statement->execute(array($city, $country_code));
-                            $location_id = $db->lastInsertId();
+                            $location_id = (int) $db->lastInsertId();
 
                             $statement = $db->prepare("INSERT INTO homes (user_id, location_id, value) VALUES (?, ?, ?) RETURNING home_id");
                             $statement->execute(array($user_id, $location_id, $home_size));
-                            $home_id = $db->lastInsertId();
+                            $home_id = (int) $db->lastInsertId();
 
                             echo $user_id;
                             echo $home_id;
