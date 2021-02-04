@@ -3,7 +3,7 @@ try{
     session_start();
     $root = $_SERVER['DOCUMENT_ROOT'];
     require $root . '/app/connection.php';
-    require $root . '/app/controller.php';
+    // require $root . '/app/controller.php';
     $user_id = 1;
 } catch (Exception $e){
     echo $e->getMessage;
