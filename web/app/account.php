@@ -3,7 +3,7 @@ session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
 require $root . '/app/controller.php';
-if (isset($_SESSION['user_id'])){
+if (isset($_SESSION['user_id'])) {
     foreach ($_SESSION['user_id'] as $x) {
         $user_id = $x;
     }
@@ -42,13 +42,14 @@ if (isset($_SESSION['user_id'])){
             $home_country_code = $row['country_code'];
             $available = $row['booked'];
         }
-        
-        // $db = getConnection();
-        // foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row){
-        //     $home_id = $row['home_id'];
-        //     $city_name = $row['name'];
-        //     $country_code = $row['country_code'];
-        // }
+        ?>
+        <?php
+        $db = getConnection();
+        foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row) {
+            $home_id = $row['home_id'];
+            $city_name = $row['name'];
+            $country_code = $row['country_code'];
+        }
         ?>
         <br>
         <h5 class="display-5">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
