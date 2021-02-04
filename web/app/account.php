@@ -108,7 +108,7 @@ require $root . '/app/connection.php';
                                 <option value="14">1400</option>
                                 <option value="15">1500</option>
                             </select>
-                            <div id="emailHelp" class="form-text">&ensp;Honor system.</div>
+                            <div id="emailHelp" class="form-text">&ensp;Honor system. When you rent your house out, you are allowed to add the Point Value of your home times the number of nights.</div>
                         </div>
                         <button type="submit" class="btn btn-primary">Add Points</button>
                     </form>
