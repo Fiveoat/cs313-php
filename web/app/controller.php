@@ -27,7 +27,6 @@ require $root . '/app/connection.php';
                 <div class="col-md">
                     <?php
                     echo $_POST['city'];
-                    print_r($_POST);
                     if (isset($_POST['city'])) {
                         echo "CITY";
                         function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
@@ -37,7 +36,7 @@ require $root . '/app/connection.php';
                             echo "2";
                             $hashed_password = hash('sha256', $password);
                             echo "3";
-                            $query = pg_query("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$hashed_password}'); RETURNING user_id"); 
+                            $query = pg_query("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$hashed_password}') RETURNING user_id;"); 
                             echo $query;
                             $row = pg_fetch_row($query); 
                             echo $row;
