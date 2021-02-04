@@ -28,7 +28,6 @@ require $root . '/app/connection.php';
         }
         ?>
     </main>
-    <?php 
     // function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
     // {
     //     $db = getConnection();
@@ -82,7 +81,6 @@ require $root . '/app/connection.php';
     //         }
     //     }
     // }
-    ?>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
     </footer>
