@@ -2,10 +2,15 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
-// require $root . '/app/controller.php';
-// foreach ($_SESSION['user_id'] as $x) {
-    // $user_id = $x;
-// }
+require $root . '/app/controller.php';
+if (isset($_SESSION['user_id'])){
+    foreach ($_SESSION['user_id'] as $x) {
+        $user_id = $x;
+    }
+} else {
+    $user_id = 1;
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -26,7 +31,6 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        $user_id = 1;
         foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE u.user_id = {$user_id};") as $row) {
             $first_name = $row['first_name'];
             $email = $row['email'];
