@@ -40,7 +40,7 @@ require $root . '/app/connection.php';
                             $statement->execute(array($city, $country_code));
                             $location_id = $db->lastInsertId();
 
-                            $statement = $db->prepare("INSERT INTO homes (user_id, location_id, value) VALUES (?, ?, ?)");
+                            $statement = $db->prepare("INSERT INTO homes (user_id, location_id, value) VALUES (?, ?, ?) RETURNING location_id");
                             $statement->execute(array($user_id, $location_id, $home_size));
                             $home_id = $db->lastInsertId();
 
