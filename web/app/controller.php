@@ -41,7 +41,7 @@ require $root . '/app/connection.php';
                             echo "4";
                             $user_id = $statement->execute(array($first_name, $last_name, $email, $hashed_password));
                             echo $user_id;
-                            $statement = $db->prepare("INSERT INTO users (name, country_code, home_size) VALUES (?, ?, ?)");
+                            $statement = $db->prepare("INSERT INTO homes (name, country_code, home_size) VALUES (?, ?, ?)");
                             echo "5";
                             $statement->execute(array($city, $country_code, $home_size));
                             echo "6";
