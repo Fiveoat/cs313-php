@@ -89,9 +89,9 @@ require $root . '/app/connection.php';
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <form>
+                    <form action='../app/add_points.php' method="POST">>
                         <div class="mb-3">
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" name="select" aria-label="Default select example">
                                 <option value="1">100</option>
                                 <option value="2">200</option>
                                 <option value="3">300</option>

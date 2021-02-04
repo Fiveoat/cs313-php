@@ -19,6 +19,11 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
+        <?php
+        if (isset($_SESSION['user_id'])) {
+            header("location: account.php");
+        }
+        ?>
         <h5 class="display-6">&ensp;Good to see you again.</h5>
         <br>
         <div class="container">
