@@ -26,7 +26,9 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                 <div class="col-md">
                     <form method="POST" action="../app/controller.php">
                         <div class="mb-3">
-                        <?php echo $_POST['email'];?>
+                        <?php echo $_POST['email'];
+                        echo $_POST['password'];
+                        ?>
                             <label for="email" class="form-label">Email address</label>
                             <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
                         </div>
