@@ -43,6 +43,10 @@ require $root . '/app/connection.php';
 
                             $statement = $db->prepare("INSERT INTO homes (user_id, location_id, value) VALUES (?, ?, ?)");
                             $statement->execute(array($user_id, $location_id, $home_size));
+                            $home_id = $db->lastInsertId();
+
+                            $statement = $db->prepare("INSERT INTO bookings(renter, owner, home_id, booked, duration) VALUES (?, ?, ?, ?, ?)");
+                            $statement->execute(array($user_id, $user_id, $home_id, FALSE, 0));
 
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
