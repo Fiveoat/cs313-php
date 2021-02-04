@@ -3,13 +3,14 @@ session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
 require $root . '/app/controller.php';
-if (isset($_SESSION['user_id'])) {
-    foreach ($_SESSION['user_id'] as $x) {
-        $user_id = 1;
-    }
-} else {
-    $user_id = 1;
-}
+$user_id = 1;
+// if (isset($_SESSION['user_id'])) {
+//     foreach ($_SESSION['user_id'] as $x) {
+//         $user_id = 1;
+//     }
+// } else {
+//     $user_id = 1;
+// }
 
 ?>
 <!DOCTYPE html>
