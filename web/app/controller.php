@@ -45,7 +45,7 @@ require $root . '/app/connection.php';
                             $statement->execute(array($user_id, $location_id, $home_size));
 
                             $statement = $db->prepare("INSERT INTO bookings(renter, owner, home_id, booked, duration) VALUES (?, ?, ?, ?)");
-                            $statement->execute(array(1, 1, 0, FALSE, 0));
+                            $statement->execute(array(1, 1, 1, FALSE, 0));
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
                         }
