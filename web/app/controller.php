@@ -27,7 +27,7 @@ require $root . '/app/connection.php';
                 <div class="col-md">
                     <?php
                     echo $_POST['city'];
-                    print_r($_POST);
+                    
                     if (isset($_POST['city'])) {
                         echo "CITY";
                         function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
@@ -41,7 +41,7 @@ require $root . '/app/connection.php';
                             // $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?) RETURNING user_id;");
                             echo "4";
                             // $user_id = $statement->execute(array($first_name, $last_name, $email, $hashed_password));
-                            echo $user_id;
+                            print_r($user_id);
                             $statement = $db->prepare("INSERT INTO locations (name, country_code) VALUES (?, ?) RETURNING location_id");
                             echo "10";
                             $location_id = $statement->execute(array($city, $country_code));
