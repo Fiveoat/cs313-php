@@ -27,11 +27,11 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                     <form method="POST" action="../app/controller.php">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
                         </div>
                         <div>
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
+                            <input type="password" name="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
                         </div>
                         <br>
                         <button type="submit" class="btn btn-primary">Sign In</button>
