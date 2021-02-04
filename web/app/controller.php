@@ -31,7 +31,8 @@ require $root . '/app/connection.php';
                         {
                             $db = getConnection();
                             $hashed_password = hash('sha256', $password);
-
+                            $booked = false;
+                            $duration = 0;
                             $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password, points) VALUES (?, ?, ?, ?, ?) RETURNING user_id;");
                             $statement->execute(array($first_name, $last_name, $email, $hashed_password, 0));
                             $user_id = (int) $db->lastInsertId();
@@ -45,7 +46,7 @@ require $root . '/app/connection.php';
                             $home_id = (int) $db->lastInsertId();
                                 
                             $statement = $db->prepare("INSERT INTO bookings (renter, owner, home_id, booked, duration) VALUES (?, ?, ?, ?, ?) RETURNING booking_id");
-                            $statement->execute(array($user_id, $user_id, $home_id, 0, 0));
+                            $statement->execute(array($user_id, $user_id, $home_id, $booked, $duration));
 
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
