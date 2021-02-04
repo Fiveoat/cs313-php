@@ -4,9 +4,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
 require $root . '/app/controller.php';
 if (isset($_SESSION['user_id'])) {
-    foreach ($_SESSION['user_id'] as $x) {
-        $user_id = $x;
-    }
+    $user_id = $_SESSION['user_id'];
 } else {
     $user_id = 1;
 }
