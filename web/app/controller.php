@@ -52,7 +52,7 @@ require $root . '/app/connection.php';
                             echo gettype($location_id);
                                 
                             $statement = $db->prepare("INSERT INTO bookings(renter, owner, home_id, booked, duration) VALUES (?, ?, ?, ?, ?)");
-                            $statement->execute(array($user_id, $user_id, $home_id, FALSE, 0));
+                            $statement->execute(array($user_id, $user_id, $home_id, false, 0));
 
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
