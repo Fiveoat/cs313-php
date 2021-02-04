@@ -47,6 +47,9 @@ require $root . '/app/connection.php';
                             echo $user_id;
                             echo $home_id;
                             echo $location_id;
+                            echo gettype($user_id);
+                            echo gettype($home_id);
+                            echo gettype($location_id);
                                 
                             $statement = $db->prepare("INSERT INTO bookings(renter, owner, home_id, booked, duration) VALUES (?, ?, ?, ?, ?)");
                             $statement->execute(array($user_id, $user_id, $home_id, FALSE, 0));
