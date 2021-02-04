@@ -31,6 +31,7 @@ require $root . '/app/connection.php';
                     function auth($email, $password)
                     {
                         $hashed_password = hash('sha256', $password);
+                        echo $hashed_password;
                         $db = getConnection();
                         foreach ($db->query("SELECT * FROM users WHERE email = '{$email}'") as $row) {
                             try {
@@ -48,6 +49,7 @@ require $root . '/app/connection.php';
                             }
                         }
                     }
+                    echo auth($_POST['email'], $_POST['password']);
                     ?>
                 </div>
             </div>
