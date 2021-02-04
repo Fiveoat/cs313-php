@@ -38,10 +38,10 @@ require $root . '/app/connection.php';
                                 if ($hashed_password == $row['hashed_password']) {
                                     $_SESSION['user_id'] = $row['user_id'];
                                     header("location: account.php");
-                                    return True;
+                                    echo "WORKED";
                                 } else {
                                     header("location: welcome.php");
-                                    return False;
+                                    echo "FAILED";
                                 }
                             } catch (Exception $e) {
                                 echo 'Message: ' . $e->getMessage();
