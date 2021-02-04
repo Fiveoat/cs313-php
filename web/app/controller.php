@@ -42,7 +42,6 @@ require $root . '/app/connection.php';
                             echo "UID". $user_id;
                             echo "4";
                             echo "5";
-                            $user_id = $db->query("SELECT MAX(user_id) FROM users;");
                             echo $user_id;
                             $statement = $db->prepare("INSERT INTO locations (name, country_code) VALUES (?, ?) RETURNING location_id");
                             echo "10";
