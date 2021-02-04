@@ -26,7 +26,10 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <?php
+                    echo $_POST['city'];
+                    print_r($_POST);
                     if (isset($_POST['city'])) {
+                        echo "CITY";
                         function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
                         {
                             echo "1";
@@ -34,17 +37,11 @@ require $root . '/app/connection.php';
                             echo "2";
                             $hashed_password = hash('sha256', $password);
                             echo "3";
-                            $new_id= pg_query($db,"INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}','{$last_name}','{$email}','{$hashed_password}') RETURNING user_id;");
-                            echo pg_fetch_array($new_id);
-                            $user_id = 1;
-                            print_r($user_id);
-                            // $user_id = $db->query("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}','{$last_name}','{$email}','{$hashed_password}') RETURNING user_id;");
-                            echo "A\n";
-                            echo $user_id;
-                            echo "^user_id";
-                            // $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?) RETURNING user_id;");
+                            $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?);");
                             echo "4";
-                            // $user_id = $statement->execute(array($first_name, $last_name, $email, $hashed_password));
+                            $statement->execute(array($first_name, $last_name, $email, $hashed_password));
+                            $user_id = $db->query("SELECT MAX(user_id) FROM users");
+                            echo $user_id;
                             $statement = $db->prepare("INSERT INTO locations (name, country_code) VALUES (?, ?) RETURNING location_id");
                             echo "10";
                             $location_id = $statement->execute(array($city, $country_code));
@@ -53,14 +50,17 @@ require $root . '/app/connection.php';
                             $statement = $db->prepare("INSERT INTO homes (user_id, location_id, value) VALUES (?, ?, ?)");
                             echo "5";
                             echo $user_id;
+
                             echo $home_size;
                             $statement->execute(array($user_id, $location_id, $home_size));
                             echo "6";
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
                         }
-                        echo "start";
+                        echo "TACO";
                         $home_size = (int) $_POST['select'];
+                        echo gettype($home_size);
+                        echo $home_size;
                         create_user($_POST['first_name'], $_POST['last_name'], $_POST['email'], $_POST['password'], $_POST['city'], $_POST['country_code'], $home_size);
                     } else {
                         echo $_POST['email'];
