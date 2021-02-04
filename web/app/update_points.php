@@ -7,4 +7,5 @@ $db = getConnection();
 $points = (int)$_POST['select'];
 $statement= $db->prepare("UPDATE users SET points =?");
 $statement->execute(array($points));
+header("location: account.php");
 ?>

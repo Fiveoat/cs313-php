@@ -92,21 +92,21 @@ require $root . '/app/connection.php';
                     <form action='../app/update_points.php' method="POST">
                         <div class="mb-3">
                             <select class="form-select" name="select" aria-label="Default select example">
-                                <option value="1">100</option>
-                                <option value="2">200</option>
-                                <option value="3">300</option>
-                                <option value="4">400</option>
-                                <option value="5">500</option>
-                                <option value="6">600</option>
-                                <option value="7">700</option>
-                                <option value="8">800</option>
-                                <option value="9">900</option>
-                                <option value="10">1000</option>
-                                <option value="11">1100</option>
-                                <option value="12">1200</option>
-                                <option value="13">1300</option>
-                                <option value="14">1400</option>
-                                <option value="15">1500</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="300">300</option>
+                                <option value="400">400</option>
+                                <option value="500">500</option>
+                                <option value="600">600</option>
+                                <option value="700">700</option>
+                                <option value="800">800</option>
+                                <option value="900">900</option>
+                                <option value="1000">1000</option>
+                                <option value="1100">1100</option>
+                                <option value="1200">1200</option>
+                                <option value="1300">1300</option>
+                                <option value="1400">1400</option>
+                                <option value="1500">1500</option>
                             </select>
                             <div id="emailHelp" class="form-text">&ensp;Honor system. When you rent your house out, you are allowed to add the Point Value of your home times the number of nights.</div>
                         </div>
