@@ -22,8 +22,10 @@ require $root . '/app/connection.php';
     <main>
         <h5 class="display-6">&ensp;Good to see you again.</h5>
         <?php
-        echo $_POST['password'];
-        echo $_POST['email'];
+        if(isset($_POST)){
+            echo $_POST['password'];
+            echo $_POST['email'];
+        }
         ?>
     </main>
     <?php 
