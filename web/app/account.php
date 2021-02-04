@@ -21,18 +21,22 @@ require $root . '/app/connection.php';
     </nav>
     <main>
         <?php
-        $user_id = (int) $_SESSION['user_id'];
-        $db = getConnection();
-        foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id WHERE u.user_id = {$user_id};") as $row) {
-            $first_name = $row['first_name'];
-            $email = $row['email'];
-            $last_name = $row['last_name'];
-            $hashed_password =  $row['hashed_password'];
-            $points = $row['points'];
-            $home_id = $row['home_id'];
-            $home_city_name = $row['name'];
-            $home_country_code = $row['country_code'];
-            $home_worth = $row['value'];
+        if (isset($_SESSION['user_id'])) {
+            $user_id = (int) $_SESSION['user_id'];
+            $db = getConnection();
+            foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id WHERE u.user_id = {$user_id};") as $row) {
+                $first_name = $row['first_name'];
+                $email = $row['email'];
+                $last_name = $row['last_name'];
+                $hashed_password =  $row['hashed_password'];
+                $points = $row['points'];
+                $home_id = $row['home_id'];
+                $home_city_name = $row['name'];
+                $home_country_code = $row['country_code'];
+                $home_worth = $row['value'];
+            }
+        } else {
+            header("location: sign_in.php");
         }
         ?>
         <br>
@@ -41,7 +45,7 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <h5>Your Points</h5>
-                    <?php echo $points ." Points"; 
+                    <?php echo $points . " Points";
                     ?>
                 </div>
                 <div class="col-md">
