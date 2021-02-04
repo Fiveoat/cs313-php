@@ -115,7 +115,7 @@ require $root . '/app/connection.php';
                 </div>
             </div>
         </div>
-        <!-- <h5 class="display-3">&ensp;Your Bookings!</h5>
+        <h5 class="display-3">&ensp;Your Bookings!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -128,7 +128,7 @@ require $root . '/app/connection.php';
                     <h5>Home</h5>
                 </div>
             </div>
-        </div> -->
+        </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
