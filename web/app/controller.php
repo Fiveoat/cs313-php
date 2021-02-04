@@ -1,7 +1,6 @@
 <?php
 session_start();
 require $root . '/app/connection.php';
-
 ?>
 
 <!DOCTYPE html>

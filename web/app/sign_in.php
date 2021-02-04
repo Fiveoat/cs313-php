@@ -24,7 +24,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <form action="../app/controller.php">
+                    <form method="POST" action="../app/controller.php">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
