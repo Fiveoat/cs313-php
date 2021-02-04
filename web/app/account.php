@@ -2,7 +2,6 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
-require $root . '/app/controller.php';
 
 ?>
 <!DOCTYPE html>
