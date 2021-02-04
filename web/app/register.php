@@ -23,35 +23,35 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <form>
+                    <form method="POST" action="../app/controller.php">
                         <div class="mb-3">
                             <label for="first-name" class="form-label">First Name</label>
-                            <input type="first-name" class="form-control" id="first-name">
+                            <input type="first-name" name="first_name" class="form-control" id="first-name">
                         </div>
                         <div class="mb-3">
                             <label for="last-name" class="form-label">Last Name</label>
-                            <input type="last-name" class="form-control" id="last-name">
+                            <input type="last-name" name="last_name" class="form-control" id="last-name">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <label for="inputPassword5" class="form-label">Password</label>
-                        <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                        <input type="password" id="inputPassword5" name="password" class="form-control" aria-describedby="passwordHelpBlock">
                         <div id="passwordHelpBlock" class="form-text">
                             <div id="emailHelp" class="form-text">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</div>
                         </div>
                         <div class="mb-3">
                             <label for="city" class="form-label">City</label>
-                            <input type="city" class="form-control" id="city">
+                            <input type="city" name="city" class="form-control" id="city">
                         </div>
                         <div class="mb-3">
                             <label for="country-code" class="form-label">Country Code (ex. US / AU / UK etc.)</label>
-                            <input type="country-code" class="form-control" id="country-code">
+                            <input type="country-code" name="country_code" class="form-control" id="country-code">
                         </div>
                         <div>
-                            <label for="last-name" class="form-label">Home Size</label>
+                            <label for="last-name" name="select" class="form-label">Home Size</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option value="1">Large > 2000 sq ft.</option>
                                 <option value="2">Medium < 2000 sq ft.</option>

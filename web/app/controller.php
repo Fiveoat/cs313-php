@@ -26,30 +26,31 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <?php
-                    echo $_POST['email'];
-                    echo $_POST['password'];
-                    function auth($email, $password)
-                    {
-                        $hashed_password = hash('sha256', $password);
-                        echo $hashed_password;
-                        $db = getConnection();
-                        foreach ($db->query("SELECT * FROM users WHERE email = '{$email}'") as $row) {
-                            echo $row;
-                            try {
-                                $hashed_password = 'e23e8b55e902d8ecbca3542ea41bca0b';
-                                if ($hashed_password == $row['hashed_password']) {
-                                    $_SESSION['user_id'] = $row['user_id'];
-                                    header("location: account.php");
-                                } else {
-                                    header("location: 404.php");
-                                }
-                            } catch (Exception $e) {
-                                echo 'Message: ' . $e->getMessage();
-                                header("location: 404.php");
-                            }
-                        }
-                    }
-                    echo auth($_POST['email'], $_POST['password']);
+                    print_r($_POST);
+                    // echo $_POST['email'];
+                    // echo $_POST['password'];
+                    // function auth($email, $password)
+                    // {
+                    //     $hashed_password = hash('sha256', $password);
+                    //     echo $hashed_password;
+                    //     $db = getConnection();
+                    //     foreach ($db->query("SELECT * FROM users WHERE email = '{$email}'") as $row) {
+                    //         echo $row;
+                    //         try {
+                    //             $hashed_password = 'e23e8b55e902d8ecbca3542ea41bca0b';
+                    //             if ($hashed_password == $row['hashed_password']) {
+                    //                 $_SESSION['user_id'] = $row['user_id'];
+                    //                 header("location: account.php");
+                    //             } else {
+                    //                 header("location: 404.php");
+                    //             }
+                    //         } catch (Exception $e) {
+                    //             echo 'Message: ' . $e->getMessage();
+                    //             header("location: 404.php");
+                    //         }
+                    //     }
+                    // }
+                    // echo auth($_POST['email'], $_POST['password']);
                     ?>
                 </div>
             </div>
