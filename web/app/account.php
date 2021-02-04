@@ -2,7 +2,6 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
-$_SESSION['user_id'] = 1;
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,17 +34,7 @@ $_SESSION['user_id'] = 1;
             $available = $row['booked'];
         }
         ?>
-        //  if (isset($_SESSION['user_id'])) {
-        //     $user_id = $_SESSION['user_id'];
-        // } else {
-        //     $user_id = 1;
-        // }
-        // $db = getConnection();
-        // foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row) {
-        //     $home_id = $row['home_id'];
-        //     $city_name = $row['name'];
-        //     $country_code = $row['country_code'];
-        // }
+
         <br>
         <h5 class="display-5">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
         <div class="container">
