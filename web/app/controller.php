@@ -32,7 +32,7 @@ require $root . '/app/connection.php';
                         {
                             $db = getConnection();
                             $hashed_password = hash('sha256', $password);
-                            $statement = $db->prepare("INSERT INTO users (first_name, last_name, hashed_password) VALUES (?, ?, ?, ?) RETURNING user_id;");
+                            $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?) RETURNING user_id;");
                             $user_id = $statement->execute(array($first_name, $last_name, $email, $hashed_password));
                             $statement = $db->prepare("INSERT INTO users (name, country_code, home_size) VALUES (?, ?, ?)");
                             $statement->execute(array($city, $country_code, $home_size));
