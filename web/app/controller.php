@@ -24,21 +24,10 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <form method="POST" action="../app/controller.php">
-                        <div class="mb-3">
-                        <?php echo $_POST['email'];
+                <?php echo $_POST['email'];
                         echo $_POST['password'];
+                        
                         ?>
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
-                        </div>
-                        <div>
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary">Sign In</button>
-                    </form>
                 </div>
             </div>
         </div>
