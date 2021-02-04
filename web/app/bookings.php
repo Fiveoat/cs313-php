@@ -22,15 +22,11 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * FROM bookings b INNER JOIN homes h ON b.home_id = h.home_id INNER JOIN users u ON u.user_id = b.owner INNER JOIN locations l ON l.location_id = h.location_id;') as $row) {
-            $renter = $row['renter'];
-            $owner = $row['owner'];
+        foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id;') as $row) {
             $home_id = $row['home_id'];
-            $booked = $row['booked'];
-            $duration = $row['duration'];
             $country_code = $row['country_code'];
-            $name = $row['name'];
-            $points = $row['points'];
+            $city = $row['name'];
+            $home_points = $row['value'];
         }
         ?>
         <h5 class="display-5">&ensp;Available Homes!</h5>
@@ -38,11 +34,11 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <h5>Cost</h5>
-                    <?php echo $points . " Points Per Day"; ?>
+                    <?php echo $home_points . " Points Per Day"; ?>
                 </div>
                 <div class="col-md">
                     <h5>City</h5>
-                    <?php echo $name; ?>
+                    <?php echo $city; ?>
                 </div>
                 <div class="col-md">
                     <h5>Country</h5>
