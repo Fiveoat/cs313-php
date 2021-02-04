@@ -24,14 +24,14 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <form>
+                    <form action="controller.php">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
                         </div>
                         <div>
-                            <label for="inputPassword5" class="form-label">Password</label>
-                            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
                         </div>
                         <br>
                         <button type="submit" class="btn btn-primary">Sign In</button>
