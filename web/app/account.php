@@ -2,7 +2,7 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
-
+$_SESSION['user_id'] = 1;
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,9 +22,6 @@ require $root . '/app/connection.php';
     </nav>
     <main>
         <?php
-        // if (!isset($_SESSION['user_id'])) {
-        //     $user_id = $_SESSION['user_id'];
-        // }
         $user_id = 1;
         $db = getConnection();
         foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE u.user_id = {$user_id};") as $row) {
@@ -56,7 +53,9 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <h5>Your Points</h5>
-                    <?php echo $points . " Points"; ?>
+                    <?php echo $points . " Points"; 
+                    echo $_SESSION['user_id'];
+                    ?>
                 </div>
                 <div class="col-md">
                     <h5>Email</h5>
