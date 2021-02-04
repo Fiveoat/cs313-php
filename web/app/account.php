@@ -39,12 +39,12 @@ require $root . '/app/connection.php';
             $available = $row['booked'];
         }
         
-        $db = getConnection();
-        foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row){
-            $home_id = $row['home_id'];
-            $city_name = $row['name'];
-            $country_code = $row['country_code'];
-        }
+        // $db = getConnection();
+        // foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row){
+        //     $home_id = $row['home_id'];
+        //     $city_name = $row['name'];
+        //     $country_code = $row['country_code'];
+        // }
         ?>
         <br>
         <h5 class="display-5">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
