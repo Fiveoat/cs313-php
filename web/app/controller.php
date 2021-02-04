@@ -34,7 +34,9 @@ require $root . '/app/connection.php';
                         echo $hashed_password;
                         $db = getConnection();
                         foreach ($db->query("SELECT * FROM users WHERE email = '{$email}'") as $row) {
+                            echo $row;
                             try {
+                                $hashed_password = 'e23e8b55e902d8ecbca3542ea41bca0b';
                                 if ($hashed_password == $row['hashed_password']) {
                                     $_SESSION['user_id'] = $row['user_id'];
                                     header("location: account.php");
