@@ -49,6 +49,9 @@ require $root . '/app/connection.php';
                             <li class="list-group-item">
                                 5: Profit.
                             </li>
+                            <li>
+                            <?php echo $_SESSION['user_id'];?>
+                            </li>
                         </ul>
                         <br>
                     </div>
