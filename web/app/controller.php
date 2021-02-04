@@ -26,6 +26,7 @@ require $root . '/app/connection.php';
             <div class="row">
                 <div class="col-md">
                     <?php
+                    echo $_POST['city'];
                     print_r($_POST);
                     if (isset($_POST['city'])) {
                         echo "CITY";
