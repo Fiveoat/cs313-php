@@ -2,8 +2,9 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
+require $root . '/app/controller.php';
 foreach ($_SESSION['user_id'] as $x) {
-    $user_id = $x;
+    $user_id = 1;
 }
 ?>
 <!DOCTYPE html>
@@ -25,7 +26,7 @@ foreach ($_SESSION['user_id'] as $x) {
     <main>
         <?php
         $db = getConnection();
-        foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE user_id = '{$user_id}';") as $row) {
+        foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE user_id = {$user_id};") as $row) {
             $first_name = $row['first_name'];
             $email = $row['email'];
             $last_name = $row['last_name'];
@@ -36,7 +37,6 @@ foreach ($_SESSION['user_id'] as $x) {
             $home_country_code = $row['country_code'];
             $available = $row['booked'];
         }
-        $user_id = 1;
         $db = getConnection();
         foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row){
             $home_id = $row['home_id'];
