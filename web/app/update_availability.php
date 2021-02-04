@@ -7,10 +7,12 @@ $db = getConnection();
 print_r($_GET);
 if ($_GET['set'] == 1){
     $set = 1;
+    echo 1;
 } else {
     $set = 0;
+    echo 0;
 }
-$statement= $db->prepare("UPDATE bookings SET booked =? WHERE user_id =?");
+$statement= $db->prepare("UPDATE bookings SET booked =? WHERE owner =?");
 $statement->execute(array($set, $user_id));
 header("location: account.php");
 ?>
