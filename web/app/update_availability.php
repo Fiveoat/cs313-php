@@ -5,7 +5,7 @@ require $root . '/app/connection.php';
 $user_id = (int) $_SESSION['user_id'];
 $db = getConnection();
 print_r($_GET);
-if ($_GET['set'] == "1"){
+if ($_GET['set'] == 1){
     $set = 1;
 } else {
     $set = 0;
