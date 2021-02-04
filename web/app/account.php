@@ -3,9 +3,14 @@ session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
 require $root . '/app/controller.php';
-foreach ($_SESSION['user_id'] as $x) {
+if (isset($_SESSION['user_id'])) {
+    foreach ($_SESSION['user_id'] as $x) {
+        $user_id = 1;
+    }
+} else {
     $user_id = 1;
 }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,7 +43,7 @@ foreach ($_SESSION['user_id'] as $x) {
             $available = $row['booked'];
         }
         $db = getConnection();
-        foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row){
+        foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row) {
             $home_id = $row['home_id'];
             $city_name = $row['name'];
             $country_code = $row['country_code'];
