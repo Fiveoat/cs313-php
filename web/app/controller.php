@@ -21,12 +21,11 @@ require $root . '/app/connection.php';
     </nav>
     <main>
         <h5 class="display-6">&ensp;Good to see you again.</h5>
-        <?php
-        if(isset($_POST)){
-            echo $_POST['password'];
-            echo $_POST['email'];
-        }
-        ?>
+
+        // if(isset($_POST)){
+        //     echo $_POST['password'];
+        //     echo $_POST['email'];
+        // }
     </main>
     // function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
     // {
