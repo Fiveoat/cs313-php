@@ -28,6 +28,7 @@ require $root . '/app/connection.php';
                     <?php
                     print_r($_POST);
                     if (isset($_POST['city'])) {
+                        echo "CITY";
                         function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
                         {
                             $db = getConnection();
@@ -39,6 +40,7 @@ require $root . '/app/connection.php';
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
                         }
+                        echo "TACO";
                         create_user($_POST['first_name'], $_POST['last_name'], $_POST['email'], $_POST['password'], $_POST['city'], $_POST['country_code'], $_POST['home_size']);
                     } else {
                         echo $_POST['email'];
