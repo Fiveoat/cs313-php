@@ -20,13 +20,12 @@ require $root . '/app/connection.php';
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
-        <h5 class="display-6">&ensp;Good to see you again.</h5>
+        <h5 class="display-6">&ensp;Something went wrong.</h5>
         <br>
         <div class="container">
             <div class="row">
                 <div class="col-md">
                     <?php
-                    echo $_POST['city'];
                     if (isset($_POST['city'])) {
                         function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
                         {
