@@ -37,7 +37,7 @@ require $root . '/app/connection.php';
                             $hashed_password = hash('sha256', $password);
                             echo "3";
                             try {
-                            $query = pg_query("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$hashed_password}') RETURNING user_id;"); 
+                            $query = pg_query($db,"INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$hashed_password}') RETURNING user_id;"); 
                             } catch (Exception $e){
                                 echo $e;
                             }
