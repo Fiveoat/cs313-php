@@ -44,6 +44,10 @@ require $root . '/app/connection.php';
                             $statement->execute(array($user_id, $location_id, $home_size));
                             $home_id = $db->lastInsertId();
 
+                            echo $user_id;
+                            echo $home_id;
+                            echo $location_id;
+                                
                             $statement = $db->prepare("INSERT INTO bookings(renter, owner, home_id, booked, duration) VALUES (?, ?, ?, ?, ?)");
                             $statement->execute(array($user_id, $user_id, $home_id, FALSE, 0));
 
