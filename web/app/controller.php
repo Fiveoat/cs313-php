@@ -40,14 +40,12 @@ require $root . '/app/connection.php';
                                 if ($hashed_password == $row['hashed_password']) {
                                     $_SESSION['user_id'] = $row['user_id'];
                                     header("location: account.php");
-                                    echo "WORKED";
                                 } else {
-                                    header("location: welcome.php");
-                                    echo "FAILED";
+                                    header("location: 404.php");
                                 }
                             } catch (Exception $e) {
                                 echo 'Message: ' . $e->getMessage();
-                                return False;
+                                header("location: 404.php");
                             }
                         }
                     }
