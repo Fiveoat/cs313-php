@@ -37,7 +37,7 @@ require $root . '/app/connection.php';
                             echo "2";
                             $hashed_password = hash('sha256', $password);
                             echo "3";
-                            $user_id = $db->query("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}','{$last_name}','{$email}','{$hashed_password}') RETURNING user_id;")[0];
+                            $user_id = $db->query("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}','{$last_name}','{$email}','{$hashed_password}') RETURNING user_id;");
                             // $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?) RETURNING user_id;");
                             echo "4";
                             // $user_id = $statement->execute(array($first_name, $last_name, $email, $hashed_password));
@@ -50,7 +50,6 @@ require $root . '/app/connection.php';
                             $statement = $db->prepare("INSERT INTO homes (user_id, location_id, value) VALUES (?, ?, ?)");
                             echo "5";
                             echo $user_id;
-
                             echo $home_size;
                             $statement->execute(array($user_id, $location_id, $home_size));
                             echo "6";
