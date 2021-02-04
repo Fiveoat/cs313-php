@@ -33,8 +33,8 @@ require $root . '/app/connection.php';
                             $db = getConnection();
                             $hashed_password = hash('sha256', $password);
 
-                            $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?) RETURNING user_id;");
-                            $statement->execute(array($first_name, $last_name, $email, $hashed_password));
+                            $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password, points) VALUES (?, ?, ?, ?, ?) RETURNING user_id;");
+                            $statement->execute(array($first_name, $last_name, $email, $hashed_password, 0));
                             $user_id = $db->lastInsertId();
 
                             $statement = $db->prepare("INSERT INTO locations (name, country_code) VALUES (?, ?) RETURNING location_id");
