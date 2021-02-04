@@ -1,22 +1,11 @@
 <?php
-try{
-    session_start();
-    $root = $_SERVER['DOCUMENT_ROOT'];
-    require $root . '/app/connection.php';
-    // require $root . '/app/controller.php';
-    $user_id = 1;
-} catch (Exception $e){
-    echo $e->getMessage;
-}
-
-// if (isset($_SESSION['user_id'])) {
-//     foreach ($_SESSION['user_id'] as $x) {
-//         $user_id = 1;
-//     }
-// } else {
-//     $user_id = 1;
+session_start();
+$root = $_SERVER['DOCUMENT_ROOT'];
+require $root . '/app/connection.php';
+// require $root . '/app/controller.php';
+// foreach ($_SESSION['user_id'] as $x) {
+    // $user_id = $x;
 // }
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,6 +26,7 @@ try{
     <main>
         <?php
         $db = getConnection();
+        $user_id = 1;
         foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE user_id = {$user_id};") as $row) {
             $first_name = $row['first_name'];
             $email = $row['email'];
@@ -48,8 +38,9 @@ try{
             $home_country_code = $row['country_code'];
             $available = $row['booked'];
         }
+        
         $db = getConnection();
-        foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row) {
+        foreach ($db->query("SELECT * FROM bookings b INNER JOIN locations l ON l.location_id = b.location_id WHERE renter = '{$user_id}'") as $row){
             $home_id = $row['home_id'];
             $city_name = $row['name'];
             $country_code = $row['country_code'];
