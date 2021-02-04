@@ -1,4 +1,4 @@
-
+x
 
      function update_home_availablity($availablity_bool, $home_id)
      {
