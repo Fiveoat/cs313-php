@@ -36,18 +36,9 @@ require $root . '/app/connection.php';
                             echo "2";
                             $hashed_password = hash('sha256', $password);
                             echo "3";
-                            try {
-                            $query = pg_query($db,"INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}', '{$last_name}', '{$email}', '{$hashed_password}') RETURNING user_id;"); 
-                            } catch (Exception $e){
-                                echo $e;
-                            }
-                            echo $query;
-                            $row = pg_fetch_row($query); 
-                            echo $row;
-                            print_r($row);
-                            $new_id = $row['0'];
-                            echo $new_id;
-                            $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?);");
+                            $statement = $db->prepare("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES (?, ?, ?, ?) RETURNING user_id;");
+                            $user_id = $db->lastInsertId();
+                            echo "UID". $user_id;
                             echo "4";
                             $statement->execute(array($first_name, $last_name, $email, $hashed_password));
                             echo "5";
