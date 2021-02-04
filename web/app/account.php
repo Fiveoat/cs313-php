@@ -22,6 +22,7 @@ require $root . '/app/connection.php';
     <main>
         <?php
         echo $_SESSION['user_id'];
+        echo gettype($_SESSION['user_id']);
         $db = getConnection();
         foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id INNER JOIN bookings b ON b.owner = u.user_id WHERE u.user_id = {$_SESSION['user_id']};") as $row) {
             $first_name = $row['first_name'];
@@ -34,6 +35,7 @@ require $root . '/app/connection.php';
             $home_country_code = $row['country_code'];
             $available = $row['booked'];
         }
+        echo $_SESSION['user_id'];
         ?>
 
         <br>
