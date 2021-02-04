@@ -1,6 +1,7 @@
 <?php
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
+require $root . '/app/connection.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,10 +25,30 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                <?php echo $_POST['email'];
-                        echo $_POST['password'];
-                        
-                        ?>
+                    <?php
+                    echo $_POST['email'];
+                    echo $_POST['password'];
+                    function auth($email, $password)
+                    {
+                        $hashed_password = hash('sha256', $password);
+                        $db = getConnection();
+                        foreach ($db->query("SELECT * FROM users WHERE email = '{$email}'") as $row) {
+                            try {
+                                if ($hashed_password == $row['hashed_password']) {
+                                    $_SESSION['user_id'] = $row['user_id'];
+                                    header("location: account.php");
+                                    return True;
+                                } else {
+                                    header("location: welcome.php");
+                                    return False;
+                                }
+                            } catch (Exception $e) {
+                                echo 'Message: ' . $e->getMessage();
+                                return False;
+                            }
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </div>
