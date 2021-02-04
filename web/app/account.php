@@ -22,7 +22,6 @@ require $root . '/app/connection.php';
     <main>
         <?php
         $user_id = (int) $_SESSION['user_id'];
-        echo $user_id;
         $db = getConnection();
         foreach ($db->query("SELECT * FROM users u INNER JOIN homes h ON u.user_id = h.user_id INNER JOIN locations l ON l.location_id = h.location_id WHERE u.user_id = {$user_id};") as $row) {
             $first_name = $row['first_name'];
@@ -33,17 +32,16 @@ require $root . '/app/connection.php';
             $home_id = $row['home_id'];
             $home_city_name = $row['name'];
             $home_country_code = $row['country_code'];
+            $home_worth = $row['value'];
         }
-        echo $_SESSION['user_id'];
         ?>
-
         <br>
         <h5 class="display-5">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
                     <h5>Your Points</h5>
-                    <?php echo $points . $_SESSION['user_id']." Points"; 
+                    <?php echo $points ." Points"; 
                     ?>
                 </div>
                 <div class="col-md">
@@ -66,7 +64,7 @@ require $root . '/app/connection.php';
                 </div>
                 <div class="col-md">
                     <h5>Point Value</h5>
-                    <?php echo $points . " Points Per Day"; ?>
+                    <?php echo $home_worth . " Points Per Day"; ?>
                 </div>
                 <div class="col-md">
                     <h5>Home Availablity</h5>
