@@ -43,16 +43,9 @@ require $root . '/app/connection.php';
                             $statement = $db->prepare("INSERT INTO homes (user_id, location_id, value) VALUES (?, ?, ?) RETURNING home_id");
                             $statement->execute(array($user_id, $location_id, $home_size));
                             $home_id = (int) $db->lastInsertId();
-
-                            echo $user_id;
-                            echo $home_id;
-                            echo $location_id;
-                            echo gettype($user_id);
-                            echo gettype($home_id);
-                            echo gettype($location_id);
                                 
-                            $statement = $db->prepare("INSERT INTO bookings(renter, owner, home_id, booked, duration) VALUES (?, ?, ?, ?, ?)");
-                            $statement->execute(array($user_id, $user_id, $home_id, false, 0));
+                            $statement = $db->prepare("INSERT INTO bookings (renter, owner, home_id, booked, duration) VALUES (?, ?, ?, ?, ?) RETURNING booking_id");
+                            $statement->execute(array($user_id, $user_id, $home_id, 0, 0));
 
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
