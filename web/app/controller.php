@@ -27,7 +27,6 @@ require $root . '/app/connection.php';
                 <div class="col-md">
                     <?php
                     if (isset($_POST['city'])) {
-                        echo "CITY";
                         function create_user($first_name, $last_name, $email, $password, $city, $country_code, $home_size)
                         {
                             echo "1";
@@ -36,6 +35,9 @@ require $root . '/app/connection.php';
                             $hashed_password = hash('sha256', $password);
                             echo "3";
                             $user_id = pg_query($db,"INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}','{$last_name}','{$email}','{$hashed_password}') RETURNING user_id;");
+                            list($user_id) = pg_fetch_row($user_id);
+                            echo $user_id;
+                            print_r($user_id);
                             // $user_id = $db->query("INSERT INTO users (first_name, last_name, email, hashed_password) VALUES ('{$first_name}','{$last_name}','{$email}','{$hashed_password}') RETURNING user_id;");
                             echo "A\n";
                             echo $user_id;
@@ -57,10 +59,8 @@ require $root . '/app/connection.php';
                             $_SESSION['user_id'] = $user_id;
                             header("location: account.php");
                         }
-                        echo "TACO";
+                        echo "start";
                         $home_size = (int) $_POST['select'];
-                        echo gettype($home_size);
-                        echo $home_size;
                         create_user($_POST['first_name'], $_POST['last_name'], $_POST['email'], $_POST['password'], $_POST['city'], $_POST['country_code'], $home_size);
                     } else {
                         echo $_POST['email'];
