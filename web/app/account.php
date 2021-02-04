@@ -1,9 +1,14 @@
 <?php
-session_start();
-$root = $_SERVER['DOCUMENT_ROOT'];
-require $root . '/app/connection.php';
-require $root . '/app/controller.php';
-$user_id = 1;
+try{
+    session_start();
+    $root = $_SERVER['DOCUMENT_ROOT'];
+    require $root . '/app/connection.php';
+    require $root . '/app/controller.php';
+    $user_id = 1;
+} catch (Exception $e){
+    echo $e->getMessage;
+}
+
 // if (isset($_SESSION['user_id'])) {
 //     foreach ($_SESSION['user_id'] as $x) {
 //         $user_id = 1;
