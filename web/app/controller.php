@@ -58,3 +58,4 @@ function auth($email, $password)
         }
     }
 }
+?>
