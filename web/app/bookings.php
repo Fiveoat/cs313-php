@@ -31,8 +31,7 @@ require $root . '/app/connection.php';
             echo $home_points;
             echo $city;
             echo $home_id;
-            echo "<h5 class=\"display-5\">&ensp;Available Homes!</h5>
-            <div class=\"container\">
+            echo "<div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-md\">
                         <h5>Cost</h5>
@@ -48,7 +47,7 @@ require $root . '/app/connection.php';
                     </div>
                     <div class=\"col-md\">
                         <h5>Book</h5>
-                        <?php echo \"<a href='../app/book.php?home={$home_id}'>Book</a>\"?>
+                        <a href='../app/book.php?home={$home_id}'>Book</a>
                     </div>
                 </div>
             </div>";
