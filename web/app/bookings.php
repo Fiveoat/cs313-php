@@ -28,7 +28,6 @@ require $root . '/app/connection.php';
             $country_code = $row['country_code'];
             $city = $row['name'];
             $home_points = $row['value'];
-            echo $home_id;
             echo "<div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-md\">
@@ -45,7 +44,7 @@ require $root . '/app/connection.php';
                     </div>
                     <div class=\"col-md\">
                         <h5>Book</h5>
-                        <a href='../app/book.php?home={$home_id}'>Click To Book</a>
+                        <a class='btn btn-primary' href='../app/book.php?home={$home_id}'>Click To Book</a>
                     </div>
                 </div>
             </div><br>";

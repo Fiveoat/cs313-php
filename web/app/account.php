@@ -78,10 +78,10 @@ if (!isset($_SESSION['user_id'])) {
                     <?php
                     if ($available = true) {
                         echo "Currently Set To Available";
-                        echo '<br><a href="../app/update_availability.php?set=0">Make Unavailable</a>';
+                        echo '<br><a class="btn btn-primary" href="../app/update_availability.php?set=0">Make Unavailable</a>';
                     } else {
                         echo "Not Set To Available";
-                        echo '<br><a href="../app/update_availability.php?set=1">Make Available</a>';
+                        echo '<br><a class="btn btn-primary" href="../app/update_availability.php?set=1">Make Available</a>';
                     }
                     ?>
                 </div>
@@ -122,7 +122,7 @@ if (!isset($_SESSION['user_id'])) {
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <a class="btn btn-outline-secondary" href="../app/account_bookings.php">Your Bookings</a>
+                    <a class="btn btn-primary" href="../app/account_bookings.php">Your Bookings</a>
                 </div>
             </div>
         </div>

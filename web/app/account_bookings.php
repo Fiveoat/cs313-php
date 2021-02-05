@@ -54,7 +54,7 @@ if (!isset($_SESSION['user_id'])){
                 </div>
                 <div class="col-md">
                     <h5>County</h5>
-                    <?php echo $country_code; ?>
+                    <?php echo $home_country_code; ?>
                 </div>
             </div>
         </div>
