@@ -35,15 +35,15 @@ require $root . '/app/connection.php';
                 <div class=\"row\">
                     <div class=\"col-md\">
                         <h5>Cost</h5>
-                        <?php echo {$home_points} . \" Points Per Day\"; ?>
+                        {$home_points} . \" Points Per Day\";
                     </div>
                     <div class=\"col-md\">
                         <h5>City</h5>
-                        <?php echo {$city}; ?>
+                        {$city};
                     </div>
                     <div class=\"col-md\">
                         <h5>Country</h5>
-                        <?php echo {$country_code}; ?>
+                        {$country_code};
                     </div>
                     <div class=\"col-md\">
                         <h5>Book</h5>
