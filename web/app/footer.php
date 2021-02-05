@@ -1,4 +1,4 @@
 <br><br>
-<span class="display-6">© Houslr</span>
+<h5>© Houslr</h5>
 <br>
 <br>
