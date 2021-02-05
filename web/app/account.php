@@ -2,7 +2,7 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
-if (!isset($_SESSION['user_id'])){
+if (!isset($_SESSION['user_id'])) {
     header("location: sign_in.php");
 }
 ?>
@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id'])){
         }
         ?>
         <br>
-        <h5 class="display-5">&ensp;Welcome back, <?php echo $first_name . " " . $last_name; ?>!</h5>
+        <h5 class="display-5">&ensp;Yo, <?php echo $first_name . " " . $last_name; ?>.</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -118,17 +118,10 @@ if (!isset($_SESSION['user_id'])){
                 </div>
             </div>
         </div>
-        <h5 class="display-3">&ensp;Your Bookings!</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <h5>City</h5>
-                </div>
-                <div class="col-md">
-                    <h5>Country</h5>
-                </div>
-                <div class="col-md">
-                    <h5>Home</h5>
+                    <button class="btn btn-primary"><a href="../app/account_bookings.php"></a>Your Bookings</button>
                 </div>
             </div>
         </div>
