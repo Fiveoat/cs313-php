@@ -28,15 +28,11 @@ require $root . '/app/connection.php';
             $country_code = $row['country_code'];
             $city = $row['name'];
             $home_points = $row['value'];
-            echo $country_code;
-            echo $home_points;
-            echo $city;
-            echo $home_id;
             echo "<div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-md\">
                         <h5>Cost</h5>
-                        {$home_points} . \" Points Per Day\"
+                        {$home_points} Points Per Day
                     </div>
                     <div class=\"col-md\">
                         <h5>City</h5>
