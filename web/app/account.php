@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id'])) {
         }
         ?>
         <br>
-        <h5 class="display-5">&ensp;Yo, <?php echo $first_name . " " . $last_name; ?>.</h5>
+        <h5 class="display-6">&ensp;Hello <?php echo $first_name . " " . $last_name; ?>.</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
