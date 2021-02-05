@@ -20,6 +20,7 @@ require $root . '/app/connection.php';
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
+        <h5 class="display-6">&ensp;Available Homes!</h5>
         <?php
         $db = getConnection();
         foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id;') as $row) {
@@ -53,33 +54,6 @@ require $root . '/app/connection.php';
             </div>";
         }
         ?>
-        <h5 class="display-5">&ensp;Available Homes!</h5>
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <h5>Cost</h5>
-                    <?php echo $home_points . " Points Per Day"; ?>
-                </div>
-                <div class="col-md">
-                    <h5>City</h5>
-                    <?php echo $city; ?>
-                </div>
-                <div class="col-md">
-                    <h5>Country</h5>
-                    <?php echo $country_code; ?>
-                </div>
-                <div class="col-md">
-                    <h5>Book</h5>
-                    <?php echo "<a href='../app/book.php?home={$home_id}'>Book</a>"; ?>
-                </div>
-            </div>
-        </div>
-        <br><br><br><br>
-        <div class="container">
-            <div class="row">
-                
-            </div>
-        </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
