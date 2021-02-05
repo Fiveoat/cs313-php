@@ -23,7 +23,7 @@ require $root . '/app/connection.php';
         &ensp;&ensp;&ensp;&ensp;<h5 class="display-6">&ensp;Available Homes!</h5>
         <?php
         $db = getConnection();
-        foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id;') as $row) {
+        foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id AND booked != TRUE;') as $row) {
             $home_id = $row['home_id'];
             $country_code = $row['country_code'];
             $city = $row['name'];
