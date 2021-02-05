@@ -5,7 +5,10 @@ require $root . '/app/connection.php';
 if (isset($_SESSION['user_id'])){
     $user_id = (int) $_SESSION['user_id'];
 $home_id = $_GET['home_id'];
-$duration = $_GET['duration'];
+$duration = (int) $_GET['duration'];
+echo $home_id;
+echo $duration;
+echo $user_id;
 function book_home($home_id, $user_id, $duration){
          $db = getConnection();
          $statement = $db->prepare("INSERT INTO bookings (renter, home_id, duration, booked) VALUES (?, ?, ?)");
