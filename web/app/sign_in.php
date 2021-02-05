@@ -44,6 +44,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                 </div>
             </div>
         </div>
+        <a href="../app/register.php">Need an account?</a>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
