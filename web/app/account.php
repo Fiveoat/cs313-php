@@ -2,6 +2,9 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
+if (!isset($_SESSION['user_id'])){
+    header("location: sign_in.php");
+}
 ?>
 <!DOCTYPE html>
 <html>
