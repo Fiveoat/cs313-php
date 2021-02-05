@@ -2,7 +2,7 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
-if (!isset($_SESSION['user_id'])){
+if (!isset($_SESSION['user_id'])) {
     header("location: sign_in.php");
 }
 ?>
@@ -32,33 +32,33 @@ if (!isset($_SESSION['user_id'])){
                 $home_country_code = $row['country_code'];
                 $home_worth = $row['value'];
                 $duration = $row['duration'];
-            echo "<h5 class='display-3'>&ensp;Your Bookings!</h5>
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-md'>
-                        <h5>Cost</h5>
-                        {$home_worth} Points Per Day
-                    </div>
-                    <div class='col-md'>
-                        <h5>Duration</h5>
-                        {$duration} Days
-                    </div>
-                    <div class='col-md'>
-                        <h5>City</h5>
-                        {$home_city_name}
-                    </div>
-                    <div class='col-md'>
-                        <h5>County</h5>
-                        {$home_country_code}
-                    </div>
-                </div>
-            </div>";
+                echo "<h5 class='display-3'>&ensp;Your Bookings!</h5>
+                        <div class='container'>
+                            <div class='row'>
+                                <div class='col-md'>
+                                    <h5>Cost</h5>
+                                    {$home_worth} Points Per Day
+                                </div>
+                                <div class='col-md'>
+                                    <h5>Duration</h5>
+                                    {$duration} Days
+                                </div>
+                                <div class='col-md'>
+                                    <h5>City</h5>
+                                    {$home_city_name}
+                                </div>
+                                <div class='col-md'>
+                                    <h5>County</h5>
+                                    {$home_country_code}
+                                </div>
+                            </div>
+                        </div>";
             }
         } else {
             header("location: sign_in.php");
         }
         ?>
-        
+
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>

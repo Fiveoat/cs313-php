@@ -121,9 +121,7 @@ if (!isset($_SESSION['user_id'])) {
         <br><br>
         <div class="container">
             <div class="row">
-                <div class="col-md">
-                    <a class="btn btn-primary" href="../app/account_bookings.php">Your Bookings</a>
-                </div>
+                <a class="btn btn-primary" href="../app/account_bookings.php">Your Bookings</a>
             </div>
         </div>
     </main>
