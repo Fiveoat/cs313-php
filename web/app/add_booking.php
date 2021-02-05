@@ -2,7 +2,8 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
-$user_id = (int) $_SESSION['user_id'];
+if (isset($_SESSION['user_id'])){
+    $user_id = (int) $_SESSION['user_id'];
 $home_id = $_GET['home_id'];
 $duration = $_GET['duration'];
 function book_home($home_id, $user_id, $duration){
@@ -12,4 +13,6 @@ function book_home($home_id, $user_id, $duration){
      }
 book_home($home_id, $user_id, $duration);
 header("location: account.php");
-?>
+} else {
+    header("location: sign_in.php");
+}
