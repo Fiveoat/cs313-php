@@ -4,8 +4,8 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
 if (isset($_SESSION['user_id'])){
     $user_id = (int) $_SESSION['user_id'];
-$home_id = $_GET['home_id'];
-$duration = (int) $_GET['duration'];
+$home_id = $_POST['home_id'];
+$duration = (int) $_POST['duration'];
 echo $home_id;
 echo $duration;
 echo $user_id;
