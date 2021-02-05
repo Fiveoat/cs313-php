@@ -28,6 +28,7 @@ require $root . '/app/connection.php';
             $country_code = $row['country_code'];
             $city = $row['name'];
             $home_points = $row['value'];
+            echo $home_id;
             echo "<div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-md\">
