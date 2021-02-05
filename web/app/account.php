@@ -118,10 +118,11 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
         </div>
+        <br><br>
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <button class="btn btn-primary"><a href="../app/account_bookings.php"></a>Your Bookings</button>
+                    <a class="btn btn-outline-secondary" href="../app/account_bookings.php">Your Bookings</a>
                 </div>
             </div>
         </div>
