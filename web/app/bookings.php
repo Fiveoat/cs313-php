@@ -27,6 +27,10 @@ require $root . '/app/connection.php';
             $country_code = $row['country_code'];
             $city = $row['name'];
             $home_points = $row['value'];
+            echo $country_code;
+            echo $home_points;
+            echo $city;
+            echo $home_id;
             echo "<h5 class=\"display-5\">&ensp;Available Homes!</h5>
             <div class=\"container\">
                 <div class=\"row\">
