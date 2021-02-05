@@ -43,8 +43,9 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                     </form>
                 </div>
             </div>
+            <br><br><br><br>
             <div class="row">
-                <button class="btn btn-primary"><a href="../app/register.php">Need an account?</a></button>
+                <button class="btn btn-primary"><a href="../app/register.php"></a>Need an account?</button>
             </div>
         </div>
 
