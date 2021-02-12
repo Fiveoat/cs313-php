@@ -4,6 +4,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
 $_POST['home_id'] = $_GET['home_id'];
 echo $$_GET['home_id'];
+print_r($_POST);
 if (!isset($_SESSION['user_id'])){
     header("location: sign_in.php");
 }
@@ -29,7 +30,7 @@ if (!isset($_SESSION['user_id'])){
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <form method="POST" action="../app/add_booking.php">
+                    <form method="POST" action="../app/add_booking.php?}">
                         <div class="mb-3">
                             <label for="password" class="form-label">Duration</label>
                             <select class="form-select" name="duration" aria-label="Default select example">
