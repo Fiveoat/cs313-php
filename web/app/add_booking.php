@@ -6,9 +6,6 @@ if (isset($_SESSION['user_id'])){
     $user_id = (int) $_SESSION['user_id'];
 $home_id = (int) $_SESSION['home_id'];
 $duration = (int) $_POST['duration'];
-echo $home_id;
-echo $duration;
-echo $user_id;
 function book_home($home_id, $user_id, $duration){
          $db = getConnection();
          $statement = $db->prepare("INSERT INTO bookings (renter, home_id, duration, booked) VALUES (?, ?, ?, ?)");
