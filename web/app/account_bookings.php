@@ -23,6 +23,7 @@ if (!isset($_SESSION['user_id'])) {
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
+        <h5 class='display-3'>&ensp;Your Bookings!</h5>
         <?php
         if (isset($_SESSION['user_id'])) {
             $user_id = (int) $_SESSION['user_id'];
@@ -32,12 +33,7 @@ if (!isset($_SESSION['user_id'])) {
                 $home_country_code = $row['country_code'];
                 $home_worth = $row['value'];
                 $duration = $row['duration'];
-                echo $home_city_name;
-                echo $home_country_code;
-                echo $home_worth;
-                echo $duration;
-                echo "<h5 class='display-3'>&ensp;Your Bookings!</h5>
-                        <div class='container'>
+                echo "<div class='container'>
                             <div class='row'>
                                 <div class='col-md'>
                                     <h5>Cost</h5>
