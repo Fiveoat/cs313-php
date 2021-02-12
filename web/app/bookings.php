@@ -44,7 +44,7 @@ require $root . '/app/connection.php';
                     </div>
                     <div class=\"col-md\">
                         <h5>Book</h5>
-                        <a class='btn btn-primary' href='../app/book.php?home={$home_id}'>Click To Book</a>
+                        <a class='btn btn-primary' href='../app/book.php?home_id={$home_id}'>Click To Book</a>
                     </div>
                 </div>
             </div><br>";
