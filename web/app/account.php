@@ -73,18 +73,6 @@ if (!isset($_SESSION['user_id'])) {
                     <h5>Point Value</h5>
                     <?php echo $home_worth . " Points Per Day"; ?>
                 </div>
-                <div class="col-md">
-                    <h5>Home Availablity</h5>
-                    <?php
-                    if ($available = true) {
-                        echo "Currently Set To Available";
-                        echo '<br><a class="btn btn-primary" href="../app/update_availability.php?set=0">Make Unavailable</a>';
-                    } else {
-                        echo "Not Set To Available";
-                        echo '<br><a class="btn btn-primary" href="../app/update_availability.php?set=1">Make Available</a>';
-                    }
-                    ?>
-                </div>
             </div>
         </div>
         <br><br><br><br>
