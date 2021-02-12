@@ -2,11 +2,7 @@
 session_start();
 $root = $_SERVER['DOCUMENT_ROOT'];
 require $root . '/app/connection.php';
-$_POST['home_id'] = $_GET['home_id'];
-echo $$_GET['home_id'];
-print_r($_POST);
-echo "x";
-print_r($_GET);
+$_SESSION['home_id'] = $_GET['home_id'];
 if (!isset($_SESSION['user_id'])){
     header("location: sign_in.php");
 }
