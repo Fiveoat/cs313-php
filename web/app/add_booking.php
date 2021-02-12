@@ -9,12 +9,9 @@ $duration = (int) $_POST['duration'];
 echo $home_id;
 echo $duration;
 echo $user_id;
-function book_home($home_id, $user_id, $duration){
-         $db = getConnection();
-         $statement = $db->prepare("INSERT INTO bookings (renter, home_id, duration, booked) VALUES (?, ?, ?, ?)");
-         $statement->execute(array($user_id, $home_id, $duration, 1));
-     }
-book_home($home_id, $user_id, $duration);
+$db = getConnection();
+$statement = $db->prepare("INSERT INTO bookings (renter, home_id, booked, duration) VALUES (?, ?, ?, ?)");
+$statement->execute(array($user_id, $home_id, 1,$duration));
 header("location: account.php");
 } else {
     header("location: sign_in.php");
