@@ -43,8 +43,13 @@ if (!isset($_SESSION['user_id'])) {
         }
         ?>
         <br>
-        <h5>&ensp;Hello <?php echo $first_name . " " . $last_name; ?>.</h5>
+
         <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3>Hello <?php echo $first_name . " " . $last_name; ?>.</h3>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md">
                     <h5>Your Points</h5>
@@ -52,12 +57,12 @@ if (!isset($_SESSION['user_id'])) {
                     ?>
                 </div>
                 <div class="col-md">
-                    <h5>Email</h5>
+                    <h3>Email</h3>
                     <?php echo $email; ?>
                 </div>
             </div>
             <br><br><br><br>
-            <h5>&ensp;Your Home Information</h5>
+            <h3>Your Home Information</h3>
             <div class="row">
                 <div class="col-md">
                     <h5>City</h5>
@@ -73,7 +78,7 @@ if (!isset($_SESSION['user_id'])) {
                 </div>
             </div>
             <br><br><br><br>
-            <h5>&ensp;Add Points</h5>
+            <h3>Add Points</h3>
             <div class="row">
                 <div class="col-md">
                     <form action='../app/update_points.php' method="POST">
