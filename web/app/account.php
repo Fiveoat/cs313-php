@@ -43,7 +43,6 @@ if (!isset($_SESSION['user_id'])) {
         }
         ?>
         <br>
-
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -57,7 +56,7 @@ if (!isset($_SESSION['user_id'])) {
                     ?>
                 </div>
                 <div class="col-md">
-                    <h3>Email</h3>
+                    <h5>Email</h5>
                     <?php echo $email; ?>
                 </div>
             </div>
