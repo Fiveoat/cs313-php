@@ -20,18 +20,19 @@ require $root . '/app/connection.php';
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
-        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h5 class="display-6">&ensp;Available Homes!</h5>
-        <p>
-            Feel free to browse through these locations. If you find somethig in a city that you would like to book, just click the "book" button. 
-        </p>
-        <?php
-        $db = getConnection();
-        foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id;') as $row) {
-            $home_id = $row['home_id'];
-            $country_code = $row['country_code'];
-            $city = $row['name'];
-            $home_points = $row['value'];
-            echo "<div class=\"container\">
+        <div class="container">
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h5 class="display-6">&ensp;Available Homes!</h5>
+            <p>
+                Feel free to browse through these locations. If you find somethig in a city that you would like to book, just click the "book" button.
+            </p>
+            <?php
+            $db = getConnection();
+            foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id;') as $row) {
+                $home_id = $row['home_id'];
+                $country_code = $row['country_code'];
+                $city = $row['name'];
+                $home_points = $row['value'];
+                echo "<div class=\"container\">
                 <div class=\"row\">
                     <div class=\"col-md\">
                         <h5>Cost</h5>
@@ -51,8 +52,9 @@ require $root . '/app/connection.php';
                     </div>
                 </div>
             </div><br>";
-        }
-        ?>
+            }
+            ?>
+        </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
