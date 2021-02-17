@@ -28,7 +28,7 @@ require $root . '/app/connection.php';
                 <div class="row">
                     <div class="col-md">
                         <p>
-                            Feel free to browse through these locations. If you find somethig in a city that you would like to book, just click the "book" button.
+                            Feel free to browse through these locations. If you find somethig in a city that you would like to book, just click the book button.
                         </p>
                     </div>
                 </div>
@@ -55,8 +55,8 @@ require $root . '/app/connection.php';
                         {$country_code}
                     </div>
                     <div class=\"col-md\">
-                        <h5>Book</h5>
-                        <a class='btn btn-primary' href='../app/book.php?home_id={$home_id}'>Click To Book</a>
+                        <h5>Book Home</h5>
+                        <a class='btn btn-primary' href='../app/book.php?home_id={$home_id}'>Book</a>
                     </div>
                 </div>
             </div><br>";
