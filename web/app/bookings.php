@@ -35,7 +35,7 @@ require $root . '/app/connection.php';
                 <br><br>
                 <?php
                 $db = getConnection();
-                foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id INNER JOIN bookings b ON b.home_id = h.home_id WHERE b.booked NOT IN (TRUE, 1);') as $row) {
+                foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id INNER JOIN bookings b ON b.home_id = h.home_id WHERE b.booked != 1;') as $row) {
                     $home_id = $row['home_id'];
                     $country_code = $row['country_code'];
                     $city = $row['name'];
