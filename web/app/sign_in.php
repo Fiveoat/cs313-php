@@ -46,13 +46,13 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                             </form>
                         </div>
                     </div>
-                </div>
-                <br><br><br><br>
-                <div class="row">
-                    <a class="btn btn-primary" href="../app/register.php">Need an account?</a>
+                    <br><br><br><br>
+                    <div class="row">
+                        <a class="btn btn-primary" href="../app/register.php">Need an account?</a>
+                    </div>
                 </div>
             </div>
-
+        </div>
     </main>
     <footer>
         <?php require $root . '/app/footer.php'; ?>
