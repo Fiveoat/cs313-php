@@ -23,7 +23,7 @@ require $root . '/app/connection.php';
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h5>Available Homes!</h5>
+                    &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h3>Available Homes!</h3>
                 </div>
                 <div class="row">
                     <div class="col-md">
