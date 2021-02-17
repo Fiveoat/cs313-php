@@ -1,1 +1,1 @@
-&ensp;&ensp;<img src="../images/houslr.png" alt=""><a href="../app/welcome.php"></a></img>
+&ensp;<img src="../images/houslr.png" width="100px"><a href="../app/welcome.php"></a></img>
