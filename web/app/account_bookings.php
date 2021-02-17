@@ -56,6 +56,9 @@ if (!isset($_SESSION['user_id'])) {
                                     <h5>County</h5>
                                     {$home_country_code}
                                 </div>
+                                <div class='col-md'>
+                                    <a class=\"btn btn-primary\" href=\"../app/update_booking.php\">Remove Booking</a>
+                                </div>
                             </div>
                         </div>";
                 }
