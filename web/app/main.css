@@ -28,5 +28,6 @@ h1 {
 }
 
 .logo {
-    width: 100px;
+    width: 200px;
+    margin-left: 50px;
 }
