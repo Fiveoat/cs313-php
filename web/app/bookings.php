@@ -25,11 +25,14 @@ require $root . '/app/connection.php';
                 <div class="col-md">
                     &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<h5>Available Homes!</h5>
                 </div>
-                <div class="col-md">
-                    <p>
-                        Feel free to browse through these locations. If you find somethig in a city that you would like to book, just click the "book" button.
-                    </p>
+                <div class="row">
+                    <div class="col-md">
+                        <p>
+                            Feel free to browse through these locations. If you find somethig in a city that you would like to book, just click the "book" button.
+                        </p>
+                    </div>
                 </div>
+                <br><br>
                 <?php
                 $db = getConnection();
                 foreach ($db->query('SELECT * FROM homes h INNER JOIN locations l ON h.location_id = l.location_id;') as $row) {
