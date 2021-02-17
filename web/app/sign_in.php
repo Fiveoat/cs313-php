@@ -28,7 +28,7 @@ $root = $_SERVER['DOCUMENT_ROOT'];
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <h3>&ensp;Hello.</h3>
+                    <h3>Hello.</h3>
                     <br>
                     <div class="row">
                         <div class="col-md">
