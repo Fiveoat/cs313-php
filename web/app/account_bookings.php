@@ -25,7 +25,7 @@ if (!isset($_SESSION['user_id'])) {
     <main>
         <div class="container">
             <div class="row">
-                <h3>&ensp;Your Bookings!</h3>
+                <h3>Your Bookings!</h3>
             </div>
         </div>
         <?php
