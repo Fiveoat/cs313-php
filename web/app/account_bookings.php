@@ -32,7 +32,7 @@ if (!isset($_SESSION['user_id'])) {
         if (isset($_SESSION['user_id'])) {
             $user_id = (int) $_SESSION['user_id'];
             $db = getConnection();
-            foreach ($db->query("SELECT * FROM bookings b INNER JOIN homes h ON h.home_id = b.home_id INNER JOIN locations l ON l.location_id = h.location_id WHERE b.renter = {$user_id} AND b.owner != {$user_id};") as $row) {
+            foreach ($db->query("SELECT * FROM bookings b INNER JOIN homes h ON h.home_id = b.home_id INNER JOIN locations l ON l.location_id = h.location_id WHERE b.renter = {$user_id};") as $row) {
                 $home_city_name = $row['name'];
                 $home_country_code = $row['country_code'];
                 $home_worth = $row['value'];
