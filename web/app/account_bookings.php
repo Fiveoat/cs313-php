@@ -23,7 +23,11 @@ if (!isset($_SESSION['user_id'])) {
         <?php require $root . '/app/nav.php'; ?>
     </nav>
     <main>
-        <h5 class='display-3'>&ensp;Your Bookings!</h5>
+        <div class="container">
+            <div class="row">
+                <h3>&ensp;Your Bookings!</h3>
+            </div>
+        </div>
         <?php
         if (isset($_SESSION['user_id'])) {
             $user_id = (int) $_SESSION['user_id'];
