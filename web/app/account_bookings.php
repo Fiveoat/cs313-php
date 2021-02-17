@@ -37,7 +37,8 @@ if (!isset($_SESSION['user_id'])) {
                 $home_country_code = $row['country_code'];
                 $home_worth = $row['value'];
                 $duration = $row['duration'];
-                echo "<div class='container'>
+                if ($row['owner'] != $user_id) {
+                    echo "<div class='container'>
                             <div class='row'>
                                 <div class='col-md'>
                                     <h5>Cost</h5>
@@ -57,6 +58,7 @@ if (!isset($_SESSION['user_id'])) {
                                 </div>
                             </div>
                         </div>";
+                }
             }
         } else {
             header("location: sign_in.php");
