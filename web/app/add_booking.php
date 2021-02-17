@@ -8,8 +8,8 @@ $home_id = (int) $_SESSION['home_id'];
 $duration = (int) $_POST['duration'];
 function book_home($home_id, $user_id, $duration){
          $db = getConnection();
-         $statement = $db->prepare("INSERT INTO bookings (renter, home_id, duration, booked) VALUES (?, ?, ?, ?)");
-         $statement->execute(array($user_id, $home_id, $duration, 1));
+         $statement = $db->prepare("UPDATE bookings SET renter=?, duration=?, booked=? WHERE home_id=?");
+         $statement->execute(array($user_id, $duration, 1, $home_id));
      }
 book_home($home_id, $user_id, $duration);
 header("location: account_bookings.php");
