@@ -30,27 +30,28 @@ $root = $_SERVER['DOCUMENT_ROOT'];
                 <div class="col-md">
                     <h3>&ensp;Hello.</h3>
                     <br>
+                    <div class="row">
+                        <div class="col-md">
+                            <form method="POST" action="../app/controller.php">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                </div>
+                                <div>
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-primary">Sign In</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md">
-                    <form method="POST" action="../app/controller.php">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
-                        </div>
-                        <div>
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" name="password" id="password" class="form-control" aria-describedby="passwordHelpBlock">
-                        </div>
-                        <br>
-                        <button type="submit" class="btn btn-primary">Sign In</button>
-                    </form>
+                <br><br><br><br>
+                <div class="row">
+                    <a class="btn btn-primary" href="../app/register.php">Need an account?</a>
                 </div>
             </div>
-            <br><br><br><br>
-            <div class="row">
-                <a class="btn btn-primary" href="../app/register.php">Need an account?</a>
-            </div>
-        </div>
 
     </main>
     <footer>
