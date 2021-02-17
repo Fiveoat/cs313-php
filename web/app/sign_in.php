@@ -24,10 +24,13 @@ $root = $_SERVER['DOCUMENT_ROOT'];
             header("location: account.php");
         }
         ?>
-        <h5 class="display-6">&ensp;Good to see you again.</h5>
-        <br>
+
         <div class="container">
             <div class="row">
+                <div class="col-md">
+                    <h5>&ensp;Hello.</h5>
+                    <br>
+                </div>
                 <div class="col-md">
                     <form method="POST" action="../app/controller.php">
                         <div class="mb-3">
