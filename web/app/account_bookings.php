@@ -37,6 +37,7 @@ if (!isset($_SESSION['user_id'])) {
                 $home_country_code = $row['country_code'];
                 $home_worth = $row['value'];
                 $duration = $row['duration'];
+                $home_id = $row['home_id'];
                 if ($row['owner'] != $user_id) {
                     echo "<div class='container'>
                             <div class='row'>
@@ -57,7 +58,8 @@ if (!isset($_SESSION['user_id'])) {
                                     {$home_country_code}
                                 </div>
                                 <div class='col-md'>
-                                    <a class=\"btn btn-primary\" href=\"../app/update_booking.php\">Remove Booking</a>
+                                    <h5>Remove Booking<h5>
+                                    <a class=\"btn btn-primary\" href=\"../app/update_booking.php?home_id={$home_id}\">Remove</a>
                                 </div>
                             </div>
                         </div>";
