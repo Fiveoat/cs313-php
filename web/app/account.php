@@ -43,7 +43,7 @@ if (!isset($_SESSION['user_id'])) {
         }
         ?>
         <br>
-        <h5 class="display-6">&ensp;Hello <?php echo $first_name . " " . $last_name; ?>.</h5>
+        <h5>&ensp;Hello <?php echo $first_name . " " . $last_name; ?>.</h5>
         <div class="container">
             <div class="row">
                 <div class="col-md">
@@ -56,10 +56,8 @@ if (!isset($_SESSION['user_id'])) {
                     <?php echo $email; ?>
                 </div>
             </div>
-        </div>
-        <br><br><br><br>
-        <h5 class="display-6">&ensp;Your Home Information</h5>
-        <div class="container">
+            <br><br><br><br>
+            <h5>&ensp;Your Home Information</h5>
             <div class="row">
                 <div class="col-md">
                     <h5>City</h5>
@@ -74,10 +72,8 @@ if (!isset($_SESSION['user_id'])) {
                     <?php echo $home_worth . " Points Per Day"; ?>
                 </div>
             </div>
-        </div>
-        <br><br><br><br>
-        <h5 class="display-6">&ensp;Add Points</h5>
-        <div class="container">
+            <br><br><br><br>
+            <h5>&ensp;Add Points</h5>
             <div class="row">
                 <div class="col-md">
                     <form action='../app/update_points.php' method="POST">
@@ -105,9 +101,7 @@ if (!isset($_SESSION['user_id'])) {
                     </form>
                 </div>
             </div>
-        </div>
-        <br><br>
-        <div class="container">
+            <br><br>
             <div class="row">
                 <a class="btn btn-primary" href="../app/account_bookings.php">Your Bookings</a>
             </div>
