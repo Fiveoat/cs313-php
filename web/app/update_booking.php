@@ -9,5 +9,5 @@ echo $user_id;
 $db = getConnection();
 $statement= $db->prepare("UPDATE bookings SET booked =? WHERE home_id =? AND renter =?");
 $statement->execute(array(0, $home_id, $user_id));
-// header("location: account.php");
+header("location: account.php");
 ?>
