@@ -7,7 +7,7 @@ $home_id = (int) $_GET['home_id'];
 echo $home_id;
 echo $user_id;
 $db = getConnection();
-$statement= $db->prepare("UPDATE bookings SET booked =? WHERE home_id =? AND user_id =?");
+$statement= $db->prepare("UPDATE bookings SET booked =? WHERE home_id =? AND renter =?");
 $statement->execute(array(0, $home_id, $user_id));
 header("location: account.php");
 ?>
